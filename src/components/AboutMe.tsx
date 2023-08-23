@@ -5,6 +5,7 @@ import { TfiMobile } from "react-icons/tfi";
 import Card from "./CardsAboutMe";
 import { Slide } from "react-awesome-reveal";
 import "../css/AboutMe.css";
+import CarouselMySkills from "./CarouselMySkills";
 
 const AboutMe = () => {
   return (
@@ -31,7 +32,7 @@ const AboutMe = () => {
             - Algorithm `}
             />
           </Slide>
-          <Slide direction="up">
+          <Slide direction="left">
             <Card
               Icon={CgWebsite}
               title={"Full Stack Developer"}
@@ -58,6 +59,10 @@ const AboutMe = () => {
             />
           </Slide>
         </div>
+
+        <>
+          <CarouselMySkills />
+        </>
       </div>
     </>
   );
