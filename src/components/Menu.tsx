@@ -18,10 +18,10 @@ const Header = () => {
 
         <div className="Nav" style={bar ? { height: "100vh" } : { height: 0 }}>
           <span>
-            <a href="#home">Home</a>
+            <a href="#Home">Home</a>
           </span>
           <span>
-            <a href="#service">About</a>
+            <a href="#About">About</a>
           </span>
           <span>
             <a href="#project">Projects</a>

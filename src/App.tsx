@@ -1,6 +1,7 @@
 import "./css/App.css";
 import Header from "../src/components/Menu";
 import ProfileStart from "../src/components/ProfileStart";
+import AboutMe from "./components/AboutMe";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <Header />
         <ProfileStart />
       </div>
+      <AboutMe />
     </div>
   );
 }
