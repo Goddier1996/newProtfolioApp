@@ -6,6 +6,12 @@ import "../css/Menu.css";
 const Header = () => {
   const [bar, setBar] = useState<any>(false);
 
+  const arrayMenuOptions: any = [
+    { id: 1, type: "About" },
+    { id: 2, type: "project" },
+    { id: 3, type: "client" },
+  ];
+
   return (
     <Container bar={bar}>
       <div className="Container">
@@ -17,26 +23,18 @@ const Header = () => {
         </div>
 
         <div className="Nav" style={bar ? { height: "100vh" } : { height: 0 }}>
-          <span>
-            <a href="#Home" onClick={() => setBar(!bar)}>
-              Home
-            </a>
-          </span>
-          <span>
-            <a href="#About" onClick={() => setBar(!bar)}>
-              About
-            </a>
-          </span>
-          <span>
-            <a href="#project" onClick={() => setBar(!bar)}>
-              Projects
-            </a>
-          </span>
-          <span>
-            <a href="#client" onClick={() => setBar(!bar)}>
-              Contact
-            </a>
-          </span>
+          {arrayMenuOptions.map((value: any) => (
+            <span key={value.id}>
+              <a
+                href={"#" + value.type}
+                onClick={() => {
+                  bar ? setBar(!bar) : setBar(bar);
+                }}
+              >
+                {value.type}
+              </a>
+            </span>
+          ))}
         </div>
 
         <div

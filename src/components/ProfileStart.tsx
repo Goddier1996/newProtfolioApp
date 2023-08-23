@@ -5,7 +5,7 @@ import "../css/ProfileStart.css";
 
 const ProfileStart = () => {
   return (
-    <div className="ContainerProfileStart" id="/Home">
+    <div className="ContainerProfileStart">
       <Slide direction="left">
         <div className="Texts">
           <h4>
