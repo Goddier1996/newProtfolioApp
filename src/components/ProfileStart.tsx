@@ -1,0 +1,51 @@
+import { AiOutlineGithub } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
+import { Slide } from "react-awesome-reveal";
+import "../css/ProfileStart.css";
+
+const ProfileStart = () => {
+  return (
+    <div className="ContainerProfileStart" id="home">
+      <Slide direction="left">
+        <div className="Texts">
+          <h4>
+            Hello <span className="green">I'm</span>
+          </h4>
+          <h1 className="green">Artem Kot</h1>
+          <h3>
+            Full Stack Developer • Software Practical Engineer •
+            <br />
+            Ready For Any Challenge 🚀
+          </h3>
+          <p>
+            Create Websites And Also Applications For Mobile. And In Addition
+            Creates Algorithm Software, And A Database..
+          </p>
+          <button>Let's talk</button>
+          <div className="Social">
+            <p>Check out my</p>
+            <div className="social-icons">
+              <span>
+                <a href="https://github.com/Goddier1996">
+                  <AiOutlineGithub />
+                </a>
+              </span>
+              <span>
+                <a href="https://www.linkedin.com/in/artem-kot96">
+                  <FaLinkedinIn />
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </Slide>
+      <Slide direction="right">
+        <div className="Profile">
+          <img src="https://i.postimg.cc/MTCzWm3W/p1.webp" alt="profile" />
+        </div>
+      </Slide>
+    </div>
+  );
+};
+
+export default ProfileStart;
