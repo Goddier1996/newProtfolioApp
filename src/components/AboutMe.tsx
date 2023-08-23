@@ -6,7 +6,6 @@ import Card from "./CardsAboutMe";
 import { Slide } from "react-awesome-reveal";
 import "../css/AboutMe.css";
 
-
 const AboutMe = () => {
   return (
     <div className="ContainerAboutMe" id="About">
@@ -21,7 +20,9 @@ const AboutMe = () => {
           <Card
             Icon={PiCodeThin}
             title={"Software Practical Enginee"}
-            disc={`specialized in 
+            disc={`
+            Learn in Shenkar - Engineering. Design. Art.
+            specialized in 
             data structures
             - OOP concepts
             - Full-Stack Development & mobile

@@ -18,27 +18,37 @@ const Header = () => {
 
         <div className="Nav" style={bar ? { height: "100vh" } : { height: 0 }}>
           <span>
-            <a href="#Home">Home</a>
+            <a href="#Home" onClick={() => setBar(!bar)}>
+              Home
+            </a>
           </span>
           <span>
-            <a href="#About">About</a>
+            <a href="#About" onClick={() => setBar(!bar)}>
+              About
+            </a>
           </span>
           <span>
-            <a href="#project">Projects</a>
+            <a href="#project" onClick={() => setBar(!bar)}>
+              Projects
+            </a>
           </span>
           <span>
-            <a href="#client">Contact</a>
+            <a href="#client" onClick={() => setBar(!bar)}>
+              Contact
+            </a>
           </span>
         </div>
-        <div onClick={() => setBar(!bar)} className="bars">
-          <div
-            className="bar"
-            style={
-              bar
-                ? { backgroundColor: "transparent" }
-                : { backgroundColor: "#fff" }
-            }
-          ></div>
+
+        <div
+          onClick={() => setBar(!bar)}
+          className="bars"
+          style={
+            !bar
+              ? { backgroundColor: "#01be96" }
+              : { backgroundColor: "#8B0000		" }
+          }
+        >
+          <div className="bar">{!bar ? <p>Menu</p> : <p>Close</p>}</div>
         </div>
       </div>
     </Container>
