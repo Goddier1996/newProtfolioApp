@@ -7,7 +7,7 @@ const CarouselMySkills = () => {
       <div className="slide-track">
         {Skills.map((value) => (
           <div className="slide" key={value.id}>
-            <img src={value.image} height="100" width="250" alt="" />
+            <img src={value.image} alt="skills" />
           </div>
         ))}
       </div>

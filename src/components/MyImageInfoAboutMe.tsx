@@ -1,3 +1,5 @@
+import CarouselMySkills from "./CarouselMySkills";
+
 export const MyImageInfoAboutMe = () => {
   return (
     <div className="miniInfoAboutMe">
@@ -22,6 +24,7 @@ export const MyImageInfoAboutMe = () => {
           traveling to a variety of beautiful places in the world).
         </b>
       </p>
+      <CarouselMySkills/>
     </div>
   );
 };
