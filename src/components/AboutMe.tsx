@@ -6,6 +6,7 @@ import Card from "./CardsAboutMe";
 import { Slide } from "react-awesome-reveal";
 import "../css/AboutMe.css";
 import CarouselMySkills from "./CarouselMySkills";
+import MyImage from "./MyImage";
 
 const AboutMe = () => {
   return (
@@ -17,6 +18,11 @@ const AboutMe = () => {
           </h4>
           <h1>What I Do</h1>
         </Slide>
+
+        <Slide direction="left">
+          <MyImage />
+        </Slide>
+
         <div className="CardsAboutMe">
           <Slide direction="left">
             <Card
@@ -60,9 +66,9 @@ const AboutMe = () => {
           </Slide>
         </div>
 
-        <>
+        <Slide direction="up">
           <CarouselMySkills />
-        </>
+        </Slide>
       </div>
     </>
   );

@@ -34,18 +34,23 @@
     font-weight: 300;
 }
 
-.Texts button {
+.btn {
+    margin-top: 5%;
+}
+
+.btn a {
     padding: 0.7rem 2rem;
-    margin-top: 3rem;
     cursor: pointer;
     background-color: #01be96;
     border: none;
     color: #fff;
     font-weight: 500;
     filter: drop-shadow(0px 10px 10px #01be9551);
+    text-decoration: none;
 }
 
-.Texts button:hover {
+
+.btn a:hover {
     filter: drop-shadow(0px 10px 10px #01be9570);
 }
 
@@ -122,22 +127,34 @@
 }
 
 .Profile img {
-    width: 25rem;
+    width: 400px;
     filter: drop-shadow(0px 10px 10px #01be9570);
     transition: transform 400ms ease-in-out;
+    transform: rotate(15deg);
 }
 
 .Profile img:hover img {
     transform: translateY(-10px);
 }
 
-@media (max-width: 790px) {
+/* @media (max-width: 790px) {
     .Profile img {
         width: 20rem;
     }
+} */
+
+@media screen and (max-width: 768px) {
+    .Profile {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Profile img {
+        width: 300px;
+    }
 }
 
-@media (max-width: 660px) {
+/* @media (max-width: 660px) {
     .Profile img {
         width: 18rem;
     }
@@ -147,4 +164,4 @@
     .Profile img {
         width: 100%;
     }
-}
+} */

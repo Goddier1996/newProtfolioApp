@@ -21,7 +21,11 @@ const ProfileStart = () => {
             Create Websites And Also Applications For Mobile. And In Addition
             Creates Algorithm Software, And A Database..
           </p>
-          <button>Let's talk</button>
+
+          <div className="btn">
+            <a href="#About">About Me</a>
+          </div>
+
           <div className="Social">
             <p>Check out my</p>
             <div className="social-icons">
