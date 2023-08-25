@@ -6,7 +6,7 @@ import "../css/Projects.css";
 import { useContext } from "react";
 import SelectCategoryProject from "../Context/SelectCategoryProject";
 
-var settings = {
+let settings = {
   className: "center",
   centerMode: true,
   dots: false,
@@ -52,25 +52,25 @@ const SliderModelsProjects = () => {
 
   const { typeProject } = useContext(SelectCategoryProject);
 
-  const sizeWebsite: any = Projects.filter((Project) => {
-    return Project.type === "Website";
-  });
+  // const sizeWebsite: any = Projects.filter((Project) => {
+  //   return Project.type === "Website";
+  // });
 
-  const sizeAppsAndroid: any = Projects.filter((Project) => {
-    return Project.type === "App Android";
-  });
+  // const sizeAppsAndroid: any = Projects.filter((Project) => {
+  //   return Project.type === "App Android";
+  // });
 
-  const sizePythonApp: any = Projects.filter((Project) => {
-    return Project.type === "Python";
-  });
+  // const sizePythonApp: any = Projects.filter((Project) => {
+  //   return Project.type === "Python";
+  // });
 
-  const sizeArduinoApp: any = Projects.filter((Project) => {
-    return Project.type === "Arduino";
-  });
+  // const sizeArduinoApp: any = Projects.filter((Project) => {
+  //   return Project.type === "Arduino";
+  // });
 
   return (
     <>
-      {typeProject === "Website" ? (
+      {/* {typeProject === "Website" ? (
         <p>Size web Project's - {sizeWebsite.length}</p>
       ) : typeProject === "App Android" ? (
         <p>Size App Android Project's - {sizeAppsAndroid.length}</p>
@@ -80,7 +80,7 @@ const SliderModelsProjects = () => {
         <p>Size Arduino Project's - {sizeArduinoApp.length}</p>
       ) : (
         ""
-      )}
+      )} */}
 
       <div className="ContainerSlider">
         <Slider ref={arrowRef} {...settings}>

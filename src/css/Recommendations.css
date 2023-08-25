@@ -1,0 +1,158 @@
+.ContainerRecommendations {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+.ContainerRecommendations span {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.ContainerRecommendations h1 {
+    padding-top: 1rem;
+    text-transform: capitalize;
+}
+
+
+.slick-dots {
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.slick-dots li button:before {
+    content: "";
+}
+
+.slick-dots li button {
+    width: 9px;
+    height: 4px;
+    background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+    padding: 0.1rem;
+    margin-top: 1rem;
+    transition: all 400ms ease-in-out;
+    border-radius: 50px;
+}
+
+/* .ContainerRecommendations.slick-list, .slick-slider, .slick-track{
+    padding: 0;
+} */
+
+.slick-dots li.slick-active button {
+    background: #01be96;
+    width: 15px;
+}
+
+.slick-dots li {
+    margin: 0;
+}
+
+@media (max-width: 840px) {
+    .ContainerRecommendations {
+        width: 90%;
+    }
+
+    .slick-dots li {
+        bottom: 5rem;
+    }
+}
+
+.Testimonials {
+    /* margin-top: 2rem; */
+    position: relative;
+}
+
+.Buttons {
+    position: absolute;
+    right: 0.7rem;
+    bottom: 2rem;
+}
+
+.Buttons button {
+    background-color: transparent;
+    margin-left: 0.5rem;
+    border: none;
+    color: #01be96;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+
+@media(max-width:530px) {
+    .Buttons button {
+        display: none;
+    }
+}
+
+
+
+
+
+.ContainerRecommendationsCard {
+    background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+    padding: 1.5rem 1rem;
+    margin: 0 1rem;
+}
+
+.Header {
+    display: flex;
+    justify-content: end;
+    margin-bottom: -2.5rem;
+}
+
+.Header .quote {
+    font-size: 3rem;
+    color: #01be96;
+    opacity: 0.7;
+}
+
+
+.BodyCard {
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.FooterCard {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.FooterCard img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+
+.FooterCard h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.FooterCard p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+@media (max-width: 580px) {
+    .FooterCard h1 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 538px) {
+
+    .FooterCard h1 {
+        font-size: 0.9rem;
+    }
+
+    .FooterCard p {
+        font-size: 0.6rem;
+    }
+}
