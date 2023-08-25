@@ -137,12 +137,6 @@
     transform: translateY(-10px);
 }
 
-/* @media (max-width: 790px) {
-    .Profile img {
-        width: 20rem;
-    }
-} */
-
 @media screen and (max-width: 768px) {
     .Profile {
         display: flex;
@@ -153,15 +147,3 @@
         width: 300px;
     }
 }
-
-/* @media (max-width: 660px) {
-    .Profile img {
-        width: 18rem;
-    }
-}
-
-@media (max-width: 640px) {
-    .Profile img {
-        width: 100%;
-    }
-} */

@@ -1,0 +1,149 @@
+.selectTypeProjectStyle {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.styleTextType h6 {
+    padding: 6%;
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+    background: linear-gradient(159deg, rgb(137, 137, 155) 0%, rgb(43, 43, 53) 100%);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    font-size: 15px;
+}
+
+.styleTextType h6:hover {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.633);
+}
+
+
+
+.ContainerMyProjects {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 3rem 0;
+    text-align: center;
+    position: relative;
+}
+
+.ContainerMyProjects h1 {
+    font-size: 1.9rem;
+}
+
+.ContainerMyProjects p {
+    width: 28rem;
+    margin: 0 auto;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 500px) {
+    .ContainerMyProjects p {
+        width: 90%;
+    }
+}
+
+@media (max-width: 840px) {
+    .ContainerMyProjects {
+        width: 90%;
+    }
+}
+
+
+/* style Slider next and back */
+.ContainerSlider {
+    position: relative;
+}
+
+.buttonNextBack button {
+    width: 40px;
+    height: 40px;
+    background-color: #01be96;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    top: 45%;
+}
+
+.back {
+    left: -1rem;
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+}
+
+.next {
+    right: -1rem;
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+}
+
+.buttonNextBack button:hover {
+    width: 35px;
+    height: 35px;
+    background-color: #01be95ae;
+}
+
+
+
+.ContainerProject {
+    height: 180px;
+    background-color: #4e5156;
+    margin: 0 0.5rem;
+    padding: 3px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ContainerProject img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 400ms ease-in-out;
+}
+
+.about {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -10rem;
+    padding: 0.5rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.498), rgba(0, 0, 0, 0.9));
+    transition: all 400ms ease-in-out;
+    width: 100%;
+}
+
+.titleAndAbout {
+    display: flex;
+    justify-content: center;
+}
+
+.ContainerProject a {
+    color: white;
+    margin: 6%;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.ContainerProject a:hover {
+    color: rgba(255, 255, 255, 0.612);
+    font-size: 15px;
+}
+
+.ContainerProject:hover>img {
+    transform: scale(1.3);
+}
+
+.ContainerProject:hover>.about {
+    bottom: 0;
+}
+
+
+.infoApp video {
+    height: auto;
+    width: 100%;
+    border-radius: 15px;
+}
