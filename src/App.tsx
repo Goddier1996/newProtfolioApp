@@ -21,7 +21,9 @@ function App() {
           <Projects />
         </div>
         <Recommendations />
-        <div className="LightColor">{/* <Contact/> */}</div>
+        <div className="LightColor">
+          <Contact />
+        </div>
       </div>
     </>
   );

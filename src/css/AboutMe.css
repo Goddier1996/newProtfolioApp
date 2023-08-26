@@ -98,6 +98,16 @@
 }
 
 
+.ContainerAboutMeCards b {
+    padding-left: 2%;
+    font-size: 13px;
+    color: #01be96;
+    cursor: pointer;
+}
+
+.ContainerAboutMeCards b:hover {
+    color: #01be95a2;
+}
 
 
 

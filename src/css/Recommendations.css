@@ -35,10 +35,6 @@
     border-radius: 50px;
 }
 
-/* .ContainerRecommendations.slick-list, .slick-slider, .slick-track{
-    padding: 0;
-} */
-
 .slick-dots li.slick-active button {
     background: #01be96;
     width: 15px;
