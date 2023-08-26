@@ -97,8 +97,8 @@
 }
 
 .Header .quote {
-    font-size: 3rem;
-    color: #01be96;
+    font-size: 30px;
+    color: #82b5bd;
     opacity: 0.7;
 }
 
@@ -112,12 +112,12 @@
 .BodyCard b {
     padding-left: 2%;
     font-size: 13px;
-    color: #01be96;
+    color: #f9a51f;
     cursor: pointer;
 }
 
 .BodyCard b:hover {
-    color: #01be95a2;
+    color: #f9a51f9b;
 }
 
 .FooterCard {

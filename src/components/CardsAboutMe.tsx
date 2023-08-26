@@ -9,7 +9,7 @@ const CardsAboutMe = (props: any) => {
 
   return (
     <div className="ContainerAboutMeCards">
-      <span className="green">
+      <span className="styleIconAboutMe">
         <Icon />
       </span>
       <h1>{title}</h1>

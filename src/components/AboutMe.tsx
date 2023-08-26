@@ -36,10 +36,8 @@ const AboutMe = () => {
                 Icon={
                   value.title == "Software Practical Engineer"
                     ? PiCodeThin
-                    : value.title == "Web Developer"
+                    : value.title == "Web Developer + Mobile"
                     ? CgWebsite
-                    : value.title == "Mobile"
-                    ? TfiMobile
                     : BiLogoAdobe
                 }
                 title={value.title}

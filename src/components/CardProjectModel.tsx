@@ -16,7 +16,7 @@ const CardProjectModel = (props: any) => {
                 <br/><p>Skills : ${Skils}</p>
              </div>`,
       confirmButtonText: "Ok",
-      confirmButtonColor: "#01be96",
+      confirmButtonColor: "#f9a51f",
     });
   };
 

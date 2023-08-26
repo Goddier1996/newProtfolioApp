@@ -79,16 +79,15 @@
 .btnSendMessage a {
     padding: 0.7rem 2rem;
     cursor: pointer;
-    background-color: #01be96;
+    background: #82b5bd;
     border: none;
-    color: #fff;
+    color: #000000;
     font-weight: 500;
-    filter: drop-shadow(0px 10px 10px #01be9551);
     text-decoration: none;
 }
 
 .btnSendMessage a:hover {
-    filter: drop-shadow(0px 10px 10px #01be9570);
+    filter: drop-shadow(0px 10px 10px #82b5bd22);
 }
 
 @media(max-width:991px) {

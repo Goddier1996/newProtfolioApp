@@ -23,7 +23,7 @@ body {
 }
 
 .green {
-  color: #01be96;
+  color: #f9a51f;
 }
 
 .slick-list,
@@ -103,4 +103,5 @@ body {
 /* swal css butoon */
 .swal2-styled.swal2-confirm {
   font-size: 15px;
+  color: #000000;
 }

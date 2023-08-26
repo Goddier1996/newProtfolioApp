@@ -5,15 +5,11 @@
     },
     {
         "id": 2,
-        "title": "Web Developer",
-        "info": "With a strong inclination towards Full Stack Developer. Possess a strong passion for developing ideas from scratch while being organized and motivated by challenges.Has the ability to self-learn new technologies.Has a solid background in React, JavaScript , TypeScript, NodeJS , DataBase and other technologies⚒️."
-    }, {
-        "id": 3,
-        "title": "Mobile",
-        "info": "Has the ability to create an application in technologies React Native - Android."
+        "title": "Web Developer + Mobile",
+        "info": "With a strong inclination towards Full Stack Developer. Possess a strong passion for developing ideas from scratch while being organized and motivated by challenges.Has the ability to self-learn new technologies.Has a solid background in React, JavaScript , TypeScript, NodeJS , DataBase and other technologies⚒️.Has the ability to create an application in technologies React Native - Android."
     },
     {
-        "id": 4,
+        "id": 3,
         "title": "UX / UI",
         "info": "Has a broad background in web design and applications.Improving user experience."
     }

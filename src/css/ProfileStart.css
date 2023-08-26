@@ -41,17 +41,16 @@
 .btn a {
     padding: 0.7rem 2rem;
     cursor: pointer;
-    background-color: #01be96;
+    background: #82b5bd;
     border: none;
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-weight: 500;
-    filter: drop-shadow(0px 10px 10px #01be9551);
     text-decoration: none;
 }
 
 
 .btn a:hover {
-    filter: drop-shadow(0px 10px 10px #01be9570);
+    filter: drop-shadow(0px 10px 10px #82b5bd22);
 }
 
 @media (max-width: 840px) {
@@ -100,10 +99,10 @@
 }
 
 .social-icons span {
-    width: 2.3rem;
-    height: 2rem;
+    width: 2.4rem;
+    height: 2.2rem;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    background-color: #01be96;
+    background: #82b5bd;
     position: relative;
     transition: transform 400ms ease-in-out;
 }
@@ -113,7 +112,7 @@
 }
 
 .social-icons a {
-    color: #fff;
+    color: black;
     position: absolute;
     top: 55%;
     left: 50%;
@@ -128,7 +127,7 @@
 
 .Profile img {
     width: 400px;
-    filter: drop-shadow(0px 10px 10px #01be9570);
+    filter: drop-shadow(0px 10px 10px #82b5bda5);
     transition: transform 400ms ease-in-out;
     transform: rotate(15deg);
 }

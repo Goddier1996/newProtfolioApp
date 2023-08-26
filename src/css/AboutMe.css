@@ -53,7 +53,7 @@
 }
 
 .highlight {
-    background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=ffff43);
+    background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=f9a51f);
     color: rgb(0, 0, 0);
 }
 
@@ -101,15 +101,17 @@
 .ContainerAboutMeCards b {
     padding-left: 2%;
     font-size: 13px;
-    color: #01be96;
+    color: #f9a51f;
     cursor: pointer;
 }
 
 .ContainerAboutMeCards b:hover {
-    color: #01be95a2;
+    color: #f9a51f9b;
 }
 
-
+.styleIconAboutMe{
+    color: #82b5bd;
+}
 
 /* carousel My Skills */
 @keyframes scroll {

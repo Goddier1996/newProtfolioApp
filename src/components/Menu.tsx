@@ -43,8 +43,8 @@ const Header = () => {
           className="bars"
           style={
             !bar
-              ? { backgroundColor: "#01be96" }
-              : { backgroundColor: "#8B0000		" }
+              ? { backgroundColor: "#82b5bd" }
+              : { backgroundColor: "#8B0000",color:"white" }
           }
         >
           <div className="bar">{!bar ? <p>Menu</p> : <p>Close</p>}</div>
