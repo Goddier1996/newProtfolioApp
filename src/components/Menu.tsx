@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <Container bar={bar}>
-      <div className="Container">
+      <div className="ContainerMenu">
         <div className="Logo">
           <span className="green">
             <FaCode />

@@ -1,4 +1,4 @@
-.Container {
+.ContainerMenu {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -27,7 +27,7 @@
 
 
 .Nav span {
-    margin-left: 1rem;
+    margin-left: 30px;
 }
 
 .Nav a {
@@ -68,14 +68,13 @@
 
 
 @media (max-width: 840px) {
-    .Container {
+    .ContainerMenu {
         width: 90%;
     }
 }
 
 
 @media (max-width: 640px) {
-
     .bars {
         width: 55px;
         height: 55px;

@@ -1,75 +1,110 @@
 .contact {
+    margin-top: 2rem;
+    position: relative;
+    padding: 2rem 0;
     width: 80%;
     max-width: 1280px;
     margin: 0 auto;
-    padding: 3rem 0;
+    display: flex;
+    justify-content: space-around;
+
 }
 
-
-.contact .icons-container1 {
+.modelIcons {
     display: flex;
     gap: 1.5rem;
     flex-wrap: wrap;
-    padding-bottom: 2rem;
+    width: 70%;
 }
 
-.contact .icons-container1 .icons {
+.icons {
     flex: 1 1 25rem;
     text-align: center;
-    padding: 2rem;
-    /* background: rgba(255, 255, 255, 0.436); */
+    padding: 5%;
+    background: rgba(0, 0, 0, 0.16);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     border-radius: .5rem;
 }
 
-
-
-.contact .icons-container1 .icons h3 {
-    color: rgba(33, 33, 33, 0.793);
+.icons h3 {
+    color: rgba(255, 255, 255, 0.793);
     font-weight: 600;
     font-size: 17px;
     padding: .5rem 0;
     padding-top: 1rem;
 }
 
-.contact .icons-container1 .icons p {
-    color: rgba(102, 102, 102, 0.793);
+.icons p {
+    color: rgba(255, 255, 255, 0.616);
     font-weight: 600;
     font-size: 14px;
     text-decoration: none;
 }
 
-
-
-.contact .row1 form {
-    flex: 1 1 55rem;
-    /* background: rgba(255, 255, 255, 0.436); */
-    padding: 0 2rem;
+.inputValue {
+    width: 70%;
+    background: rgba(0, 0, 0, 0.16);
+    padding: 2%;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     border-radius: .5rem;
 }
 
-
-
-.contact .row1 form .box,
-.contact .row1 form textarea {
+.inputValue form .box,
+.inputValue form textarea {
     width: 100%;
-    border-bottom: .1rem solid #333;
-    color: rgba(102, 102, 102, 0.793);
-    font-weight: 600;
+    color: rgb(255, 255, 255);
     text-transform: none;
     font-size: 14px;
-    padding: 20px;
     margin: 1rem 0;
-    background: rgba(255, 0, 0, 0);
+    background: rgba(197, 7, 7, 0);
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.616);
+    padding: 1%;
 }
 
-.contact .row1 form textarea {
+.inputValue form .box:focus,
+.inputValue form .box:active {
+    border: none;
+}
+
+.inputValue form textarea {
     height: 10rem;
     resize: none;
 }
 
-.contact .row1 form .btn {
-    margin-top: 0;
-    margin-bottom: 1.5rem;
+.btnSendMessage {
+    padding: 3%;
+}
+
+.btnSendMessage a {
+    padding: 0.7rem 2rem;
+    cursor: pointer;
+    background-color: #01be96;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    filter: drop-shadow(0px 10px 10px #01be9551);
+    text-decoration: none;
+}
+
+.btnSendMessage a:hover {
+    filter: drop-shadow(0px 10px 10px #01be9570);
+}
+
+@media(max-width:991px) {
+    .modelIcons {
+        width: 100%;
+    }
+
+    .inputValue {
+        width: 100%;
+        padding: 6%;
+    }
+}
+
+@media (max-width: 650px) {
+    .contact {
+        flex-direction: column;
+        gap: 3rem;
+    }
 }
