@@ -1,9 +1,9 @@
 import { createContext } from "react";
 
-// default select website
+// default see all projects
 
 const SelectCategoryProject = createContext({
-  typeProject: "Website",
+  typeProject: "",
   setTypeProject: () => {},
 });
 

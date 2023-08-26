@@ -58,14 +58,19 @@ const Recommendations = () => {
           ))}
         </Slider>
 
-        <div className="Buttons">
-          <button onClick={() => arrowRef.current.slickPrev()}>
-            <IoIosArrowBack />
-          </button>
-          <button onClick={() => arrowRef.current.slickNext()}>
-            <IoIosArrowForward />
-          </button>
-        </div>
+        {/* check if length Recommend was more 3 , and show Arrow next + back*/}
+        {Recommend.length > 3 ? (
+          <div className="Buttons">
+            <button onClick={() => arrowRef.current.slickPrev()}>
+              <IoIosArrowBack />
+            </button>
+            <button onClick={() => arrowRef.current.slickNext()}>
+              <IoIosArrowForward />
+            </button>
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );

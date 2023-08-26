@@ -1,0 +1,105 @@
+.contact{
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+
+.contact .icons-container1 {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+
+.contact .icons-container1 .icons {
+    flex: 1 1 25rem;
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.436);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+}
+
+.contact .icons-container1 .icons i {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 50%;
+}
+
+.contact .icons-container1 .icons h3 {
+    color: rgba(33, 33, 33, 0.793);
+    font-weight: 600;
+    font-size: 17px;
+    padding: .5rem 0;
+    padding-top: 1rem;
+}
+
+.contact .icons-container1 .icons p {
+    color: rgba(102, 102, 102, 0.793);
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.contact .row1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contact .row1 form {
+    flex: 1 1 55rem;
+    background: rgba(255, 255, 255, 0.436);
+    padding: 0 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+}
+
+
+.contact .row1 .map {
+    flex: 1 1 25rem;
+    border: 1rem solid rgba(255, 255, 255, 0.436);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    width: 100%;
+}
+
+.contact .row1 form .box,
+.contact .row1 form textarea {
+    width: 100%;
+    border-bottom: .1rem solid #333;
+    color: rgba(102, 102, 102, 0.793);
+    font-weight: 600;
+    text-transform: none;
+    font-size: 14px;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    background: rgba(94, 6, 6, 0);
+}
+
+
+.contact .row1 form .box:focus,
+.contact .row1 form textarea:focus {
+    border-color: var(--main-color);
+}
+
+.contact .row1 form .box::placeholder,
+.contact .row1 form textarea::placeholder {
+    text-transform: capitalize;
+}
+
+.contact .row1 form textarea {
+    height: 20rem;
+    resize: none;
+}
+
+.contact .row1 form .btn {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
