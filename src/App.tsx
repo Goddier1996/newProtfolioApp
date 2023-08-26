@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Recommendations from "./components/Recommendations";
 import Contact from "./components/Contact";
 import ScrollUpButton from "./components/ScrollUpButton";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <div className="LightColor">
           <Contact />
         </div>
+        <Footer />
       </div>
     </>
   );

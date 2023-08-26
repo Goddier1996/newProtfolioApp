@@ -1,0 +1,9 @@
+.styleFooter {
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+}
+
+.styleFooter p {
+    font-size: 13px;
+}
