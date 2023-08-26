@@ -1,4 +1,3 @@
-
 import { useRef } from "react";
 import Slider from "react-slick";
 import { Slide } from "react-awesome-reveal";
@@ -47,10 +46,10 @@ const Recommendations = () => {
   const arrowRef = useRef<any>(null);
 
   return (
-    <div className="ContainerRecommendations" id="client">
+    <div className="ContainerRecommendations" id="Recommendations">
       <Slide className="titleAboutRecommendations" direction="left">
-        <span className="green">testimonials</span>
-        <h1>what clients say</h1>
+        <span className="green">Recommendations</span>
+        <h1>what say about me</h1>
       </Slide>
       <div className="Testimonials">
         <Slider ref={arrowRef} {...settings}>

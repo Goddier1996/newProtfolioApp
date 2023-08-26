@@ -1,10 +1,12 @@
-
-
 import { IoIosQuote } from "react-icons/io";
 import "../css/Recommendations.css";
+import { useState } from "react";
 
 const CardRecommendations = (props: any) => {
   const { name, position, img_url, disc } = props.item;
+  const [showMore, setShowMore] = useState<Boolean>(false);
+
+  const sizeWorldInDisc: any = disc.length;
 
   return (
     <div className="ContainerRecommendationsCard">
@@ -21,7 +23,20 @@ const CardRecommendations = (props: any) => {
         </div>
       </div>
 
-      <div className="BodyCard">{disc}</div>
+      <div className="BodyCard">
+        <p>
+          {sizeWorldInDisc < 150 ? (
+            <p>{disc}</p>
+          ) : (
+            <>
+              {showMore ? disc : `${disc.substring(0, 150)}`}
+              <b onClick={() => setShowMore(!showMore)}>
+                {showMore ? "Show less" : "Show more"}
+              </b>
+            </>
+          )}
+        </p>
+      </div>
     </div>
   );
 };

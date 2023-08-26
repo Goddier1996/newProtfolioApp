@@ -9,7 +9,8 @@ const Header = () => {
   const arrayMenuOptions: any = [
     { id: 1, type: "About" },
     { id: 2, type: "project" },
-    { id: 3, type: "client" },
+    { id: 3, type: "Recommendations" },
+    { id: 4, type: "Contact" },
   ];
 
   return (

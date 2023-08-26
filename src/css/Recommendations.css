@@ -59,7 +59,6 @@
 }
 
 .Testimonials {
-    /* margin-top: 2rem; */
     position: relative;
 }
 
@@ -112,6 +111,12 @@
     font-size: 0.8rem;
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
+}
+
+.BodyCard b {
+    padding-left: 2%;
+    font-size: 13px;
+    color: #01be96;
 }
 
 .FooterCard {
