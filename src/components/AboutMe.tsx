@@ -15,10 +15,9 @@ const AboutMe = () => {
     <>
       <div className="ContainerAboutMe" id="About">
         <Slide direction="down">
-          <h4>
+          <h1>
             About <span className="green">Me</span>
-          </h4>
-          <h1>What I Do</h1>
+          </h1>
         </Slide>
 
         <Slide direction="left">
