@@ -11,7 +11,6 @@
     height: auto;
     cursor: pointer;
     background: rgba(0, 0, 0, 0.16);
-    /* background: linear-gradient(159deg, rgb(137, 137, 155) 0%, rgb(43, 43, 53) 100%); */
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     font-size: 15px;
 }
