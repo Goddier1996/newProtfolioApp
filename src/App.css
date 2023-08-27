@@ -1,4 +1,3 @@
-.ContainerApp,
 .BannerApp {
     height: 100vh;
     background: url("../src/images/11.webp");
@@ -9,3 +8,11 @@
 .LightColor {
     background: url("../src/images/22.webp");
 }
+
+
+@media (max-width: 640px) {
+.BannerApp {
+    height: 100%;
+    padding-bottom: 2rem;
+}
+  }

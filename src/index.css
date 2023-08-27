@@ -93,12 +93,12 @@ body {
 .swal2-container.swal2-center>.swal2-popup {
   font-size: 13px;
   border-radius: 15px;
-  background: url("https://i.postimg.cc/wjkknfPK/low-contrast-linen.png");
+  background: url("./images/11.webp");
   color: #fff;
 }
 
 /* swal css butoon */
 .swal2-styled.swal2-confirm {
   font-size: 15px;
-  color: #000000;
+  color: #ffffff;
 }
