@@ -1,11 +1,11 @@
 .ContainerApp,
 .BannerApp {
     height: 100vh;
-    background: url("https://i.postimg.cc/wjkknfPK/low-contrast-linen.png");
+    background: url("../src/images/11.webp");
     border-bottom-left-radius: 2%;
     border-bottom-right-radius: 2%;
 }
 
 .LightColor {
-    background: url("https://i.postimg.cc/wjkknfPK/low-contrast-linen.png");
+    background: url("../src/images/22.webp");
 }
