@@ -87,9 +87,9 @@
 .ContainerRecommendationsCard {
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
     background: rgba(0, 0, 0, 0.16);
-    /* background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%); */
     padding: 1.5rem 1rem;
     margin: 0 1rem;
+    border-radius: 1%;
 }
 
 

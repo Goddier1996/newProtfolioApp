@@ -1,12 +1,16 @@
 import { useState } from "react";
 import "../css/Contact.css";
 import { Slide } from "react-awesome-reveal";
-import emailjs from "@emailjs/browser";
-import Swal from "sweetalert2";
+import { SendMessage } from "./SendMessage";
 
 const Contact = () => {
-  //value input to message
-  const [toSend, setToSend] = useState({
+
+  const [toSend, setToSend] = useState<{
+    from_name: string;
+    message: string;
+    from_email: string;
+    from_number: string;
+  }>({
     from_name: "",
     message: "",
     from_email: "",
@@ -20,36 +24,7 @@ const Contact = () => {
   const sendEmail = (e: any) => {
     e.preventDefault();
 
-    if (
-      toSend.from_name == "" ||
-      toSend.from_email == "" ||
-      toSend.message == "" ||
-      toSend.from_number == ""
-    ) {
-      e.preventDefault();
-
-      Swal.fire({
-        html: "<h4>you can`t send message<br/>please input all value !</h4>",
-        icon: "error",
-        confirmButtonColor: "green",
-      });
-    } else {
-      emailjs.send(
-        process.env.REACT_APP_SERVICE_KEY || "",
-        process.env.REACT_APP_TEMPLATE || "",
-        toSend,
-        process.env.REACT_APP_PASSWORD || ""
-      );
-      Swal.fire({
-        html: "<h4>success send your messsage</h4>",
-        icon: "success",
-        confirmButtonColor: "green",
-      }).then((result) => {
-        if (result.isConfirmed) {
-          window.location.reload();
-        }
-      });
-    }
+    SendMessage(toSend);
   };
 
   return (
@@ -101,7 +76,7 @@ const Contact = () => {
           <input
             type="number"
             name="from_number"
-            placeholder="your phone number"
+            placeholder="Your phone number"
             className="box"
             id="fromPhoneNumber"
             value={toSend.from_number}
