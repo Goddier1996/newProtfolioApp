@@ -27,8 +27,8 @@
 
 .slick-dots li button {
     width: 9px;
-    height: 4px;
-    background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+    height: 6px;
+    background: #82b5bdea;
     padding: 0.1rem;
     margin-top: 1rem;
     transition: all 400ms ease-in-out;
@@ -36,7 +36,7 @@
 }
 
 .slick-dots li.slick-active button {
-    background: #01be96;
+    background: #f9a51f;
     width: 15px;
 }
 
@@ -66,9 +66,9 @@
 
 .Buttons button {
     background-color: transparent;
-    margin-left: 0.5rem;
+    margin-left: 1.5rem;
     border: none;
-    color: #01be96;
+    background-color: #f9a51f;
     cursor: pointer;
     font-size: 17px;
 }
