@@ -16,7 +16,7 @@
 
 body {
   width: 100%;
-  background-color: var(---background);
+  background: url("https://i.postimg.cc/8kKddfvG/87878.png");
   color: #fff;
   overflow-x: hidden;
   position: relative;
@@ -62,18 +62,15 @@ body {
   width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #000000;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #82b5bd;
   border-radius: 50px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
@@ -96,7 +93,7 @@ body {
 .swal2-container.swal2-center>.swal2-popup {
   font-size: 13px;
   border-radius: 15px;
-  background: #151b1fdb;
+  background: url("https://i.postimg.cc/wjkknfPK/low-contrast-linen.png");
   color: #fff;
 }
 

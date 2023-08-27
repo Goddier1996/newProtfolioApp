@@ -1,7 +1,6 @@
 import { PiCodeThin } from "react-icons/pi";
 import { BiLogoAdobe } from "react-icons/bi";
 import { CgWebsite } from "react-icons/cg";
-import { TfiMobile } from "react-icons/tfi";
 import Card from "./CardsAboutMe";
 import { Slide } from "react-awesome-reveal";
 import "../css/AboutMe.css";

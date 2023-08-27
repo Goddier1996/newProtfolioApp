@@ -9,7 +9,7 @@ const ProfileStart = () => {
       <Slide direction="left">
         <div className="Texts">
           <h4>
-            Hello <span className="green">I'm</span>
+            Hi <span className="green">There...</span>
           </h4>
           <h1 className="green">Artem Kot</h1>
           <h3>

@@ -1,7 +1,57 @@
+import { useState } from "react";
 import "../css/Contact.css";
 import { Slide } from "react-awesome-reveal";
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 const Contact = () => {
+  //value input to message
+  const [toSend, setToSend] = useState({
+    from_name: "",
+    message: "",
+    from_email: "",
+    from_number: "",
+  });
+
+  const handleChange = (e: any) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
+  };
+
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+
+    if (
+      toSend.from_name == "" ||
+      toSend.from_email == "" ||
+      toSend.message == "" ||
+      toSend.from_number == ""
+    ) {
+      e.preventDefault();
+
+      Swal.fire({
+        html: "<h4>you can`t send message<br/>please input all value !</h4>",
+        icon: "error",
+        confirmButtonColor: "green",
+      });
+    } else {
+      emailjs.send(
+        process.env.REACT_APP_SERVICE_KEY || "",
+        process.env.REACT_APP_TEMPLATE || "",
+        toSend,
+        process.env.REACT_APP_PASSWORD || ""
+      );
+      Swal.fire({
+        html: "<h4>success send your messsage</h4>",
+        icon: "success",
+        confirmButtonColor: "green",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          window.location.reload();
+        }
+      });
+    }
+  };
+
   return (
     <div className="contact" id="Contact">
       <Slide direction="left">
@@ -39,39 +89,43 @@ const Contact = () => {
       </Slide>
 
       <div className="inputValue">
-        <form action="" method="post">
+        <form onSubmit={sendEmail}>
           <input
             type="text"
-            name="inputbox"
-            placeholder="your name"
-            className="box Name"
-            id="fromName"
-          />
-          <input
-            type="email"
-            name="inputbox"
-            placeholder="your email"
-            className="box Email"
-            id="fromEmail"
+            name="from_name"
+            placeholder="Your Name"
+            className="box"
+            value={toSend.from_name}
+            onChange={handleChange}
           />
           <input
             type="number"
-            name="inputbox"
+            name="from_number"
             placeholder="your phone number"
-            className="box PhoneNumber"
+            className="box"
             id="fromPhoneNumber"
+            value={toSend.from_number}
+            onChange={handleChange}
+          ></input>
+          <input
+            type="email"
+            name="from_email"
+            placeholder="Your Email"
+            className="box"
+            value={toSend.from_email}
+            onChange={handleChange}
           />
           <textarea
-            placeholder="Message"
-            rows={4}
-            cols={40}
+            rows={3}
             name="message"
-            className="msg Msg"
-            id="msg"
+            placeholder="Your Message"
+            className="msg"
+            value={toSend.message}
+            onChange={handleChange}
           ></textarea>
           <Slide direction="up">
             <div className="btnSendMessage">
-              <a href="#About">Send Message</a>
+              <button type="submit">Send Message</button>
             </div>
           </Slide>
         </form>

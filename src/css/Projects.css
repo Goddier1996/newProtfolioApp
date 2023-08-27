@@ -10,7 +10,8 @@
     width: 150px;
     height: auto;
     cursor: pointer;
-    background: linear-gradient(159deg, rgb(137, 137, 155) 0%, rgb(43, 43, 53) 100%);
+    background: rgba(0, 0, 0, 0.16);
+    /* background: linear-gradient(159deg, rgb(137, 137, 155) 0%, rgb(43, 43, 53) 100%); */
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     font-size: 15px;
 }
@@ -90,12 +91,12 @@
 
 .ContainerProject {
     height: 180px;
-    background: #4e5156;
+    background: rgba(0, 0, 0, 0.16);
     margin: 0 0.5rem;
-    padding: 3px;
-    border-radius: 5px;
+    padding: 1.5%;
     position: relative;
     overflow: hidden;
+    border-radius: 1%;
 }
 
 .ContainerProject img {
@@ -143,7 +144,12 @@
 
 
 .infoApp video {
-    height: auto;
+    height: 190px;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 1%;
+}
+
+.highlight {
+    background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=f9a51f);
+    color: rgb(0, 0, 0);
 }

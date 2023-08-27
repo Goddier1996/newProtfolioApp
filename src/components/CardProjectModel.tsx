@@ -13,10 +13,10 @@ const CardProjectModel = (props: any) => {
       html: `<div>
                 <div class="infoApp"><video controls autoplay loop muted playsinline src="${video}"></video></div>
                 <br/><p>${About}</p>
-                <br/><p>Skills : ${Skils}</p>
+                <br/><p> <b class="highlight">Skills :</b> ${Skils}</p>
              </div>`,
       confirmButtonText: "Ok",
-      confirmButtonColor: "#f9a51f",
+      confirmButtonColor: "#82b5bd",
     });
   };
 

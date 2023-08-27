@@ -4,12 +4,7 @@ import SelectCategoryProject from "../Context/SelectCategoryProject";
 import "../css/Projects.css";
 
 const SelectTypeProject = () => {
-  const selectTypeProject: string[] = [
-    "Website",
-    "App Android",
-    "Python",
-    "Arduino",
-  ];
+  const selectTypeProject: string[] = ["Website", "App", "Python", "Arduino"];
 
   const [typeProject, setTypeProject] = useState<String>("");
   const value: any = { typeProject, setTypeProject };

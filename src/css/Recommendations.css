@@ -85,10 +85,13 @@
 
 
 .ContainerRecommendationsCard {
-    background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    background: rgba(0, 0, 0, 0.16);
+    /* background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%); */
     padding: 1.5rem 1rem;
     margin: 0 1rem;
 }
+
 
 .Header {
     display: flex;
@@ -104,9 +107,9 @@
 
 
 .BodyCard {
-    font-size: 0.8rem;
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
+    font-size: 13px;
+    margin-bottom: 25%;
+    margin-top: 7%;
 }
 
 .BodyCard b {

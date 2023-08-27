@@ -46,7 +46,7 @@
     background: rgba(0, 0, 0, 0.16);
     padding: 2%;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-    border-radius: .5rem;
+    border-radius: 2%;
 }
 
 .inputValue form .box,
@@ -56,10 +56,10 @@
     text-transform: none;
     font-size: 14px;
     margin: 1rem 0;
-    background: rgba(197, 7, 7, 0);
     border: none;
     border-bottom: 2px solid rgba(255, 255, 255, 0.616);
     padding: 1%;
+    background: none;
 }
 
 .inputValue form .box:focus,
@@ -76,7 +76,7 @@
     padding: 3%;
 }
 
-.btnSendMessage a {
+.btnSendMessage button {
     padding: 0.7rem 2rem;
     cursor: pointer;
     background: #82b5bd;
@@ -86,7 +86,7 @@
     text-decoration: none;
 }
 
-.btnSendMessage a:hover {
+.btnSendMessage button:hover {
     filter: drop-shadow(0px 10px 10px #82b5bd22);
 }
 

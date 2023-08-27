@@ -23,17 +23,6 @@
     {
         "id": 3,
         "type": "Website",
-        "image": "https://i.postimg.cc/vZ6n29hF/205441681-7f4db9cf-58d1-455a-a565-da319c551c98.webp",
-        "NameProject": "Forum App",
-        "Skils": "React Native , Redux , NodeJs , Express , MongoDB ",
-        "Link": "https://public-forum-app.netlify.app",
-        "Git": "https://github.com/Goddier1996/App_Mobile_Forum",
-        "About": "This App about Community forum , have Category and Topics all Subjects , messages. user can control Topics and meesages or update a data user , in Profile Page.Admin control all This App delete topics and more , add new Category.",
-        "video": "https://user-images.githubusercontent.com/59862302/219870734-1faa88ab-8654-43c6-8c58-f49b2d78fe35.mp4"
-    },
-    {
-        "id": 4,
-        "type": "Website",
         "image": "https://i.postimg.cc/wBr4bc2p/Screenshot-2023-08-25-172541.png",
         "NameProject": "Animals sound kids",
         "Skils": "React , TypeScript , Css , NodeJs , MongoDB ",
@@ -44,7 +33,7 @@
     },
 
     {
-        "id": 5,
+        "id": 4,
         "type": "Website",
         "image": "https://i.postimg.cc/jSQxjSdn/Screenshot-2022-08-30-131150.webp",
         "NameProject": "Forum",
@@ -56,7 +45,7 @@
 
     },
     {
-        "id": 6,
+        "id": 5,
         "type": "Website",
         "image": "https://i.postimg.cc/9X6wRzVL/Screenshot-2022-10-19-145256.webp",
         "NameProject": "Tic Tac Toe Game",
@@ -67,7 +56,7 @@
         "video": "https://user-images.githubusercontent.com/59862302/197387716-fa804ee2-ce64-4cf4-8f04-b5ee22cd4a07.mp4"
     },
     {
-        "id": 7,
+        "id": 6,
         "type": "Website",
         "image": "https://i.postimg.cc/mD0kH6xP/4.webp",
         "NameProject": "Mini Snake Game",
@@ -79,7 +68,7 @@
     },
 
     {
-        "id": 8,
+        "id": 7,
         "type": "Website",
         "image": "https://i.postimg.cc/02v21S91/2-1.webp",
         "NameProject": "Tools",
@@ -91,7 +80,7 @@
     },
 
     {
-        "id": 9,
+        "id": 8,
         "type": "Website",
         "image": "https://i.postimg.cc/6QnmK89F/Screenshot-2023-01-05-141139.webp",
         "NameProject": "My PortFolio",
@@ -102,7 +91,7 @@
         "video": "https://user-images.githubusercontent.com/59862302/194697167-eb9a067a-09ea-49d6-84ea-3e9fff491b3c.mp4"
     },
     {
-        "id": 10,
+        "id": 9,
         "type": "Website",
         "image": "https://i.postimg.cc/7YJ1dpPW/2-1-1.webp",
         "NameProject": "Online Pet Shop",
@@ -113,7 +102,7 @@
         "video": "https://user-images.githubusercontent.com/59862302/179350546-e30ac0f3-3bfb-4458-a463-7795a075d0b6.mp4"
     },
     {
-        "id": 11,
+        "id": 10,
         "type": "Website",
         "image": "https://i.postimg.cc/fkQV6q5G/174877270-06cc97d7-aff7-4f65-b522-63aa552c9cff.webp",
         "NameProject": "Mini Bmw Site",
@@ -124,8 +113,19 @@
         "video": "https://user-images.githubusercontent.com/59862302/179349517-80a24dbd-44b0-4d61-b6b9-41f49f339b45.mp4"
     },
     {
+        "id": 11,
+        "type": "App",
+        "image": "https://i.postimg.cc/vZ6n29hF/205441681-7f4db9cf-58d1-455a-a565-da319c551c98.webp",
+        "NameProject": "Forum App",
+        "Skils": "React Native , Redux , NodeJs , Express , MongoDB ",
+        "Link": "https://public-forum-app.netlify.app",
+        "Git": "https://github.com/Goddier1996/App_Mobile_Forum",
+        "About": "This App about Community forum , have Category and Topics all Subjects , messages. user can control Topics and meesages or update a data user , in Profile Page.Admin control all This App delete topics and more , add new Category.",
+        "video": "https://user-images.githubusercontent.com/59862302/219870734-1faa88ab-8654-43c6-8c58-f49b2d78fe35.mp4"
+    },
+    {
         "id": 12,
-        "type": "App Android",
+        "type": "App",
         "image": "https://i.postimg.cc/Dy9CgRb7/174898287-34485b1b-8276-414a-a3e6-0025adab7adc.webp",
         "NameProject": "Clock Alarm",
         "Skils": "Java android",
@@ -136,7 +136,7 @@
 
     {
         "id": 13,
-        "type": "App Android",
+        "type": "App",
         "image": "https://i.postimg.cc/fbKBMLqb/x1.webp",
         "NameProject": "Sport Steps",
         "Skils": "Java android , FireBase",
@@ -146,7 +146,7 @@
     },
     {
         "id": 14,
-        "type": "App Android",
+        "type": "App",
         "image": "https://i.postimg.cc/2SdxxyDx/x2.webp",
         "NameProject": "Game where my Pizza",
         "Skils": "Java android",
@@ -156,7 +156,7 @@
     },
     {
         "id": 16,
-        "type": "App Android",
+        "type": "App",
         "image": "https://i.postimg.cc/bJ50v2xq/x3.webp",
         "NameProject": "product list",
         "Skils": "Java android",
