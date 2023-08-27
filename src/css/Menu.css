@@ -98,7 +98,7 @@
         background: #82b5bdea;
         inset: 0;
         justify-content: center;
-        align-items: center;
+        align-items: left;
         font-size: 2rem;
         gap: 2rem;
         font-weight: 700;
@@ -106,6 +106,8 @@
         overflow: hidden;
         z-index: 100;
     }
+
+
 
     .bar p {
         font-size: 13px;
