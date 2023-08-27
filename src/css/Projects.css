@@ -152,3 +152,10 @@
     background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=f9a51f);
     color: rgb(0, 0, 0);
 }
+
+
+@media screen and (max-width: 768px) {
+    .ContainerProject a {
+        font-size: 19px;
+    }
+}

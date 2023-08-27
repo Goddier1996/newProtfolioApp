@@ -99,8 +99,8 @@
 }
 
 .social-icons span {
-    width: 2.4rem;
-    height: 2.2rem;
+    width: 42px;
+    height: 38px;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     background: #82b5bd;
     position: relative;
