@@ -4,7 +4,8 @@ import { FaCode } from "react-icons/fa";
 import "../css/Menu.css";
 
 const Header = () => {
-  const [bar, setBar] = useState<any>(false);
+
+  const [bar, setBar] = useState<Boolean>(false);
 
   const arrayMenuOptions: any = [
     { id: 1, type: "About" },
@@ -55,6 +56,9 @@ const Header = () => {
 };
 
 export default Header;
+
+
+
 
 const Container = styled.div<any>`
   @media (max-width: 640px) {

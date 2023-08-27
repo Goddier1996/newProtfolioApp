@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Slide } from "react-awesome-reveal";
 
 const CardRecommendations = (props: any) => {
+  
   const { name, position, img_url, disc } = props.item;
   const [showMore, setShowMore] = useState<Boolean>(false);
 

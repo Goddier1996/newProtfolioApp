@@ -5,9 +5,11 @@ import { AiOutlineLink } from "react-icons/ai";
 import Swal from "sweetalert2";
 
 const CardProjectModel = (props: any) => {
+
   const { image, NameProject, Link, Git, type, Skils, About, video } =
     props.item;
 
+  
   const ShowPopUpInfoApp = () => {
     Swal.fire({
       html: `<div>
@@ -20,6 +22,7 @@ const CardProjectModel = (props: any) => {
     });
   };
 
+  
   return (
     <div className="ContainerProject project">
       <img src={image} alt="project" />

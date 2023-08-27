@@ -2,6 +2,7 @@ import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 
 export function SendMessage(value: any) {
+
   if (
     value.from_name == "" ||
     value.from_email == "" ||
@@ -13,7 +14,9 @@ export function SendMessage(value: any) {
       icon: "error",
       confirmButtonColor: "green",
     });
-  } else {
+  }
+  
+  else {
     emailjs.send(
       process.env.REACT_APP_SERVICE_KEY || "",
       process.env.REACT_APP_TEMPLATE || "",

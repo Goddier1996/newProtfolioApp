@@ -2,6 +2,7 @@ import "../css/AboutMe.css";
 import { useState } from "react";
 
 const CardsAboutMe = (props: any) => {
+  
   const { Icon, disc, title } = props;
 
   const [showMore, setShowMore] = useState<Boolean>(false);

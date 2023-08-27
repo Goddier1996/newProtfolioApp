@@ -5,6 +5,7 @@ import Projects from "../Json/projecrs.json";
 import "../css/Projects.css";
 import SelectCategoryProject from "../Context/SelectCategoryProject";
 
+// this settings for Slider
 let settings = {
   className: "center",
   centerMode: true,
@@ -46,7 +47,10 @@ let settings = {
   ],
 };
 
+
+
 const SliderModelsProjects = () => {
+
   const arrowRef = useRef<any>(null);
 
   const { typeProject } = useContext(SelectCategoryProject);

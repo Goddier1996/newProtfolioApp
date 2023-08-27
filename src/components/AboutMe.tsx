@@ -8,6 +8,7 @@ import MyImage from "./MyImage";
 import infoAboutMe from "../Json/infoAboutMe.json";
 
 const AboutMe = () => {
+
   let lengthJsonFileInfoAboutMe: Number = infoAboutMe.length / 2;
 
   return (
@@ -19,10 +20,12 @@ const AboutMe = () => {
           </h1>
         </Slide>
 
+        {/* here show my image,and in component MyImage use other component to show mini info about me */}
         <Slide direction="left">
           <MyImage />
         </Slide>
 
+        {/* here show cards data */}
         <div className="CardsAboutMe">
           {infoAboutMe.map((value: any) => (
             <Slide

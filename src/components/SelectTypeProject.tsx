@@ -4,6 +4,7 @@ import SelectCategoryProject from "../Context/SelectCategoryProject";
 import "../css/Projects.css";
 
 const SelectTypeProject = () => {
+  
   const selectTypeProject: string[] = ["Website", "App", "Python", "Arduino"];
 
   const [typeProject, setTypeProject] = useState<String>("");
@@ -19,12 +20,10 @@ const SelectTypeProject = () => {
         ))}
       </div>
 
-      <>
-        {/* here i can use props , but i use context for example */}
-        <SelectCategoryProject.Provider value={value}>
-          <SliderModelsProjects />
-        </SelectCategoryProject.Provider>
-      </>
+      {/* here i can use props , but i use context for example */}
+      <SelectCategoryProject.Provider value={value}>
+        <SliderModelsProjects />
+      </SelectCategoryProject.Provider>
     </>
   );
 };

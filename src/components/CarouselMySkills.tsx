@@ -2,6 +2,7 @@ import "../css/AboutMe.css";
 import Skills from "../Json/skils.json";
 
 const CarouselMySkills = () => {
+  
   return (
     <div className="slider">
       <div className="slide-track">

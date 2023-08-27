@@ -17,18 +17,23 @@ const Contact = () => {
     from_number: "",
   });
 
+
   const handleChange = (e: any) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
 
+
   const sendEmail = (e: any) => {
     e.preventDefault();
-
+    
+    // move to this function , and send email , here i use emailjs
     SendMessage(toSend);
   };
 
+
   return (
     <div className="contact" id="Contact">
+      
       <Slide direction="left">
         <div className="modelIcons">
           <div className="icons">
@@ -63,6 +68,7 @@ const Contact = () => {
         </div>
       </Slide>
 
+      
       <div className="inputValue">
         <form onSubmit={sendEmail}>
           <input
@@ -105,6 +111,7 @@ const Contact = () => {
           </Slide>
         </form>
       </div>
+
     </div>
   );
 };

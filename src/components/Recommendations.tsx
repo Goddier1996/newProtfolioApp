@@ -6,7 +6,8 @@ import Recommend from "../Json/recommend.json";
 import "../css/Recommendations.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
-var settings = {
+// settings Slider
+let settings = {
   dots: true,
   infinite: true,
   speed: 500,
@@ -42,7 +43,9 @@ var settings = {
   ],
 };
 
+
 const Recommendations = () => {
+  
   const arrowRef = useRef<any>(null);
 
   return (

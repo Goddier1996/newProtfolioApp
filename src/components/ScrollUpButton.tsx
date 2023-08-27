@@ -3,7 +3,9 @@ import { FaArrowCircleUp } from "react-icons/fa";
 import "../css/ScrollUpButton.css";
 
 const ScrollUpButton = () => {
+
   const [visible, setVisible] = useState<Boolean>(false);
+
 
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
@@ -15,6 +17,7 @@ const ScrollUpButton = () => {
     }
   };
 
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -22,10 +25,12 @@ const ScrollUpButton = () => {
     });
   };
 
+
   useEffect(() => {
     window.addEventListener("scroll", toggleVisible);
   });
 
+  
   return (
     <>
       <div className="ButtonScroll">
