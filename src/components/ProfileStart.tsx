@@ -14,7 +14,7 @@ const ProfileStart = () => {
           </h4>
           <h1 className="green">Artem Kot</h1>
           <h3>
-            Full Stack Developer • Software Practical Engineer •
+          Web Developer | Software Practical Engineer
             <br />
             Ready For Any Challenge 🚀
           </h3>
