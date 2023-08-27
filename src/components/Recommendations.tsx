@@ -57,7 +57,9 @@ const Recommendations = () => {
       <div className="Testimonials">
         <Slider ref={arrowRef} {...settings}>
           {Recommend.map((value) => (
-            <CardRecommendations item={value} />
+            <div key={value.id}>
+               <CardRecommendations item={value} />
+            </div>
           ))}
         </Slider>
 

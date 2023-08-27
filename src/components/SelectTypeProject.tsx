@@ -14,7 +14,7 @@ const SelectTypeProject = () => {
     <>
       <div className="selectTypeProjectStyle">
         {selectTypeProject.map((value) => (
-          <div className="styleTextType">
+          <div key={value} className="styleTextType">
             <h6 onClick={() => setTypeProject(value)}>{value}</h6>
           </div>
         ))}
