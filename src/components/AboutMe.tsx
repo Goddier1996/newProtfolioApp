@@ -5,12 +5,34 @@ import Card from "./CardsAboutMe";
 import { Slide } from "react-awesome-reveal";
 import "../css/AboutMe.css";
 import MyImage from "./MyImage";
-import infoAboutMe from "../Json/infoAboutMe.json";
+import sanityClient from "../Sanity/client";
+import { useEffect, useState } from "react";
 
 const AboutMe = () => {
 
-  let lengthJsonFileInfoAboutMe: Number = infoAboutMe.length / 2;
 
+  const [infoAboutMe, setInfoAboutMe] = useState<any>([]);
+
+
+  const loadingDataInfoAboutMe = async () => {
+    await sanityClient
+      .fetch(
+        `*[_type=="info"]{
+          title,
+          info
+    }`
+      )
+      .then((data) => setInfoAboutMe(data))
+      .catch(console.error);
+  };
+
+
+
+  useEffect(() => {
+    loadingDataInfoAboutMe();
+  }, []);
+
+  
   return (
     <>
       <div className="ContainerAboutMe" id="About">
@@ -27,26 +49,22 @@ const AboutMe = () => {
 
         {/* here show cards data */}
         <div className="CardsAboutMe">
-          {infoAboutMe.map((value: any) => (
-            <Slide
-              key={value.id}
-              direction={
-                value.id <= lengthJsonFileInfoAboutMe ? "left" : "right"
-              }
-            >
-              <Card
-                Icon={
-                  value.title == "Software Practical Engineer"
-                    ? PiCodeThin
-                    : value.title == "Web Developer + Mobile"
-                    ? CgWebsite
-                    : BiLogoAdobe
-                }
-                title={value.title}
-                disc={value.info}
-              />
-            </Slide>
-          ))}
+          {infoAboutMe &&
+            infoAboutMe.map((value: any) => (
+              <Slide key={value} direction="right">
+                <Card
+                  Icon={
+                    value.title == "Software Practical Engineer"
+                      ? PiCodeThin
+                      : value.title == "Web Developer + Mobile"
+                      ? CgWebsite
+                      : BiLogoAdobe
+                  }
+                  title={value.title}
+                  info={value.info}
+                />
+              </Slide>
+            ))}
         </div>
       </div>
     </>

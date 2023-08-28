@@ -3,10 +3,10 @@ import { useState } from "react";
 
 const CardsAboutMe = (props: any) => {
   
-  const { Icon, disc, title } = props;
+  const { Icon, info, title } = props;
 
   const [showMore, setShowMore] = useState<Boolean>(false);
-  const sizeWorldInDisc: any = disc.length;
+  const sizeWorldInDisc: any = info.length;
 
   return (
     <div className="ContainerAboutMeCards">
@@ -17,10 +17,10 @@ const CardsAboutMe = (props: any) => {
 
       <p>
         {sizeWorldInDisc < 100 ? (
-          <p>{disc}</p>
+          <p>{info}</p>
         ) : (
           <>
-            {showMore ? disc : `${disc.substring(0, 100)}`}
+            {showMore ? info : `${info.substring(0, 100)}`}
             <b onClick={() => setShowMore(!showMore)}>
               {showMore ? "Show less" : "Show more"}
             </b>

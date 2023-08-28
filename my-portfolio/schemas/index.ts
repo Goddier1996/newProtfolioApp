@@ -1,4 +1,4 @@
+import recommends from './recommends'
+import infoAboutMe from './infoAboutMe'
 
-import author from './author'
-
-export const schemaTypes = [author ]
+export const schemaTypes = [recommends ,infoAboutMe]
