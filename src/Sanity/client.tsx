@@ -1,7 +1,7 @@
 import { createClient } from "@sanity/client";
 
 const client = createClient({
-  projectId: "4y0y6frg",
+  projectId: process.env.REACT_APP_SANITY || "",
   dataset: "production",
 });
 
