@@ -1,28 +1,16 @@
 import { useEffect, useState } from "react";
 import "../css/AboutMe.css";
-import sanityClient from "../Sanity/client";
+import {GetMySkills} from "../Sanity/functionsFetchData"
 
 
 const CarouselMySkills = () => {
 
   const [skills, setSkills] = useState<any>([]);
 
+  
   const loadingDataSkills = async () => {
-    await sanityClient
-      .fetch(
-        `*[_type=="skills"]{
-          title,
-      image{
-        asset->{
-          _id,
-          url
-        },
-      },
-      
-    }`
-      )
-      .then((data) => setSkills(data))
-      .catch(console.error);
+
+    setSkills(await GetMySkills());
   };
 
 

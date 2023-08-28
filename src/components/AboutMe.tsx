@@ -5,25 +5,19 @@ import Card from "./CardsAboutMe";
 import { Slide } from "react-awesome-reveal";
 import "../css/AboutMe.css";
 import MyImage from "./MyImage";
-import sanityClient from "../Sanity/client";
 import { useEffect, useState } from "react";
+import { GetInfoAboutMe} from "../Sanity/functionsFetchData";
+
+
 
 const AboutMe = () => {
-
 
   const [infoAboutMe, setInfoAboutMe] = useState<any>([]);
 
 
   const loadingDataInfoAboutMe = async () => {
-    await sanityClient
-      .fetch(
-        `*[_type=="info"]{
-          title,
-          info
-    }`
-      )
-      .then((data) => setInfoAboutMe(data))
-      .catch(console.error);
+
+    setInfoAboutMe(await GetInfoAboutMe())
   };
 
 

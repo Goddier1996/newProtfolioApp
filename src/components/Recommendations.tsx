@@ -4,7 +4,7 @@ import { Slide } from "react-awesome-reveal";
 import CardRecommendations from "./CardRecommendations";
 import "../css/Recommendations.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import sanityClient from "../Sanity/client";
+import { GetRecommends } from "../Sanity/functionsFetchData";
 
 
 // settings Slider
@@ -44,43 +44,23 @@ let settings = {
   ],
 };
 
-
-
 const Recommendations = () => {
-
 
   const [recommendations, setRecommendations] = useState<any>([]);
 
   const arrowRef = useRef<any>(null);
   let lengthData = recommendations.length;
 
+
   const loadingDataRecommends = async () => {
-
-    await sanityClient
-      .fetch(
-        `*[_type=="recommends"]{
-      name,
-      position,
-      bio,
-      image{
-        asset->{
-          _id,
-          url
-        },
-      },
-      
-    }`
-      )
-      .then((data) => setRecommendations(data))
-      .catch(console.error);
+    
+    setRecommendations(await GetRecommends());
   };
-
 
 
   useEffect(() => {
     loadingDataRecommends();
   }, []);
-
 
 
   return (
@@ -98,7 +78,6 @@ const Recommendations = () => {
               </div>
             ))}
         </Slider>
-
 
         {/* check if length Recommend was more 3 , and show Arrow next + back*/}
         {lengthData > 3 ? (

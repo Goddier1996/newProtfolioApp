@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import Project from "./CardProjectModel";
 import "../css/Projects.css";
 import SelectCategoryProject from "../Context/SelectCategoryProject";
-import sanityClient from "../Sanity/client";
+import { GetProjects}from "../Sanity/functionsFetchData"
 
 
 // this settings for Slider
@@ -61,22 +61,7 @@ const SliderModelsProjects = () => {
 
   const loadingDataProjects = async () => {
 
-    await sanityClient
-      .fetch(
-        `*[_type=="projects"]{
-          type,
-          image,
-          nameProject,
-          skills,
-          link,
-          git,
-          about,
-          video,
-      
-    }`
-      )
-      .then((data) => setProjects(data))
-      .catch(console.error);
+    setProjects(await GetProjects());
   };
 
 
