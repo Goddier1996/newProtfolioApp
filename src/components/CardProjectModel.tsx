@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 
 const CardProjectModel = (props: any) => {
 
-  const { image, NameProject, Link, Git, type, Skils, About, video } =
+  const { image, nameProject, link, git, type, skills, about, video } =
     props.item;
 
   
@@ -14,8 +14,8 @@ const CardProjectModel = (props: any) => {
     Swal.fire({
       html: `<div>
                 <div class="infoApp"><video controls autoplay loop muted playsinline src="${video}"></video></div>
-                <br/><p>${About}</p>
-                <br/><p> <b class="highlight">Skills :</b> ${Skils}</p>
+                <br/><p>${about}</p>
+                <br/><p> <b class="highlight">Skills :</b> ${skills}</p>
              </div>`,
       confirmButtonText: "Ok",
       confirmButtonColor: "#82b5bd",
@@ -29,18 +29,18 @@ const CardProjectModel = (props: any) => {
 
       <div className="about">
         <div className="titleAndAbout">
-          <p>{NameProject}</p>
+          <p>{nameProject}</p>
         </div>
 
         {type === "Website" ? (
-          <a href={Link}>
+          <a href={link}>
             <AiOutlineLink />
           </a>
         ) : (
           ""
         )}
 
-        <a href={Git}>
+        <a href={git}>
           <AiOutlineGithub />
         </a>
 

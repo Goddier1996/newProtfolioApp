@@ -1,9 +1,10 @@
-import { useRef, useContext } from "react";
+import { useRef, useContext, useState, useEffect } from "react";
 import Slider from "react-slick";
 import Project from "./CardProjectModel";
-import Projects from "../Json/projecrs.json";
 import "../css/Projects.css";
 import SelectCategoryProject from "../Context/SelectCategoryProject";
+import sanityClient from "../Sanity/client";
+
 
 // this settings for Slider
 let settings = {
@@ -55,11 +56,42 @@ const SliderModelsProjects = () => {
 
   const { typeProject } = useContext(SelectCategoryProject);
 
+  const [projects, setProjects] = useState<any>([]);
+
+
+  const loadingDataProjects = async () => {
+
+    await sanityClient
+      .fetch(
+        `*[_type=="projects"]{
+          type,
+          image,
+          nameProject,
+          skills,
+          link,
+          git,
+          about,
+          video,
+      
+    }`
+      )
+      .then((data) => setProjects(data))
+      .catch(console.error);
+  };
+
+
+  
+  useEffect(() => {
+    loadingDataProjects();
+  }, []);
+
+
+
   return (
     <div className="ContainerSlider">
       <Slider ref={arrowRef} {...settings}>
-        {Projects.filter((name) => name.type.includes(typeProject)).map(
-          (value) => (
+        {projects.filter((name:any) => name.type.includes(typeProject)).map(
+          (value:any) => (
             <div key={value.id}>
                <Project item={value} />
             </div>
