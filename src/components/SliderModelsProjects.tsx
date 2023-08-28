@@ -77,7 +77,7 @@ const SliderModelsProjects = () => {
       <Slider ref={arrowRef} {...settings}>
         {projects.filter((name:any) => name.type.includes(typeProject)).map(
           (value:any) => (
-            <div key={value.id}>
+            <div key={value}>
                <Project item={value} />
             </div>
           )
