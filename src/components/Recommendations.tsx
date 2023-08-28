@@ -1,10 +1,11 @@
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import { Slide } from "react-awesome-reveal";
 import CardRecommendations from "./CardRecommendations";
-import Recommend from "../Json/recommend.json";
 import "../css/Recommendations.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import sanityClient from "../Sanity/client";
+
 
 // settings Slider
 let settings = {
@@ -44,9 +45,43 @@ let settings = {
 };
 
 
+
 const Recommendations = () => {
-  
+
+
+  const [recommendations, setRecommendations] = useState<any>([]);
+
   const arrowRef = useRef<any>(null);
+  let lengthData = recommendations.length;
+
+  const loadingDataRecommends = async () => {
+
+    await sanityClient
+      .fetch(
+        `*[_type=="recommends"]{
+      name,
+      position,
+      bio,
+      image{
+        asset->{
+          _id,
+          url
+        },
+      },
+      
+    }`
+      )
+      .then((data) => setRecommendations(data))
+      .catch(console.error);
+  };
+
+
+
+  useEffect(() => {
+    loadingDataRecommends();
+  }, []);
+
+
 
   return (
     <div className="ContainerRecommendations" id="Recommendations">
@@ -56,15 +91,17 @@ const Recommendations = () => {
       </Slide>
       <div className="Testimonials">
         <Slider ref={arrowRef} {...settings}>
-          {Recommend.map((value) => (
-            <div key={value.id}>
-               <CardRecommendations item={value} />
-            </div>
-          ))}
+          {recommendations &&
+            recommendations.map((value: any) => (
+              <div key={value}>
+                <CardRecommendations item={value} />
+              </div>
+            ))}
         </Slider>
 
+
         {/* check if length Recommend was more 3 , and show Arrow next + back*/}
-        {Recommend.length > 3 ? (
+        {lengthData > 3 ? (
           <div className="Buttons">
             <button onClick={() => arrowRef.current.slickPrev()}>
               <IoIosArrowBack />

@@ -5,10 +5,10 @@ import { Slide } from "react-awesome-reveal";
 
 const CardRecommendations = (props: any) => {
   
-  const { name, position, img_url, disc } = props.item;
+  const { name, position, image, bio } = props.item;
   const [showMore, setShowMore] = useState<Boolean>(false);
 
-  const sizeWorldInDisc: any = disc.length;
+  const sizeWorldInDisc: any = bio.length;
 
   return (
     <Slide direction="down">
@@ -19,7 +19,7 @@ const CardRecommendations = (props: any) => {
           </span>
         </div>
         <div className="FooterCard">
-          <img src={img_url} alt={name} />
+          <img src={image.asset.url} alt={name} />
           <div className="details">
             <h1>{name}</h1>
             <p>{position}</p>
@@ -29,10 +29,10 @@ const CardRecommendations = (props: any) => {
         <div className="BodyCard">
           <p>
             {sizeWorldInDisc < 150 ? (
-              <p>{disc}</p>
+              <p>{bio}</p>
             ) : (
               <>
-                {showMore ? disc : `${disc.substring(0, 150)}`}
+                {showMore ? bio : `${bio.substring(0, 150)}`}
                 <b onClick={() => setShowMore(!showMore)}>
                   {showMore ? "Show less" : "Show more"}
                 </b>
