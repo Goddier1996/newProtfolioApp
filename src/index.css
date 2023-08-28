@@ -20,6 +20,7 @@ body {
   color: #fff;
   overflow-x: hidden;
   position: relative;
+  cursor: url("https://i.postimg.cc/q7R0vBGq/cursor-Start-Web.png"), pointer;
 }
 
 .green {
