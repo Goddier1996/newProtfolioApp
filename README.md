@@ -5,7 +5,10 @@ Limk : https://portfolio-artem-kot.vercel.app
 skills use : React , TypeScript , sweetalert2 , style-components , slider , slide
 
 ##Video :
-https://github.com/Goddier1996/newProtfolioApp/assets/59862302/f71b06a1-87b1-478a-a760-fc3fd23b89f5
+
+
+https://github.com/Goddier1996/newProtfolioApp/assets/59862302/d1950b45-744b-4e55-b9d3-f0e3ede009ed
+
 
 
 ##images :
