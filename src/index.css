@@ -103,3 +103,11 @@ body {
   font-size: 15px;
   color: #ffffff;
 }
+
+
+
+/* popup say shabbatShalom */
+.popUpShabbatShalom {
+  border-radius: 10%;
+  height: 200px;
+}
