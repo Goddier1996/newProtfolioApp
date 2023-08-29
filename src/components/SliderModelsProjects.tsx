@@ -85,8 +85,8 @@ const SliderModelsProjects = () => {
       </Slider>
 
       <div className="buttonNextBack">
-        <button onClick={() => arrowRef.current.slickPrev()} className="back" />
-        <button onClick={() => arrowRef.current.slickNext()} className="next" />
+        <button name="Prev" onClick={() => arrowRef.current.slickPrev()} className="back" />
+        <button name="Next" onClick={() => arrowRef.current.slickNext()} className="next" />
       </div>
     </div>
   );
