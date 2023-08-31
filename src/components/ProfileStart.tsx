@@ -31,12 +31,12 @@ const ProfileStart = () => {
             <p>Check out my</p>
             <div className="social-icons">
               <span>
-                <a href="https://github.com/Goddier1996">
+                <a href="https://github.com/Goddier1996" aria-label="show im my git all my projects">
                   <AiOutlineGithub />
                 </a>
               </span>
               <span>
-                <a href="https://www.linkedin.com/in/artem-kot96">
+                <a href="https://www.linkedin.com/in/artem-kot96" aria-label="connect to my linkedin">
                   <FaLinkedinIn />
                 </a>
               </span>
