@@ -1,13 +1,15 @@
 import "../css/AboutMe.css";
 import { useState } from "react";
+import { InfoAboutMe } from "../interface/info.model";
 
-const CardsAboutMe = (props: any) => {
-  
+const CardsAboutMe: React.FC<InfoAboutMe> = (props) => {
+
   const { Icon, info, title } = props;
 
   const [showMore, setShowMore] = useState<Boolean>(false);
-  const sizeWorldInDisc: any = info.length;
+  const sizeWorldInDisc: number = info.length;
 
+  
   return (
     <div className="ContainerAboutMeCards">
       <span className="styleIconAboutMe">

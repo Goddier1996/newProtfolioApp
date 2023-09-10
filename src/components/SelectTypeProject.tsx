@@ -3,11 +3,11 @@ import SliderModelsProjects from "./SliderModelsProjects";
 import SelectCategoryProject from "../Context/SelectCategoryProject";
 import "../css/Projects.css";
 
-const SelectTypeProject = () => {
+const SelectTypeProject:React.FC = () => {
   
   const selectTypeProject: string[] = ["Website", "App", "Python", "Arduino"];
 
-  const [typeProject, setTypeProject] = useState<String>("");
+  const [typeProject, setTypeProject] = useState<string>("");
   const value: any = { typeProject, setTypeProject };
 
   return (

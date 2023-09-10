@@ -7,17 +7,17 @@ import "../css/AboutMe.css";
 import MyImage from "./MyImage";
 import { useEffect, useState } from "react";
 import { GetInfoAboutMe} from "../Sanity/functionsFetchData";
+import {InfoAboutMe} from "../interface/info.model"
 
 
+const AboutMe:React.FC = () => {
 
-const AboutMe = () => {
-
-  const [infoAboutMe, setInfoAboutMe] = useState<any>([]);
+  const [infoAboutMe, setInfoAboutMe] = useState<InfoAboutMe[]>([]);
 
 
   const loadingDataInfoAboutMe = async () => {
 
-    setInfoAboutMe(await GetInfoAboutMe())
+    setInfoAboutMe(await GetInfoAboutMe());
   };
 
 
@@ -43,8 +43,7 @@ const AboutMe = () => {
 
         {/* here show cards data */}
         <div className="CardsAboutMe">
-          {infoAboutMe &&
-            infoAboutMe.map((value: any) => (
+          {infoAboutMe.map((value: any) => (
               <Slide key={value} direction="right">
                 <Card
                   Icon={

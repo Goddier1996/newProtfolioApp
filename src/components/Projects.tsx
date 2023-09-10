@@ -2,7 +2,7 @@ import "../css/Projects.css";
 import SelectTypeProject from "./SelectTypeProject";
 import { Slide } from "react-awesome-reveal";
 
-const Projects = () => {
+const Projects:React.FC = () => {
 
   return (
     <div className="ContainerMyProjects" id="project">

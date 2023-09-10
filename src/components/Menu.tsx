@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { FaCode } from "react-icons/fa";
 import "../css/Menu.css";
 
-const Header = () => {
+const Header:React.FC = () => {
 
   const [bar, setBar] = useState<Boolean>(false);
 

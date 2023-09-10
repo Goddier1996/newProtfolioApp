@@ -3,8 +3,9 @@ import Slider from "react-slick";
 import Project from "./CardProjectModel";
 import "../css/Projects.css";
 import SelectCategoryProject from "../Context/SelectCategoryProject";
-import { GetProjects}from "../Sanity/functionsFetchData"
-
+import { GetProjects } from "../Sanity/functionsFetchData";
+import React from "react";
+import { ShowMyProjects } from "../interface/info.model";
 
 // this settings for Slider
 let settings = {
@@ -49,44 +50,57 @@ let settings = {
 };
 
 
-
-const SliderModelsProjects = () => {
-
+const SliderModelsProjects: React.FC = () => {
+  
   const arrowRef = useRef<any>(null);
 
   const { typeProject } = useContext(SelectCategoryProject);
 
-  const [projects, setProjects] = useState<any>([]);
+  const [projects, setProjects] = useState<ShowMyProjects[]>([]);
 
 
   const loadingDataProjects = async () => {
-
     setProjects(await GetProjects());
   };
 
 
-  
   useEffect(() => {
     loadingDataProjects();
   }, []);
 
-
-
+  
   return (
     <div className="ContainerSlider">
       <Slider ref={arrowRef} {...settings}>
-        {projects.filter((name:any) => name.type.includes(typeProject)).map(
-          (value:any) => (
-            <div key={value}>
-               <Project item={value} />
+        {projects
+          .filter((name) => name.type.includes(typeProject))
+          .map((value) => (
+            <div key={value.nameProject}>
+              <Project
+                type={value.type}
+                image={value.image}
+                nameProject={value.nameProject}
+                skills={value.skills}
+                link={value.link}
+                git={value.git}
+                about={value.about}
+                video={value.video}
+              />
             </div>
-          )
-        )}
+          ))}
       </Slider>
 
       <div className="buttonNextBack">
-        <button aria-labelledby="Prev" onClick={() => arrowRef.current.slickPrev()} className="back" />
-        <button aria-labelledby="Next" onClick={() => arrowRef.current.slickNext()} className="next" />
+        <button
+          aria-labelledby="Prev"
+          onClick={() => arrowRef.current.slickPrev()}
+          className="back"
+        />
+        <button
+          aria-labelledby="Next"
+          onClick={() => arrowRef.current.slickNext()}
+          className="next"
+        />
       </div>
     </div>
   );

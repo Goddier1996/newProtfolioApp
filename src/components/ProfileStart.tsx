@@ -3,7 +3,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
 import "../css/ProfileStart.css";
 
-const ProfileStart = () => {
+const ProfileStart:React.FC = () => {
   
   return (
     <div className="ContainerProfileStart">

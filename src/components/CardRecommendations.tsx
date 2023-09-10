@@ -2,10 +2,11 @@ import { IoIosQuote } from "react-icons/io";
 import "../css/Recommendations.css";
 import { useState } from "react";
 import { Slide } from "react-awesome-reveal";
+import {Recommends} from "../interface/info.model"
 
-const CardRecommendations = (props: any) => {
+const CardRecommendations:React.FC<Recommends> = props => {
   
-  const { name, position, image, bio } = props.item;
+  const { name, position, image, bio } = props;
   const [showMore, setShowMore] = useState<Boolean>(false);
 
   const sizeWorldInDisc: any = bio.length;

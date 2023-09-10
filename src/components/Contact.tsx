@@ -3,7 +3,7 @@ import "../css/Contact.css";
 import { Slide } from "react-awesome-reveal";
 import { SendMessage } from "./SendMessage";
 
-const Contact = () => {
+const Contact:React.FC = () => {
 
   const [toSend, setToSend] = useState<{
     from_name: string;

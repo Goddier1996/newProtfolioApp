@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { FaArrowCircleUp } from "react-icons/fa";
 import "../css/ScrollUpButton.css";
 
-const ScrollUpButton = () => {
+const ScrollUpButton:React.FC = () => {
 
   const [visible, setVisible] = useState<Boolean>(false);
 

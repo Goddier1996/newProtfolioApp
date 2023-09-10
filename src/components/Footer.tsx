@@ -1,6 +1,6 @@
 import "../css/Footer.css";
 
-const Footer = () => {
+const Footer:React.FC = () => {
   
   return (
     <div className="styleFooter">

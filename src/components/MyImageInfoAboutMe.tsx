@@ -1,6 +1,6 @@
 import CarouselMySkills from "./CarouselMySkills";
 
-export const MyImageInfoAboutMe = () => {
+export const MyImageInfoAboutMe:React.FC = () => {
 
   return (
     <div className="miniInfoAboutMe">

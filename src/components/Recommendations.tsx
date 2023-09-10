@@ -5,7 +5,7 @@ import CardRecommendations from "./CardRecommendations";
 import "../css/Recommendations.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { GetRecommends } from "../Sanity/functionsFetchData";
-
+import {Recommends} from "../interface/info.model"
 
 // settings Slider
 let settings = {
@@ -44,12 +44,12 @@ let settings = {
   ],
 };
 
-const Recommendations = () => {
+const Recommendations:React.FC = () => {
 
-  const [recommendations, setRecommendations] = useState<any>([]);
+  const [recommendations, setRecommendations] = useState<Recommends[]>([]);
 
   const arrowRef = useRef<any>(null);
-  let lengthData = recommendations.length;
+  let lengthData:number = recommendations.length;
 
 
   const loadingDataRecommends = async () => {
@@ -71,10 +71,9 @@ const Recommendations = () => {
       </Slide>
       <div className="Testimonials">
         <Slider ref={arrowRef} {...settings}>
-          {recommendations &&
-            recommendations.map((value: any) => (
-              <div key={value}>
-                <CardRecommendations item={value} />
+          {recommendations.map((value) => (
+              <div key={value.name}>
+                <CardRecommendations name={value.name} position={value.position} image={value.image} bio={value.bio}/>
               </div>
             ))}
         </Slider>

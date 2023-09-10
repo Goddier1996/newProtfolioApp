@@ -1,15 +1,14 @@
 import { useEffect, useState } from "react";
 import "../css/AboutMe.css";
-import {GetMySkills} from "../Sanity/functionsFetchData"
+import { GetMySkills } from "../Sanity/functionsFetchData";
+import { MySkills } from "../interface/info.model";
+
+const CarouselMySkills: React.FC = () => {
+
+  const [skills, setSkills] = useState<MySkills[]>([]);
 
 
-const CarouselMySkills = () => {
-
-  const [skills, setSkills] = useState<any>([]);
-
-  
   const loadingDataSkills = async () => {
-
     setSkills(await GetMySkills());
   };
 
@@ -18,7 +17,7 @@ const CarouselMySkills = () => {
     loadingDataSkills();
   }, []);
 
-  
+
   return (
     <div className="slider">
       <div className="slide-track">

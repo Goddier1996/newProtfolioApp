@@ -1,6 +1,6 @@
 import { MyImageInfoAboutMe } from "./MyImageInfoAboutMe";
 
-const MyImage = () => {
+const MyImage:React.FC = () => {
   
   return (
     <div className="myImageStyle">
