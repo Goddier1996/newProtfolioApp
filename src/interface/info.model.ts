@@ -29,3 +29,8 @@ export interface Recommends{
     image: any;
     bio: string;
 }[]
+
+
+export interface TypeMyProject {
+    typeProject: string;
+}

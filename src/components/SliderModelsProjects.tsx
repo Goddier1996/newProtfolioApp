@@ -4,8 +4,8 @@ import Project from "./CardProjectModel";
 import "../css/Projects.css";
 import SelectCategoryProject from "../Context/SelectCategoryProject";
 import { GetProjects } from "../Sanity/functionsFetchData";
-import React from "react";
 import { ShowMyProjects } from "../interface/info.model";
+
 
 // this settings for Slider
 let settings = {
