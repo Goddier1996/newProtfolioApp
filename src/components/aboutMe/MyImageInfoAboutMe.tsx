@@ -1,4 +1,6 @@
 import CarouselMySkills from "./CarouselMySkills";
+import ShowMyEducation from "./ShowMyDiploma";
+
 
 export const MyImageInfoAboutMe:React.FC = () => {
 
@@ -27,7 +29,15 @@ export const MyImageInfoAboutMe:React.FC = () => {
       </p>
 
       {/* here show carousel all my skills */}
-      <CarouselMySkills/>
+      <CarouselMySkills />
+      
+
+      {/* here show my education diploma and course */}
+      <div className="styleButtonEducation">
+        <ShowMyEducation />
+      </div>
+
+
     </div>
   );
 };

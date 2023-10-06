@@ -179,6 +179,32 @@
 }
 
 
+.styleButtonEducation {
+    display: flex;
+    justify-content: center;
+}
+
+.styleImageMyDiploma img {
+    height: auto;
+    width: 100%;
+    border-radius: 2%;
+}
+
+.styleBtnDiploma button {
+    padding: 0.7rem 2rem;
+    cursor: pointer;
+    background: #82b5bd;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.styleBtnDiploma button:hover {
+    filter: drop-shadow(0px 10px 10px #82b5bd22);
+}
+
+
 @media screen and (max-width: 768px) {
     .slider img {
         width: 75px;
