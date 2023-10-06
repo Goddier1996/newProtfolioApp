@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import "../css/AboutMe.css";
-import { GetMySkills } from "../Sanity/functionsFetchData";
-import { MySkills } from "../interface/info.model";
+import "../../css/AboutMe.css";
+import { GetMySkills } from "../../Sanity/functionsFetchData";
+import { MySkills } from "../../interface/info.model";
 
 const CarouselMySkills: React.FC = () => {
 

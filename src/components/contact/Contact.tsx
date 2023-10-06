@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../css/Contact.css";
+import "../../css/Contact.css";
 import { Slide } from "react-awesome-reveal";
 import { SendMessage } from "./SendMessage";
 

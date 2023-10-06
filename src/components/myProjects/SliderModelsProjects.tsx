@@ -1,10 +1,10 @@
 import { useRef, useContext, useState, useEffect } from "react";
 import Slider from "react-slick";
 import Project from "./CardProjectModel";
-import "../css/Projects.css";
-import SelectCategoryProject from "../Context/SelectCategoryProject";
-import { GetProjects } from "../Sanity/functionsFetchData";
-import { ShowMyProjects } from "../interface/info.model";
+import "../../css/Projects.css";
+import SelectCategoryProject from "../../Context/SelectCategoryProject";
+import { GetProjects } from "../../Sanity/functionsFetchData";
+import { ShowMyProjects } from "../../interface/info.model";
 
 
 // this settings for Slider

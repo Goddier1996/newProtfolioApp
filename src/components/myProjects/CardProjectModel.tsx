@@ -1,9 +1,9 @@
-import "../css/Projects.css";
+import "../../css/Projects.css";
 import { AiOutlineGithub } from "react-icons/ai";
 import { BsFillInfoSquareFill } from "react-icons/bs";
 import { AiOutlineLink } from "react-icons/ai";
 import Swal from "sweetalert2";
-import {ShowMyProjects} from "../interface/info.model";
+import { ShowMyProjects } from "../../interface/info.model";
 
 
 const CardProjectModel: React.FC<ShowMyProjects> = (props) => {

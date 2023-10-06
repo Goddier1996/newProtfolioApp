@@ -1,8 +1,8 @@
 import { IoIosQuote } from "react-icons/io";
-import "../css/Recommendations.css";
+import "../../css/Recommendations.css";
 import { useState } from "react";
 import { Slide } from "react-awesome-reveal";
-import {Recommends} from "../interface/info.model"
+import {Recommends} from "../../interface/info.model"
 
 const CardRecommendations:React.FC<Recommends> = props => {
   

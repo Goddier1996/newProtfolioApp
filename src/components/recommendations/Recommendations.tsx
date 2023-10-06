@@ -2,10 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import { Slide } from "react-awesome-reveal";
 import CardRecommendations from "./CardRecommendations";
-import "../css/Recommendations.css";
+import "../../css/Recommendations.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import { GetRecommends } from "../Sanity/functionsFetchData";
-import {Recommends} from "../interface/info.model"
+import { GetRecommends } from "../../Sanity/functionsFetchData";
+import {Recommends} from "../../interface/info.model"
 
 // settings Slider
 let settings = {

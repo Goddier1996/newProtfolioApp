@@ -1,7 +1,8 @@
 import { AiOutlineGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
-import "../css/ProfileStart.css";
+import "../../css/ProfileStart.css";
+
 
 const ProfileStart:React.FC = () => {
   
