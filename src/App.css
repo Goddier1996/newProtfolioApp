@@ -11,8 +11,8 @@
 
 
 @media (max-width: 640px) {
-.BannerApp {
-    height: 100%;
-    padding-bottom: 2rem;
+    .BannerApp {
+        height: 100%;
+        padding-bottom: 2rem;
+    }
 }
-  }
