@@ -3,6 +3,8 @@ import "../../css/AboutMe.css";
 import { GetMySkills } from "../../Sanity/functionsFetchData";
 import { MySkills } from "../../interface/info.model";
 
+
+
 const CarouselMySkills: React.FC = () => {
 
   const [skills, setSkills] = useState<MySkills[]>([]);

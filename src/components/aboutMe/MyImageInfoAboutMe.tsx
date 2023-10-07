@@ -1,4 +1,5 @@
 import CarouselMySkills from "./CarouselMySkills";
+import ShowMyCertificate from "./ShowMyCertificate";
 import ShowMyEducation from "./ShowMyDiploma";
 
 
@@ -35,8 +36,8 @@ export const MyImageInfoAboutMe:React.FC = () => {
       {/* here show my education diploma and course */}
       <div className="styleButtonEducation">
         <ShowMyEducation />
+        <ShowMyCertificate/>
       </div>
-
 
     </div>
   );

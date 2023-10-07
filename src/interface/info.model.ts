@@ -34,3 +34,9 @@ export interface Recommends{
 export interface TypeMyProject {
     typeProject: string;
 }
+
+
+export interface MyCertificate{
+    link: string;
+    image: any;
+}[]

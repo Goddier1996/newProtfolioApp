@@ -19,7 +19,7 @@ const CardProjectModel: React.FC<ShowMyProjects> = (props) => {
                 <br/><p> <b class="highlight">Skills :</b> ${skills}</p>
              </div>`,
       confirmButtonText: "Ok",
-      confirmButtonColor: "#82b5bd",
+      confirmButtonColor: "green",
     });
   };
 

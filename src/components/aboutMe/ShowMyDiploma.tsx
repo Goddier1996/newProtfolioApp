@@ -15,7 +15,6 @@ const ShowMyDiploma = () => {
                    </div>`,
       confirmButtonText: "Close",
       confirmButtonColor: "green",
-      background: "none",
     });
   };
 
