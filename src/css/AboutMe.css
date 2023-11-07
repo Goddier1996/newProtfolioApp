@@ -253,4 +253,8 @@
   .imgCertificate img {
     height: 270px;
   }
+
+  .styleButtonEducation {
+    justify-content: space-between;
+  }
 }
