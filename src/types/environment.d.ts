@@ -10,6 +10,7 @@ declare global {
       REACT_APP_URL_MY_IMG_CERTIFICATE2: string;
       REACT_APP_MY_LINK_DIPLOMA1: string;
       REACT_APP_MY_LINK_DIPLOMA2: string;
+      REACT_APP_RECAPTCHA: string;
     }
   }
 }

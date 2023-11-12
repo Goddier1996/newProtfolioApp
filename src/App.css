@@ -16,3 +16,12 @@
         padding-bottom: 2rem;
     }
 }
+
+
+
+@media screen and (max-width: 768px) {
+    .g-recaptcha {
+        transform: scale(0.77);
+        transform-origin: 0 0;
+    }
+}

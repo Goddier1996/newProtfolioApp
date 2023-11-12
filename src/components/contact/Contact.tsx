@@ -2,8 +2,12 @@ import { useState } from "react";
 import "../../css/Contact.css";
 import { Slide } from "react-awesome-reveal";
 import { SendMessage } from "./SendMessage";
+import ReCAPTCHA from "react-google-recaptcha";
 
-const Contact:React.FC = () => {
+
+
+const Contact: React.FC = () => {
+
 
   const [toSend, setToSend] = useState<{
     from_name: string;
@@ -18,22 +22,27 @@ const Contact:React.FC = () => {
   });
 
 
+  // check box if user not robot
+  const [capVal, setCapVal] = useState<any>(null);
+
+
   const handleChange = (e: any) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
 
 
+
   const sendEmail = (e: any) => {
     e.preventDefault();
-    
+
     // move to this function , and send email , here i use emailjs
     SendMessage(toSend);
   };
 
 
+
   return (
     <div className="contact" id="Contact">
-      
       <Slide direction="left">
         <div className="modelIcons">
           <div className="icons">
@@ -68,7 +77,6 @@ const Contact:React.FC = () => {
         </div>
       </Slide>
 
-      
       <div className="inputValue">
         <form onSubmit={sendEmail}>
           <input
@@ -104,14 +112,37 @@ const Contact:React.FC = () => {
             value={toSend.message}
             onChange={handleChange}
           ></textarea>
+
+          
+          {/* check box if user dont robot */}
+          <ReCAPTCHA
+            className="g-recaptcha"
+            sitekey={process.env.REACT_APP_RECAPTCHA || ""}
+            onChange={(val) => setCapVal(val)}
+          />
+
           <Slide direction="up">
             <div className="btnSendMessage">
-              <button type="submit">Send Message</button>
+              <button
+                style={
+                  !capVal
+                    ? {
+                        background: "gray",
+                        opacity: "0.7",
+                        color: "white",
+                        cursor: "not-allowed",
+                      }
+                    : {}
+                }
+                disabled={!capVal}
+                type="submit"
+              >
+                Send Message
+              </button>
             </div>
           </Slide>
         </form>
       </div>
-
     </div>
   );
 };
