@@ -116,8 +116,8 @@ const Contact: React.FC = () => {
           
           {/* check box if user dont robot */}
           <ReCAPTCHA
-            className="g-recaptcha"
-            sitekey="6LfedwwpAAAAAMUWJAVo_ZNeyjtirUZPqGteNA22"
+            className={ process.env.REACT_APP_RECAPTCHA || ""}
+            sitekey="6LfedwwpAAAAAPLsv3zMHa4cjZvaX0FY2W-o9OFj"
             onChange={(val) => setCapVal(val)}
           />
 
