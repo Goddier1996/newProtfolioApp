@@ -8,20 +8,18 @@ export const MyImageInfoAboutMe:React.FC = () => {
   return (
     <div className="miniInfoAboutMe">
       <p className="aboutMe">
-        Hi, I'm a specialist Software Practical Engineer.
-        <br /> creates a variety of projects , websites and applications and
-        also creates algorithm and database software.
-        <br /> I love my job in programming and challenging myself with new
-        things,
-        <b className="highlight">
-          You can see a variety of different projects I've done in my portfolio
-          or Github.
-        </b>
+         i"m a Frontend Developer Specializing in React frameworks and a strong understanding server side (backend) Node.js, Database..
         <br />
-        ability to work in a group/independently.
+         I am Highly Skilled with high performance capabilities and high achievements, have experience developing complex projects web site and apps.
+        <br />
+        Possess a strong passion for developing ideas from scratch while being organized and motivated by challenges. Has the ability to self-learn new technologies.
+        <br />
+        ability to work in a group / independently.
         <br />
         learns new things in programming every day and also learns to deal with
         problems that exist during the creation of projects.
+        <br />
+        For me, development is like a computer game 🎮.
         <br />{" "}
         <b className="highlight">
           My hobbies : (gamer , following new technologies , cars , lego , and

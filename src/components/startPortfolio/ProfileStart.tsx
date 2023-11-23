@@ -15,13 +15,12 @@ const ProfileStart:React.FC = () => {
           </h4>
           <h1 className="green">Artem Kot</h1>
           <h3>
-            Full Stack Developer • Experience with both Front-End and Back-End •
+            Front End Developer • Expert in React, Node.js, and Database • Ready For Any Challenge 🚀
             <br />
-            Ready For Any Challenge 🚀
+            Built a portfolio of 10+ personal projects to hone my skills
           </h3>
           <p>
-            Create Websites And Also Applications For Mobile. And In Addition
-            Creates Algorithm Software, And A Database..
+            Create Websites And Also Applications For Mobile.
           </p>
 
           <div className="btn">
