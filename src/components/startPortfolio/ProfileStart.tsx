@@ -15,7 +15,7 @@ const ProfileStart:React.FC = () => {
           </h4>
           <h1 className="green">Artem Kot</h1>
           <h3>
-            Full Stack Developer | Software Practical Engineer
+            Full Stack Developer • Experience with both Front-End and Back-End •
             <br />
             Ready For Any Challenge 🚀
           </h3>
