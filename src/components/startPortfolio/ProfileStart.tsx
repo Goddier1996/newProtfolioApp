@@ -18,7 +18,7 @@ const ProfileStart:React.FC = () => {
             Front End Developer
             <br />
             <br/>
-            Expert in React and Server side technologies (Node.js, and Database) Ready For Any Challenge 🚀
+            Expert in <b className="green">React</b> and <b className="green">Server side technologies</b> (Node.js, Database) Ready For Any Challenge 🚀
           </h3>
           <p>
           Built a portfolio of 10+ personal projects to hone my skill.
