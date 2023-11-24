@@ -19,7 +19,7 @@ export const MyImageInfoAboutMe:React.FC = () => {
         learns new things in programming every day and also learns to deal with
         problems that exist during the creation of projects.
         <br />
-        For me, development is like a computer game 🎮.n
+        For me, development is like a computer game 🎮.
         <br />{" "}
         <b className="highlight">
           My hobbies : (gamer , following new technologies , cars , lego , and
