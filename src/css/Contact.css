@@ -83,6 +83,8 @@
     color: #000000;
     font-weight: 500;
     text-decoration: none;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; /* Safari */
 }
 
 .btnSendMessage button:hover {

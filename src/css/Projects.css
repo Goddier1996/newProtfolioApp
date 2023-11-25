@@ -13,6 +13,8 @@
     background: rgba(0, 0, 0, 0.16);
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     font-size: 15px;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; /* Safari */
 }
 
 .styleTextType h6:hover {
@@ -61,13 +63,15 @@
 }
 
 .buttonNextBack button {
-    width: 40px;
-    height: 40px;
+    width: 43px;
+    height: 43px;
     background-color: #f9a51f;
     cursor: pointer;
     border: none;
     position: absolute;
     top: 45%;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; /* Safari */
 }
 
 .back {
@@ -83,7 +87,7 @@
 .buttonNextBack button:hover {
     width: 39px;
     height: 39px;
-    background: #f9a51fc7;
+    background: #82b5bd;
 }
 
 
@@ -124,13 +128,15 @@
 .ContainerProject a {
     color: white;
     margin: 6%;
-    font-size: 17px;
+    font-size: 21px;
     cursor: pointer;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; /* Safari */
 }
 
 .ContainerProject a:hover {
     color: rgba(255, 255, 255, 0.612);
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .ContainerProject:hover>img {
@@ -154,8 +160,8 @@
 }
 
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .ContainerProject a {
-        font-size: 19px;
+        font-size: 20px;
     }
-}
+} */
