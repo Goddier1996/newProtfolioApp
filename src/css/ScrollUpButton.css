@@ -3,16 +3,17 @@
     justify-content: right;
     right: 3%;
     position: fixed;
-    width: 100%;
     bottom: 40px;
     height: 40px;
     font-size:45px;
     z-index: 1;
     cursor: pointer;
-    color: #82b5bd;
+    color: #f9a51f;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; /* Safari */
 }
 
 .ButtonScroll:hover {
-    font-size:44px;
+    font-size:42px;
     color: #82b5bdb3;
 }
