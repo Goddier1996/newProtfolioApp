@@ -255,6 +255,11 @@
   }
 
   .styleButtonEducation {
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .styleBtnDiploma {
+    margin: 2%;
   }
 }
