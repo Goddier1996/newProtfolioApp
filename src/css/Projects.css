@@ -13,6 +13,8 @@
     background: rgba(0, 0, 0, 0.16);
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     font-size: 15px;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; /* Safari */
 }
 
 .styleTextType h6:hover {
@@ -158,8 +160,13 @@
 }
 
 
-/* @media screen and (max-width: 768px) {
-    .ContainerProject a {
+@media screen and (max-width: 768px) {
+    /* .ContainerProject a {
         font-size: 20px;
+    } */
+
+    .styleTextType h6 {
+        transition-duration:0ms;
+        -webkit-transition-duration: 0ms; /* Safari */
     }
-} */
+}
