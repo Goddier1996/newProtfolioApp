@@ -57,6 +57,11 @@
     transform-origin: left;
 }
 
+.bars{
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; /* Safari */
+}
+
 .Nav a:hover,
 .bars:hover {
     opacity: 0.7;
