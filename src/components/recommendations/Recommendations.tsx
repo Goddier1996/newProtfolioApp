@@ -68,6 +68,7 @@ const Recommendations:React.FC = () => {
       <Slide className="titleAboutRecommendations" direction="left">
         <span className="green">Recommendations</span>
         <h1>what say about me</h1>
+        <h6>I have <b className="green">{recommendations.length}</b> Recommendations</h6>
       </Slide>
       <div className="Testimonials">
         <Slider ref={arrowRef} {...settings}>

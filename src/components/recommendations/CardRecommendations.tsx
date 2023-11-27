@@ -29,11 +29,11 @@ const CardRecommendations:React.FC<Recommends> = props => {
 
         <div className="BodyCard">
           <p>
-            {sizeWorldInDisc < 150 ? (
+            {sizeWorldInDisc < 140 ? (
               <p>{bio}</p>
             ) : (
               <>
-                {showMore ? bio : `${bio.substring(0, 150)}`}
+                {showMore ? bio : `${bio.substring(0, 140)}`}
                 <b onClick={() => setShowMore(!showMore)}>
                   {showMore ? "Show less" : "Show more"}
                 </b>

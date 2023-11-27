@@ -15,10 +15,17 @@
     text-transform: capitalize;
 }
 
+.ContainerRecommendations h6 {
+    padding-top: 1rem;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
 
 .slick-dots {
     text-align: left;
     margin-left: 1rem;
+    bottom: 3.5rem;
 }
 
 .slick-dots li button:before {
@@ -68,9 +75,18 @@
     background-color: transparent;
     margin-left: 1.5rem;
     border: none;
-    background-color: #f9a51f;
+    /* background-color: #f9a51f; */
     cursor: pointer;
-    font-size: 17px;
+    font-size: 32px;
+    color: #f9a51f;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+}
+
+.Buttons button:hover {
+    font-size: 30px;
+    color: #82b5bd;
 }
 
 
