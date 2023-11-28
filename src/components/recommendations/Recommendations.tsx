@@ -71,7 +71,7 @@ const Recommendations:React.FC = () => {
         <h6>I have <b className="green">{recommendations.length}</b> Recommendations</h6>
       </Slide>
       <div className="Testimonials">
-        <Slider ref={arrowRef} {...settings}>
+        <Slider className="modelsShowCards" ref={arrowRef} {...settings}>
           {recommendations.map((value) => (
               <div key={value.name}>
                 <CardRecommendations name={value.name} position={value.position} image={value.image} bio={value.bio}/>
