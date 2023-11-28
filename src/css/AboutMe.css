@@ -104,6 +104,8 @@
   font-size: 13px;
   color: #f9a51f;
   cursor: pointer;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s; /* Safari */
 }
 
 .ContainerAboutMeCards b:hover {
