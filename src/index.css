@@ -64,7 +64,8 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #000000;
+  /* background: #000000; */
+  background: url("https://i.postimg.cc/8kKddfvG/87878.png");
 }
 
 ::-webkit-scrollbar-thumb {
@@ -73,7 +74,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #f9a51f;
 }
 
 @keyframes header {
