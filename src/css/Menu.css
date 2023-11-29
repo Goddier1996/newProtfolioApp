@@ -35,6 +35,8 @@
     text-decoration: none;
     font-weight: 400;
     position: relative;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s; /* Safari */
 }
 
 
