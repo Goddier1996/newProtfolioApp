@@ -1,5 +1,5 @@
-import { GetProjects } from "../../Sanity/functionsFetchData";
-import { ShowMyProjects , TypeMyProject } from "../../interface/info.model";
+import { GetProjects } from "../../../Sanity/functionsFetchData";
+import { ShowMyProjects , TypeMyProject } from "../../../interface/info.model";
 import { useState, useEffect } from "react";
 
 
@@ -35,5 +35,6 @@ const ShowCountMyProjects: React.FC<TypeMyProject> = ({ typeProject }) => {
   ) 
   
 };
+
 
 export default ShowCountMyProjects;

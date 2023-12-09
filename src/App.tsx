@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "../src/components/Menu";
 import ProfileStart from "./components/startPortfolio/ProfileStart";
-import AboutMe from "./components/aboutMe/AboutMe";
+import AboutMe from "./components/aboutMe/infoAboutMe/AboutMe";
 import Projects from "./components/myProjects/Projects";
 import Recommendations from "./components/recommendations/Recommendations";
 import Contact from "./components/contact/Contact";

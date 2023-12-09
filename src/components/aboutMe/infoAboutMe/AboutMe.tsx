@@ -1,16 +1,17 @@
 import { PiCodeThin } from "react-icons/pi";
 import { BiLogoAdobe } from "react-icons/bi";
 import { CgWebsite } from "react-icons/cg";
-import Card from "../aboutMe/CardsAboutMe";
+import Card from "./CardsAboutMe";
 import { Slide } from "react-awesome-reveal";
-import "../../css/AboutMe.css";
+import "../../../css/AboutMe.css";
 import MyImage from "./MyImage";
 import { useEffect, useState } from "react";
-import { GetInfoAboutMe} from "../../Sanity/functionsFetchData";
-import { InfoAboutMe } from "../../interface/info.model"
+import { GetInfoAboutMe} from "../../../Sanity/functionsFetchData";
+import { InfoAboutMe } from "../../../interface/info.model"
 
 
 const AboutMe:React.FC = () => {
+
 
   const [infoAboutMe, setInfoAboutMe] = useState<InfoAboutMe[]>([]);
 
@@ -41,8 +42,10 @@ const AboutMe:React.FC = () => {
           <MyImage />
         </Slide>
 
+        
         {/* here show cards data */}
         <div className="CardsAboutMe">
+
           {infoAboutMe.map((value: any) => (
               <Slide key={value} direction="right">
                 <Card
@@ -63,5 +66,6 @@ const AboutMe:React.FC = () => {
     </>
   );
 };
+
 
 export default AboutMe;

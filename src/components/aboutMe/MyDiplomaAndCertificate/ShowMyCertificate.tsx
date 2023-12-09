@@ -1,6 +1,6 @@
 import Swal from "sweetalert2";
-import "../../css/AboutMe.css";
-import { MyCertificate } from "../../interface/info.model";
+import "../../../css/AboutMe.css";
+import { MyCertificate } from "../../../interface/info.model";
 
 
 
@@ -59,9 +59,10 @@ const ShowMyCertificate = () => {
 
   return (
     <div className="styleBtnDiploma">
-      <button onClick={showPopUpMyCertificates}>Show My Certificate's</button>
+      <button onClick={showPopUpMyCertificates}>Show My {arrCertificate.length} Certificate's</button>
     </div>
   );
 };
+
 
 export default ShowMyCertificate;

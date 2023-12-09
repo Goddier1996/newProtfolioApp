@@ -1,6 +1,6 @@
-import CarouselMySkills from "./CarouselMySkills";
-import ShowMyCertificate from "./ShowMyCertificate";
-import ShowMyEducation from "./ShowMyDiploma";
+import CarouselMySkills from "../showSkills/CarouselMySkills";
+import ShowMyCertificate from "../MyDiplomaAndCertificate/ShowMyCertificate";
+import ShowMyEducation from "../MyDiplomaAndCertificate/ShowMyDiploma";
 
 
 export const MyImageInfoAboutMe:React.FC = () => {

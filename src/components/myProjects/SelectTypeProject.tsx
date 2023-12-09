@@ -2,7 +2,7 @@ import { useState } from "react";
 import SliderModelsProjects from "./SliderModelsProjects";
 import SelectCategoryProject from "../../Context/SelectCategoryProject";
 import "../../css/Projects.css";
-import ShowCountMyProjects from "../counterMyTypeProjects/ShowCountMyProjects";
+import ShowCountMyProjects from "./counterMyTypeProjects/ShowCountMyProjects";
 
 
 const SelectTypeProject:React.FC = () => {
@@ -32,5 +32,6 @@ const SelectTypeProject:React.FC = () => {
     </>
   );
 };
+
 
 export default SelectTypeProject;

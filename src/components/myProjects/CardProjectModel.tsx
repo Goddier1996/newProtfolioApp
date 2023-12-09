@@ -6,7 +6,9 @@ import Swal from "sweetalert2";
 import { ShowMyProjects } from "../../interface/info.model";
 
 
+
 const CardProjectModel: React.FC<ShowMyProjects> = (props) => {
+
 
   const { image, nameProject, link, git, type, skills, about, video } = props;
 

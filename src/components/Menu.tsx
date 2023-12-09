@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { FaCode } from "react-icons/fa";
 import "../css/Menu.css";
 
+
 const Header:React.FC = () => {
 
   const [bar, setBar] = useState<Boolean>(false);
@@ -13,6 +14,7 @@ const Header:React.FC = () => {
     { id: 3, type: "Recommendations" },
     { id: 4, type: "Contact" },
   ];
+
 
   return (
     <Container bar={bar}>

@@ -1,5 +1,5 @@
 import Swal from "sweetalert2";
-import "../../css/AboutMe.css";
+import "../../../css/AboutMe.css";
 
 
 const ShowMyDiploma = () => {
@@ -25,5 +25,6 @@ const ShowMyDiploma = () => {
     </div>
   );
 };
+
 
 export default ShowMyDiploma;

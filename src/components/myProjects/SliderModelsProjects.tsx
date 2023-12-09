@@ -5,6 +5,7 @@ import "../../css/Projects.css";
 import SelectCategoryProject from "../../Context/SelectCategoryProject";
 import { GetProjects } from "../../Sanity/functionsFetchData";
 import { ShowMyProjects } from "../../interface/info.model";
+import ButtonNextBackProjects from "./ButtonNextBackProjects";
 
 
 // this settings for Slider
@@ -50,6 +51,7 @@ let settings = {
 };
 
 
+
 const SliderModelsProjects: React.FC = () => {
   
   const arrowRef = useRef<any>(null);
@@ -72,6 +74,7 @@ const SliderModelsProjects: React.FC = () => {
   return (
     <div className="ContainerSlider">
       <Slider ref={arrowRef} {...settings}>
+        
         {projects
           .filter((name) => name.type.includes(typeProject))
           .map((value) => (
@@ -90,20 +93,14 @@ const SliderModelsProjects: React.FC = () => {
           ))}
       </Slider>
 
+      
       <div className="buttonNextBack">
-        <button
-          aria-labelledby="Prev"
-          onClick={() => arrowRef.current.slickPrev()}
-          className="back"
-        />
-        <button
-          aria-labelledby="Next"
-          onClick={() => arrowRef.current.slickNext()}
-          className="next"
-        />
+        <ButtonNextBackProjects type={"Prev"} Click={() => arrowRef.current.slickPrev()} typeClassName={"back"} />
+        <ButtonNextBackProjects type={"Next"} Click={() => arrowRef.current.slickNext()} typeClassName={"next"}/>
       </div>
     </div>
   );
 };
+
 
 export default SliderModelsProjects;

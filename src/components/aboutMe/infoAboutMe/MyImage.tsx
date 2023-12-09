@@ -1,5 +1,6 @@
 import { MyImageInfoAboutMe } from "./MyImageInfoAboutMe";
 
+
 const MyImage:React.FC = () => {
   
   return (
@@ -9,5 +10,6 @@ const MyImage:React.FC = () => {
     </div>
   );
 };
+
 
 export default MyImage;

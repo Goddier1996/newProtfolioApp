@@ -7,6 +7,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { GetRecommends } from "../../Sanity/functionsFetchData";
 import {Recommends} from "../../interface/info.model"
 
+
 // settings Slider
 let settings = {
   dots: true,
@@ -44,7 +45,9 @@ let settings = {
   ],
 };
 
+
 const Recommendations:React.FC = () => {
+
 
   const [recommendations, setRecommendations] = useState<Recommends[]>([]);
 
@@ -71,6 +74,7 @@ const Recommendations:React.FC = () => {
         <h6>I have <b className="green">{recommendations.length}</b> Recommendations</h6>
       </Slide>
       <div className="Testimonials">
+
         <Slider className="modelsShowCards" ref={arrowRef} {...settings}>
           {recommendations.map((value) => (
               <div key={value.name}>
@@ -96,5 +100,6 @@ const Recommendations:React.FC = () => {
     </div>
   );
 };
+
 
 export default Recommendations;

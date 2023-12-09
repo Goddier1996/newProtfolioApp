@@ -1,9 +1,10 @@
-import "../../css/AboutMe.css";
+import "../../../css/AboutMe.css";
 import { useState } from "react";
-import { InfoAboutMe } from "../../interface/info.model";
+import { InfoAboutMe } from "../../../interface/info.model";
 
 
 const CardsAboutMe: React.FC<InfoAboutMe> = (props) => {
+
 
   const { Icon, info, title } = props;
 
@@ -33,5 +34,6 @@ const CardsAboutMe: React.FC<InfoAboutMe> = (props) => {
     </div>
   );
 };
+
 
 export default CardsAboutMe;

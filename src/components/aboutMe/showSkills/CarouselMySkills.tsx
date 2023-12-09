@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
-import "../../css/AboutMe.css";
-import { GetMySkills } from "../../Sanity/functionsFetchData";
-import { MySkills } from "../../interface/info.model";
+import "../../../css/AboutMe.css";
+import { GetMySkills } from "../../../Sanity/functionsFetchData";
+import { MySkills } from "../../../interface/info.model";
+import ShowSkills from "./ShowSkills";
 
 
 
 const CarouselMySkills: React.FC = () => {
+
 
   const [skills, setSkills] = useState<MySkills[]>([]);
 
@@ -23,14 +25,15 @@ const CarouselMySkills: React.FC = () => {
   return (
     <div className="slider">
       <div className="slide-track">
+
         {skills.map((value: any) => (
-          <div className="slide" key={value}>
-            <img src={value.image.asset.url} alt="skills" />
-          </div>
+
+          <ShowSkills value={value}/>
         ))}
       </div>
     </div>
   );
 };
+
 
 export default CarouselMySkills;
