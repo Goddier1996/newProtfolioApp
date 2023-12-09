@@ -6,6 +6,7 @@ import "../../css/Recommendations.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { GetRecommends } from "../../Sanity/functionsFetchData";
 import {Recommends} from "../../interface/info.model"
+import ButtonNextBack from "./ButtonNextBack";
 
 
 // settings Slider
@@ -86,12 +87,8 @@ const Recommendations:React.FC = () => {
         {/* check if length Recommend was more 3 , and show Arrow next + back*/}
         {lengthData > 3 ? (
           <div className="Buttons">
-            <button onClick={() => arrowRef.current.slickPrev()}>
-              <IoIosArrowBack />
-            </button>
-            <button onClick={() => arrowRef.current.slickNext()}>
-              <IoIosArrowForward />
-            </button>
+            <ButtonNextBack click={() => arrowRef.current.slickPrev()} typeButton={"Prev"} typeIcon={<IoIosArrowBack />} />
+            <ButtonNextBack click={() => arrowRef.current.slickNext()} typeButton={"Next"} typeIcon={<IoIosArrowForward />}/>
           </div>
         ) : (
           ""

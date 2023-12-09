@@ -32,7 +32,7 @@ const ProfileStart:React.FC = () => {
             <p>Check out my</p>
             <div className="social-icons">
               <span>
-                <a href="https://github.com/Goddier1996" aria-label="show im my git all my projects">
+                <a  href="https://github.com/Goddier1996" aria-label="show im my git all my projects">
                   <AiOutlineGithub />
                 </a>
               </span>

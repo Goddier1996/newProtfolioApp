@@ -29,7 +29,7 @@ const ShowMyCertificate = () => {
       optionItems += `
       <div class="positionImgCertificate">
          <div class="imgCertificate">
-           <a href=${item.link}>
+           <a aria-label="show my Certificate" href=${item.link}>
            <img src=${item.image}/>
            </a>
          </div>

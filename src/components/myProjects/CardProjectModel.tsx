@@ -36,18 +36,18 @@ const CardProjectModel: React.FC<ShowMyProjects> = (props) => {
         </div>
 
         {type === "Website" ? (
-          <a href={link}>
+          <a aria-label="link website" href={link}>
             <AiOutlineLink />
           </a>
         ) : (
           ""
         )}
 
-        <a href={git}>
+        <a aria-label="git link" href={git}>
           <AiOutlineGithub />
         </a>
 
-        <a onClick={ShowPopUpInfoApp}>
+        <a aria-label="popup info" onClick={ShowPopUpInfoApp}>
           <BsFillInfoSquareFill />
         </a>
       </div>

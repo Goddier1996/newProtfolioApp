@@ -27,9 +27,11 @@ const Header:React.FC = () => {
         </div>
 
         <div className="Nav" style={bar ? { height: "100vh" } : { height: 0 }}>
+
           {arrayMenuOptions.map((value: any) => (
             <span key={value.id}>
               <a
+                aria-label={value.type}
                 href={"#" + value.type}
                 onClick={() => {
                   bar ? setBar(!bar) : setBar(bar);
