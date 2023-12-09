@@ -105,7 +105,8 @@
   color: #f9a51f;
   cursor: pointer;
   transition-duration: 0.4s;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
 }
 
 .ContainerAboutMeCards b:hover {
@@ -136,7 +137,6 @@
 
 .slider img {
   transition: transform 400ms ease-in-out;
-  padding: 4%;
   padding: 7%;
   width: 80px;
   height: 70px;
@@ -201,12 +201,37 @@
   font-weight: 500;
   text-decoration: none;
   transition-duration: 0.4s;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
 }
 
 .styleBtnDiploma button:hover {
   filter: drop-shadow(0px 10px 10px #82b5bd22);
+  background: #f9a51f;
 }
+
+
+.showMyCV {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5%;
+}
+
+.showMyCV button {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background: #f9a51f;
+  width: 70px;
+  height: 60px;
+  padding: 10%;
+  font-size: 15px;
+  transition: transform 400ms ease-in-out;
+}
+
+.showMyCV button:hover {
+  transform: rotate(360deg);
+  background: #82b5bd;
+}
+
 
 
 @media screen and (max-width: 768px) {
@@ -265,5 +290,9 @@
 
   .styleBtnDiploma {
     margin: 2%;
+  }
+
+  .showMyCV {
+    margin-top: 2%;
   }
 }

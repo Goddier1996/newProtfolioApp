@@ -1,4 +1,4 @@
-import { MyImageInfoAboutMe } from "./MyImageInfoAboutMe";
+import MyImageInfoAboutMe  from "./MyImageInfoAboutMe";
 
 
 const MyImage:React.FC = () => {
