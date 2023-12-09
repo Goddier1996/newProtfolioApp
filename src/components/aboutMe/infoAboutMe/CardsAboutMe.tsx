@@ -24,9 +24,9 @@ const CardsAboutMe: React.FC<InfoAboutMe> = (props) => {
           <p>{info}</p>
         ) : (
           <>
-            {showMore ? info : `${info.substring(0, 100)}`}
+            {showMore ? info : `${info.substring(0, 60)}`}
             <b onClick={() => setShowMore(!showMore)}>
-              {showMore ? "Show less" : "Show more"}
+              {showMore ? "Show less" : "Read more"}
             </b>
           </>
         )}
