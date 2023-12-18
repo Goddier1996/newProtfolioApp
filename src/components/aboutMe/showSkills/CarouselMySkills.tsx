@@ -5,7 +5,6 @@ import { MySkills } from "../../../interface/info.model";
 import ShowSkills from "./ShowSkills";
 
 
-
 const CarouselMySkills: React.FC = () => {
 
 
@@ -17,6 +16,7 @@ const CarouselMySkills: React.FC = () => {
   };
 
 
+
   useEffect(() => {
     loadingDataSkills();
   }, []);
@@ -25,15 +25,14 @@ const CarouselMySkills: React.FC = () => {
   return (
     <div className="slider">
       <div className="slide-track">
-
         {skills.map((value: any) => (
-
-          <ShowSkills value={value}/>
+          <div key={value.image.asset.url}>
+            <ShowSkills value={value} />
+          </div>
         ))}
       </div>
     </div>
   );
 };
-
 
 export default CarouselMySkills;

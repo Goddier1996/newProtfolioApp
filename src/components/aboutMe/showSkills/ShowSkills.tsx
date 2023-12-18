@@ -3,7 +3,7 @@ const ShowSkills: React.FC<any> = ({value}) => {
 
   return (
     <>
-      <div className="slide" key={value.image.asset.url}>
+      <div className="slide">
         <img src={value.image.asset.url} alt="skills" />
       </div>
     </>
