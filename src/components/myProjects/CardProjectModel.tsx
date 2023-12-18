@@ -5,7 +5,7 @@ import { AiOutlineLink } from "react-icons/ai";
 import Swal from "sweetalert2";
 import { ShowMyProjects } from "../../interface/info.model";
 import { AsyncImage } from 'loadable-image'
-import { Blur } from 'transitions-kit'
+import { Grow   } from 'transitions-kit'
 
 
 const CardProjectModel: React.FC<ShowMyProjects> = (props) => {
@@ -32,7 +32,9 @@ const CardProjectModel: React.FC<ShowMyProjects> = (props) => {
       <AsyncImage
         src={image}
         style={{ width: "100%", height: "100%" }}
-        Transition={Blur}
+        Transition={Grow}
+        loader={<div style={{ background: 'url("../../images/11.webp")' }}/>}
+
         alt="project"
       />
 
