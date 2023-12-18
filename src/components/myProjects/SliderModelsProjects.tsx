@@ -77,6 +77,7 @@ const SliderModelsProjects: React.FC = () => {
         
         {projects
           .filter((name) => name.type.includes(typeProject))
+          .sort((a, b) => (b.nameProject > a.nameProject ? -1 : 1))
           .map((value) => (
             <div key={value.nameProject}>
               <Project
