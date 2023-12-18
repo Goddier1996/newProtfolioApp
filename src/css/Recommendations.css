@@ -108,7 +108,7 @@
     border-radius: 1%;
 }
 
-.modelsShowCards{
+.modelsShowCards {
     margin-top: -3.5%;
 }
 
@@ -138,7 +138,8 @@
     color: #f9a51f;
     cursor: pointer;
     transition-duration: 0.4s;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
 }
 
 .BodyCard b:hover {
@@ -153,8 +154,8 @@
 
 
 .FooterCard img {
-    width: 4rem;
-    height: 4rem;
+    width: 64px;
+    height: 64px;
     border-radius: 50px;
     object-fit: cover;
 }
@@ -190,7 +191,7 @@
 
 
 @media screen and (max-width: 768px) {
-    .modelsShowCards{
+    .modelsShowCards {
         margin-top: -9%;
     }
-  }
+}

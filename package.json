@@ -17,6 +17,7 @@
     "@types/react-google-recaptcha": "^2.1.8",
     "@types/react-slick": "^0.23.10",
     "dotenv": "^16.3.1",
+    "loadable-image": "^3.0.6",
     "react": "^18.2.0",
     "react-awesome-reveal": "^4.2.5",
     "react-dom": "^18.2.0",

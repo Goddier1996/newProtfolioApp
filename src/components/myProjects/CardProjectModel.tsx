@@ -4,7 +4,8 @@ import { BsFillInfoSquareFill } from "react-icons/bs";
 import { AiOutlineLink } from "react-icons/ai";
 import Swal from "sweetalert2";
 import { ShowMyProjects } from "../../interface/info.model";
-
+import { AsyncImage } from 'loadable-image'
+import { Blur } from 'transitions-kit'
 
 
 const CardProjectModel: React.FC<ShowMyProjects> = (props) => {
@@ -28,7 +29,12 @@ const CardProjectModel: React.FC<ShowMyProjects> = (props) => {
   
   return (
     <div className="ContainerProject project">
-      <img src={image} alt="project" />
+      <AsyncImage
+        src={image}
+        style={{ width: "100%", height: "100%" }}
+        Transition={Blur}
+        alt="project"
+      />
 
       <div className="about">
         <div className="titleAndAbout">
