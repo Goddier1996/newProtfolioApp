@@ -16,6 +16,10 @@ const ShowMyCertificate = () => {
       link: process.env.REACT_APP_MY_LINK_DIPLOMA2 || "",
       image:  process.env.REACT_APP_URL_MY_IMG_CERTIFICATE2 || "",
     },
+    {
+      link: process.env.REACT_APP_MY_LINK_DIPLOMA3 || "",
+      image:  process.env.REACT_APP_URL_MY_IMG_CERTIFICATE3 || "",
+    },
   ];
 
 
