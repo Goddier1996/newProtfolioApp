@@ -4,6 +4,7 @@ import { Slide } from "react-awesome-reveal";
 import "../../css/ProfileStart.css";
 
 
+
 const ProfileStart:React.FC = () => {
   
   return (
