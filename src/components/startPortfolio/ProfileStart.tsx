@@ -44,8 +44,6 @@ const ProfileStart:React.FC = () => {
             </div>
           </div>
         </div>
-      </Slide>
-      <Slide direction="right">
         <div className="Profile">
           <img src="https://i.postimg.cc/MTCzWm3W/p1.webp" alt="profile" />
         </div>
