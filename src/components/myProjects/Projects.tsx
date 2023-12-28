@@ -7,7 +7,7 @@ const Projects:React.FC = () => {
 
   return (
     <div className="ContainerMyProjects" id="project">
-      <Slide direction="right">
+      <Slide direction="left">
         <h1>
           My <span className="green">Projects</span>
         </h1>

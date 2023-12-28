@@ -5,7 +5,8 @@ import { AiOutlineLink } from "react-icons/ai";
 import Swal from "sweetalert2";
 import { ShowMyProjects } from "../../interface/info.model";
 import { AsyncImage } from 'loadable-image'
-import { Grow   } from 'transitions-kit'
+import { Zoom  } from 'transitions-kit'
+import LoadingData from "../loading/Loading";
 
 
 const CardProjectModel: React.FC<ShowMyProjects> = (props) => {
@@ -32,15 +33,14 @@ const CardProjectModel: React.FC<ShowMyProjects> = (props) => {
       <AsyncImage
         src={image}
         style={{ width: "100%", height: "100%" }}
-        Transition={Grow}
-        loader={<div style={{ background: 'url("../../images/11.webp")' }}/>}
-
+        Transition={Zoom }
+        loader={<><LoadingData/></>}
         alt="project"
       />
-
       <div className="about">
         <div className="titleAndAbout">
           <p>{nameProject}</p>
+          
         </div>
 
         {type === "Website" ? (
@@ -55,7 +55,7 @@ const CardProjectModel: React.FC<ShowMyProjects> = (props) => {
           <AiOutlineGithub />
         </a>
 
-        <a aria-label="popup info" onClick={ShowPopUpInfoApp}>
+        <a aria-label="popup info"  onClick={ShowPopUpInfoApp}>
           <BsFillInfoSquareFill />
         </a>
       </div>

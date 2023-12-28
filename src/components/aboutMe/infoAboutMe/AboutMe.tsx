@@ -47,7 +47,7 @@ const AboutMe:React.FC = () => {
         <div className="CardsAboutMe">
 
           {infoAboutMe.map((value: any) => (
-              <Slide key={value.title} direction="right">
+              <Slide key={value.title} direction="left">
                 <Card
                   Icon={
                     value.title == "Software Practical Engineer"
