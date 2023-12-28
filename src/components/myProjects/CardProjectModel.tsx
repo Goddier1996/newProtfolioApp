@@ -34,7 +34,7 @@ const CardProjectModel: React.FC<ShowMyProjects> = (props) => {
         src={image}
         style={{ width: "100%", height: "100%" }}
         Transition={Zoom }
-        loader={<><LoadingData/></>}
+        loader={<LoadingData/>}
         alt="project"
       />
       <div className="about">
