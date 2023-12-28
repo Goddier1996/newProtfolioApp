@@ -6,7 +6,6 @@ import Swal from "sweetalert2";
 import { ShowMyProjects } from "../../interface/info.model";
 import { AsyncImage } from 'loadable-image'
 import { Zoom  } from 'transitions-kit'
-import LoadingData from "../loading/Loading";
 
 
 const CardProjectModel: React.FC<ShowMyProjects> = (props) => {
@@ -34,7 +33,7 @@ const CardProjectModel: React.FC<ShowMyProjects> = (props) => {
         src={image}
         style={{ width: "100%", height: "100%" }}
         Transition={Zoom }
-        loader={<LoadingData/>}
+        loader={<img src={require("../../images/11.webp") } />}
         alt="project"
       />
       <div className="about">

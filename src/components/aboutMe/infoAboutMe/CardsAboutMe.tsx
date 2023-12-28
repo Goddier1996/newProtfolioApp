@@ -19,18 +19,18 @@ const CardsAboutMe: React.FC<InfoAboutMe> = (props) => {
       </span>
       <h1>{title}</h1>
 
-      <p>
+      
         {sizeWorldInDisc < 100 ? (
           <p>{info}</p>
         ) : (
           <>
-            {showMore ? info : `${info.substring(0, 60)}`}
+            {showMore ? <p>{info}</p> : <p>{info.substring(0, 60)}</p>}
             <b onClick={() => setShowMore(!showMore)}>
               {showMore ? "Show less" : "Read more"}
             </b>
           </>
         )}
-      </p>
+      
     </div>
   );
 };
