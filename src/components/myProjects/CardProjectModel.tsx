@@ -29,19 +29,22 @@ const CardProjectModel: React.FC<ShowMyProjects> = (props) => {
   
   return (
     <div className="ContainerProject project">
+
       <AsyncImage
         src={image}
         style={{ width: "100%", height: "100%" }}
         Transition={Zoom }
-        loader={<img src={require("../../images/11.webp") } />}
+        loader={<img alt="loading" src={require("../../images/11.webp") } />}
         alt="project"
       />
       <div className="about">
+        
         <div className="titleAndAbout">
           <p>{nameProject}</p>
-          
         </div>
 
+     <div className="modelsStyleCards">
+          
         {type === "Website" ? (
           <a aria-label="link website" href={link}>
             <AiOutlineLink />
@@ -53,13 +56,17 @@ const CardProjectModel: React.FC<ShowMyProjects> = (props) => {
         <a aria-label="git link" href={git}>
           <AiOutlineGithub />
         </a>
-
-        <a aria-label="popup info"  onClick={ShowPopUpInfoApp}>
+          
+                  
+        <h6 onClick={ShowPopUpInfoApp}>
           <BsFillInfoSquareFill />
-        </a>
+        </h6>
+
+        </div>
       </div>
     </div>
   );
 };
+
 
 export default CardProjectModel;

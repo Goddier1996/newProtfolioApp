@@ -14,7 +14,8 @@
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     font-size: 15px;
     transition-duration: 0.4s;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
 }
 
 .styleTextType h6:hover {
@@ -71,7 +72,8 @@
     position: absolute;
     top: 45%;
     transition-duration: 0.4s;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
 }
 
 .back {
@@ -96,11 +98,13 @@
     height: 180px;
     background: rgba(0, 0, 0, 0.16);
     margin: 0 0.5rem;
+    /* margin: 0 4.5rem; */
     padding: 1.5%;
     position: relative;
     overflow: hidden;
     border-radius: 1%;
 }
+
 
 .ContainerProject img {
     width: 100%;
@@ -120,18 +124,32 @@
     width: 100%;
 }
 
+.modelsStyleCards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
 .titleAndAbout {
     display: flex;
     justify-content: center;
 }
 
-.ContainerProject a {
+.about a,
+.about h6 {
     color: white;
-    margin: 6%;
+    margin: 2%;
     font-size: 21px;
-    cursor: pointer;
     transition-duration: 0.4s;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    cursor: pointer;
+}
+
+
+.ContainerProject h6:hover {
+    color: rgba(255, 255, 255, 0.612);
+    font-size: 17px;
 }
 
 .ContainerProject a:hover {
@@ -166,7 +184,8 @@
     } */
 
     .styleTextType h6 {
-        transition-duration:0ms;
-        -webkit-transition-duration: 0ms; /* Safari */
+        transition-duration: 0ms;
+        -webkit-transition-duration: 0ms;
+        /* Safari */
     }
 }
