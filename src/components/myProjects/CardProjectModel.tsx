@@ -58,9 +58,9 @@ const CardProjectModel: React.FC<ShowMyProjects> = (props) => {
         </a>
           
                   
-        <a href={void(0)} ria-label="show info" onClick={ShowPopUpInfoApp}>
+        <h6 onClick={ShowPopUpInfoApp}>
           <BsFillInfoSquareFill />
-        </a>
+        </h6>
 
         </div>
       </div>

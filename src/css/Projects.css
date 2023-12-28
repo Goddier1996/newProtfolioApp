@@ -135,7 +135,8 @@
     justify-content: center;
 }
 
-.about a {
+.about a,
+.about h6 {
     color: white;
     margin: 2%;
     font-size: 21px;
@@ -145,10 +146,12 @@
     cursor: pointer;
 }
 
+.ContainerProject h6:hover {
+    color: rgba(255, 255, 255, 0.612);
+}
 
 .ContainerProject a:hover {
     color: rgba(255, 255, 255, 0.612);
-    font-size: 17px;
 }
 
 .ContainerProject:hover>img {
