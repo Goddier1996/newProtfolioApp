@@ -7,7 +7,7 @@ const ShowCountMyProjects: React.FC<TypeMyProject> = ({ typeProject }) => {
 
 
   const [projects, setProjects] = useState<ShowMyProjects[]>([]);
-  const [counterProjects, setCounterProjects] = useState<ShowMyProjects[]>([]);
+  const [counterProjects, setCounterProjects] = useState<Number>();
 
 
   const loadingDataProjects = async () => {
@@ -17,7 +17,7 @@ const ShowCountMyProjects: React.FC<TypeMyProject> = ({ typeProject }) => {
       user.type.includes(typeProject)
     );
     
-     setCounterProjects(filtered);
+     setCounterProjects(filtered.length);
   };
 
 
@@ -30,7 +30,7 @@ const ShowCountMyProjects: React.FC<TypeMyProject> = ({ typeProject }) => {
 
   return (
     <>
-      {counterProjects.length}
+      {counterProjects}
     </>
   ) 
   

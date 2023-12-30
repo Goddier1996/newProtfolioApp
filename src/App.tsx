@@ -7,18 +7,18 @@ import Recommendations from "./components/recommendations/Recommendations";
 import Contact from "./components/contact/Contact";
 import ScrollUpButton from "./components/ScrollUpButton";
 import Footer from "./components/Footer";
-import { useEffect } from "react";
-import { sayShabbatShalom } from "./components/SayShabbatShalom";
+// import { useEffect } from "react";
+// import { sayShabbatShalom } from "./components/SayShabbatShalom";
 
 
 function App() {
 
 
   // here show popup animation when friday and saturday
-  useEffect(() => {
+//   useEffect(() => {
 
-    sayShabbatShalom();
-})
+//     sayShabbatShalom();
+// })
 
 
   return (
