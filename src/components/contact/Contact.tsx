@@ -1,4 +1,4 @@
-import "../../css/Contact.css";
+import "./Contact.css";
 import { Slide } from "react-awesome-reveal";
 import ContactMe from "./InfoContact/ContactMe";
 import InputValueSendEmail from "./sendMail/InputValueSendEmail";

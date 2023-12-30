@@ -1,4 +1,4 @@
-import "../../css/Projects.css";
+import "./Projects.css";
 import { AiOutlineGithub } from "react-icons/ai";
 import { BsFillInfoSquareFill } from "react-icons/bs";
 import { AiOutlineLink } from "react-icons/ai";

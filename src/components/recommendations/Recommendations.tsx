@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import { Slide } from "react-awesome-reveal";
 import CardRecommendations from "./CardRecommendations";
-import "../../css/Recommendations.css";
+import "./Recommendations.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { GetRecommends } from "../../Sanity/functionsFetchData";
 import {Recommends} from "../../interface/info.model"

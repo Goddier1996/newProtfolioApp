@@ -1,5 +1,5 @@
 import Swal from "sweetalert2";
-import "../../../css/AboutMe.css";
+import "../AboutMe.css";
 
 
 const ShowMyDiploma = () => {

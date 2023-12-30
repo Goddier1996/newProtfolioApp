@@ -3,7 +3,7 @@ import { BiLogoAdobe } from "react-icons/bi";
 import { CgWebsite } from "react-icons/cg";
 import Card from "./CardsAboutMe";
 import { Slide } from "react-awesome-reveal";
-import "../../../css/AboutMe.css";
+import "../AboutMe.css";
 import MyImage from "./MyImage";
 import { useEffect, useState } from "react";
 import { GetInfoAboutMe} from "../../../Sanity/functionsFetchData";

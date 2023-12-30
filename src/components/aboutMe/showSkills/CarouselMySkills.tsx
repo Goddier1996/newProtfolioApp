@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../../../css/AboutMe.css";
+import "../AboutMe.css";
 import { GetMySkills } from "../../../Sanity/functionsFetchData";
 import { MySkills } from "../../../interface/info.model";
 import ShowSkills from "./ShowSkills";

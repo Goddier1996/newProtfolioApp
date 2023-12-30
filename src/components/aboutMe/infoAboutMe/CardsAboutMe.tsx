@@ -1,4 +1,4 @@
-import "../../../css/AboutMe.css";
+import "../AboutMe.css";
 import { useState } from "react";
 import { InfoAboutMe } from "../../../interface/info.model";
 

@@ -1,5 +1,4 @@
 
-
 const ButtonNextBack: React.FC<any> = ({ click, typeButton, typeIcon }) => {
 
 

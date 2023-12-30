@@ -1,5 +1,5 @@
 import { IoIosQuote } from "react-icons/io";
-import "../../css/Recommendations.css";
+import "./Recommendations.css";
 import { useState } from "react";
 import { Slide } from "react-awesome-reveal";
 import {Recommends} from "../../interface/info.model"

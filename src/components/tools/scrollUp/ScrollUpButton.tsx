@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { FaArrowCircleUp } from "react-icons/fa";
-import "../css/ScrollUpButton.css";
+import "./ScrollUpButton.css";
 
 const ScrollUpButton:React.FC = () => {
 

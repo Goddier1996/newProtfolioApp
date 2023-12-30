@@ -1,24 +1,24 @@
 import "./App.css";
-import Header from "../src/components/Menu";
+import Header from "./components/heater/Menu";
 import ProfileStart from "./components/startPortfolio/ProfileStart";
 import AboutMe from "./components/aboutMe/infoAboutMe/AboutMe";
 import Projects from "./components/myProjects/Projects";
 import Recommendations from "./components/recommendations/Recommendations";
 import Contact from "./components/contact/Contact";
-import ScrollUpButton from "./components/ScrollUpButton";
-import Footer from "./components/Footer";
-// import { useEffect } from "react";
-// import { sayShabbatShalom } from "./components/SayShabbatShalom";
+import ScrollUpButton from "./components/tools/scrollUp/ScrollUpButton";
+import Footer from "./components/footer/Footer";
+import { useEffect } from "react";
+import { sayShabbatShalom } from "./components/tools/popUpShabbatShalom/SayShabbatShalom"
 
 
 function App() {
 
 
   // here show popup animation when friday and saturday
-//   useEffect(() => {
+  useEffect(() => {
 
-//     sayShabbatShalom();
-// })
+    sayShabbatShalom();
+})
 
 
   return (

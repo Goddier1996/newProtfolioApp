@@ -11,6 +11,7 @@ const ShowCountMyProjects: React.FC<TypeMyProject> = ({ typeProject }) => {
 
 
   const loadingDataProjects = async () => {
+    
     setProjects(await GetProjects());
 
     let filtered = projects.filter((user) =>

@@ -1,4 +1,4 @@
-import "../css/Footer.css";
+import "./Footer.css";
 
 const Footer:React.FC = () => {
   
