@@ -26,19 +26,19 @@ const ProfileStart:React.FC = () => {
           </p>
 
           <div className="btn">
-            <a href="#About">About Me</a>
+            <a aria-label="about me" href="#About">About Me</a>
           </div>
 
           <div className="Social">
             <p>Check out my</p>
             <div className="social-icons">
               <span>
-                <a  href="https://github.com/Goddier1996" aria-label="show im my git all my projects">
+                <a aria-label="show im my git all my projects" href="https://github.com/Goddier1996">
                   <AiOutlineGithub />
                 </a>
               </span>
               <span>
-                <a href="https://www.linkedin.com/in/artem-kot96" aria-label="connect to my linkedin">
+                <a aria-label="connect to my linkedin" href="https://www.linkedin.com/in/artem-kot96">
                   <FaLinkedinIn />
                 </a>
               </span>

@@ -1,5 +1,5 @@
-import "./Projects.css";
-import SelectTypeProject from "./SelectTypeProject";
+import "../Projects.css";
+import SelectTypeProject from "../sliderSelectTypeProject/SelectTypeProject";
 import { Slide } from "react-awesome-reveal";
 
 

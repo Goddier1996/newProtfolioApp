@@ -1,10 +1,10 @@
 import "./App.css";
 import Header from "./components/heater/Menu";
 import ProfileStart from "./components/startPortfolio/ProfileStart";
-import AboutMe from "./components/aboutMe/infoAboutMe/AboutMe";
-import Projects from "./components/myProjects/Projects";
-import Recommendations from "./components/recommendations/Recommendations";
-import Contact from "./components/contact/Contact";
+import AboutMe from "./components/aboutMe/infoAboutMe/mainComponent/AboutMe";
+import Projects from "./components/myProjects/mainComponent/Projects";
+import Recommendations from "./components/recommendations/mainComponent/Recommendations";
+import Contact from "./components/contact/mainComponent/Contact";
 import ScrollUpButton from "./components/tools/scrollUp/ScrollUpButton";
 import Footer from "./components/footer/Footer";
 import { useEffect } from "react";

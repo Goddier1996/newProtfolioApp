@@ -1,8 +1,8 @@
 import { useState } from "react";
 import SliderModelsProjects from "./SliderModelsProjects";
-import SelectCategoryProject from "../../Context/SelectCategoryProject";
-import "./Projects.css";
-import ShowCountMyProjects from "./counterMyTypeProjects/ShowCountMyProjects";
+import SelectCategoryProject from "../../../Context/SelectCategoryProject";
+import "../Projects.css";
+import ShowCountMyProjects from "../counterMyTypeProjects/ShowCountMyProjects";
 
 
 const SelectTypeProject:React.FC = () => {

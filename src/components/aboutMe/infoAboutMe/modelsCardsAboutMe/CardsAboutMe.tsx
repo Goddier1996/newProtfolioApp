@@ -1,6 +1,6 @@
-import "../AboutMe.css";
+import "../../AboutMe.css";
 import { useState } from "react";
-import { InfoAboutMe } from "../../../interface/info.model";
+import { InfoAboutMe } from "../../../../interface/info.model";
 
 
 const CardsAboutMe: React.FC<InfoAboutMe> = (props) => {

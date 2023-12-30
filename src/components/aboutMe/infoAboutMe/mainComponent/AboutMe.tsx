@@ -1,13 +1,13 @@
 import { PiCodeThin } from "react-icons/pi";
 import { BiLogoAdobe } from "react-icons/bi";
 import { CgWebsite } from "react-icons/cg";
-import Card from "./CardsAboutMe";
+import Card from "../modelsCardsAboutMe/CardsAboutMe";
 import { Slide } from "react-awesome-reveal";
-import "../AboutMe.css";
-import MyImage from "./MyImage";
+import "../../AboutMe.css";
+import MyImage from "../MyImage";
 import { useEffect, useState } from "react";
-import { GetInfoAboutMe} from "../../../Sanity/functionsFetchData";
-import { InfoAboutMe } from "../../../interface/info.model"
+import { GetInfoAboutMe} from "../../../../Sanity/functionsFetchData";
+import { InfoAboutMe } from "../../../../interface/info.model"
 
 
 const AboutMe:React.FC = () => {
