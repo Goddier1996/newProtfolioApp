@@ -4,9 +4,10 @@ import { Slide } from "react-awesome-reveal";
 import CardRecommendations from "../modelRecommendations/CardRecommendations";
 import "../Recommendations.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import { GetRecommends } from "../../../Sanity/functionsFetchData";
-import {Recommends} from "../../../interface/info.model"
+import { ObjectCustomHook } from "../../../interface/info.model";
 import ButtonNextBack from "../sliderNextBack/ButtonNextBack";
+import { FetchData } from "../../../customHook/FetchData";
+import Loading from "../../tools/loading/Loading";
 
 
 // settings Slider
@@ -47,18 +48,22 @@ let settings = {
 };
 
 
-const Recommendations:React.FC = () => {
+const Recommendations: React.FC = () => {
 
-
-  const [recommendations, setRecommendations] = useState<Recommends[]>([]);
+  // here use customHook to fetch animal data
+  const [saveOpjDataSendToCustomHook, SetSaveOpjDataSendToCustomHook] =
+    useState<ObjectCustomHook>({});
+  const { dataRecommendations, loading } = FetchData(
+    saveOpjDataSendToCustomHook
+  );
 
   const arrowRef = useRef<any>(null);
-  let lengthData:number = recommendations.length;
 
 
-  const loadingDataRecommends = async () => {
-    
-    setRecommendations(await GetRecommends());
+  const loadingDataRecommends = () => {
+    SetSaveOpjDataSendToCustomHook({
+      typeFetchData: "Recommendations",
+    });
   };
 
 
@@ -72,28 +77,51 @@ const Recommendations:React.FC = () => {
       <Slide className="titleAboutRecommendations" direction="left">
         <span className="green">Recommendations</span>
         <h1>what say about me</h1>
-        <h6>I have <b className="green">{recommendations.length}</b> Recommendations</h6>
+        <h6>
+          I have{" "}
+          <b className="green">
+            {loading ? "Loading..." : dataRecommendations.length}
+          </b>{" "}
+          Recommendations
+        </h6>
       </Slide>
-      <div className="Testimonials">
 
-        <Slider className="modelsShowCards" ref={arrowRef} {...settings}>
-          {recommendations.map((value) => (
+      {loading ? (
+        <Loading textLoading={"Recommendations"} />
+      ) : (
+        <div className="Testimonials">
+          <Slider className="modelsShowCards" ref={arrowRef} {...settings}>
+            {dataRecommendations.map((value) => (
               <div key={value.name}>
-                <CardRecommendations name={value.name} position={value.position} image={value.image} bio={value.bio}/>
+                <CardRecommendations
+                  name={value.name}
+                  position={value.position}
+                  image={value.image}
+                  bio={value.bio}
+                />
               </div>
             ))}
-        </Slider>
+          </Slider>
 
-        {/* check if length Recommend was more 3 , and show Arrow next + back*/}
-        {lengthData > 3 ? (
-          <div className="Buttons">
-            <ButtonNextBack click={() => arrowRef.current.slickPrev()} typeButton={"Prev"} typeIcon={<IoIosArrowBack />} />
-            <ButtonNextBack click={() => arrowRef.current.slickNext()} typeButton={"Next"} typeIcon={<IoIosArrowForward />}/>
-          </div>
-        ) : (
-          ""
-        )}
-      </div>
+          {/* check if length Recommend was more 3 , and show Arrow next + back*/}
+          {dataRecommendations.length > 3 ? (
+            <div className="Buttons">
+              <ButtonNextBack
+                click={() => arrowRef.current.slickPrev()}
+                typeButton={"Prev"}
+                typeIcon={<IoIosArrowBack />}
+              />
+              <ButtonNextBack
+                click={() => arrowRef.current.slickNext()}
+                typeButton={"Next"}
+                typeIcon={<IoIosArrowForward />}
+              />
+            </div>
+          ) : (
+            ""
+          )}
+        </div>
+      )}
     </div>
   );
 };

@@ -56,8 +56,7 @@ const CardProjectModel: React.FC<ShowMyProjects> = (props) => {
         <a aria-label="git link" href={git}>
           <AiOutlineGithub />
         </a>
-          
-                  
+                
         <h6 onClick={ShowPopUpInfoApp}>
           <BsFillInfoSquareFill />
         </h6>

@@ -3,9 +3,10 @@ import Slider from "react-slick";
 import Project from "../showModelProjects/CardProjectModel";
 import "../Projects.css";
 import SelectCategoryProject from "../../../Context/SelectCategoryProject";
-import { GetProjects } from "../../../Sanity/functionsFetchData";
-import { ShowMyProjects } from "../../../interface/info.model";
+import { ObjectCustomHook } from "../../../interface/info.model";
 import ButtonNextBackProjects from "./ButtonNextBackProjects";
+import { FetchData } from "../../../customHook/FetchData";
+import Loading from "../../tools/loading/Loading";
 
 
 // this settings for Slider
@@ -51,18 +52,22 @@ let settings = {
 };
 
 
-
 const SliderModelsProjects: React.FC = () => {
-  
+
+
   const arrowRef = useRef<any>(null);
 
   const { typeProject } = useContext(SelectCategoryProject);
 
-  const [projects, setProjects] = useState<ShowMyProjects[]>([]);
+  const [saveOpjDataSendToCustomHook, SetSaveOpjDataSendToCustomHook] =
+    useState<ObjectCustomHook>({});
+  const { dataProjects, loading } = FetchData(saveOpjDataSendToCustomHook);
 
-
-  const loadingDataProjects = async () => {
-    setProjects(await GetProjects());
+  
+  const loadingDataProjects = () => {
+    SetSaveOpjDataSendToCustomHook({
+      typeFetchData: "Projects",
+    });
   };
 
 
@@ -70,35 +75,49 @@ const SliderModelsProjects: React.FC = () => {
     loadingDataProjects();
   }, []);
 
-  
+
   return (
     <div className="ContainerSlider">
-      <Slider ref={arrowRef} {...settings}>
-        
-        {projects
-          .filter((name) => name.type.includes(typeProject==""?"Website":typeProject))
-          .sort((a, b) => (b.nameProject > a.nameProject ? -1 : 1))
-          .map((value) => (
-            <div key={value.nameProject}>
-              <Project
-                type={value.type}
-                image={value.image}
-                nameProject={value.nameProject}
-                skills={value.skills}
-                link={value.link}
-                git={value.git}
-                about={value.about}
-                video={value.video}
-              />
-            </div>
-          ))}
-      </Slider>
+      {loading ? (
+        <Loading textLoading={"Project's"} />
+      ) : (
+        <>
+          <Slider ref={arrowRef} {...settings}>
+            {dataProjects
+              .filter((name) =>
+                name.type.includes(typeProject == "" ? "Website" : typeProject)
+              )
+              .sort((a, b) => (b.nameProject > a.nameProject ? -1 : 1))
+              .map((value) => (
+                <div key={value.nameProject}>
+                  <Project
+                    type={value.type}
+                    image={value.image}
+                    nameProject={value.nameProject}
+                    skills={value.skills}
+                    link={value.link}
+                    git={value.git}
+                    about={value.about}
+                    video={value.video}
+                  />
+                </div>
+              ))}
+          </Slider>
 
-      
-      <div className="buttonNextBack">
-        <ButtonNextBackProjects type={"Prev"} Click={() => arrowRef.current.slickPrev()} typeClassName={"back"} />
-        <ButtonNextBackProjects type={"Next"} Click={() => arrowRef.current.slickNext()} typeClassName={"next"}/>
-      </div>
+          <div className="buttonNextBack">
+            <ButtonNextBackProjects
+              type={"Prev"}
+              Click={() => arrowRef.current.slickPrev()}
+              typeClassName={"back"}
+            />
+            <ButtonNextBackProjects
+              type={"Next"}
+              Click={() => arrowRef.current.slickNext()}
+              typeClassName={"next"}
+            />
+          </div>
+        </>
+      )}
     </div>
   );
 };

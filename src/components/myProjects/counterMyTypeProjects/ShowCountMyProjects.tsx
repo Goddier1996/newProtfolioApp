@@ -1,40 +1,41 @@
-import { GetProjects } from "../../../Sanity/functionsFetchData";
-import { ShowMyProjects , TypeMyProject } from "../../../interface/info.model";
+import { FetchData } from "../../../customHook/FetchData";
+import { ObjectCustomHook, TypeMyProject } from "../../../interface/info.model";
 import { useState, useEffect } from "react";
+
 
 
 const ShowCountMyProjects: React.FC<TypeMyProject> = ({ typeProject }) => {
 
 
-  const [projects, setProjects] = useState<ShowMyProjects[]>([]);
+  // here use customHook to fetch animal data
+  const [saveOpjDataSendToCustomHook, SetSaveOpjDataSendToCustomHook] =
+    useState<ObjectCustomHook>({});
+  const { dataProjects, loading } = FetchData(saveOpjDataSendToCustomHook);
+
   const [counterProjects, setCounterProjects] = useState<Number>();
 
 
-  const loadingDataProjects = async () => {
-    
-    setProjects(await GetProjects());
+  const loadingDataProjectsAndFilter = () => {
+    SetSaveOpjDataSendToCustomHook({
+      typeFetchData: "Projects",
+    });
 
-    let filtered = projects.filter((user) =>
+    let filtered = dataProjects.filter((user) =>
       user.type.includes(typeProject)
     );
-    
-     setCounterProjects(filtered.length);
+
+    setCounterProjects(filtered.length);
   };
 
 
-
   useEffect(() => {
-    loadingDataProjects();
-  }, [counterProjects]);
-
+    loadingDataProjectsAndFilter();
+  }, [dataProjects]);
 
 
   return (
-    <>
-      {counterProjects}
-    </>
-  ) 
-  
+    <>{!loading ? <b style={{ fontSize: "11px" }}>Load</b> : counterProjects}</>
+  );
 };
 
 

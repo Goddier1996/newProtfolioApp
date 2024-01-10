@@ -6,28 +6,35 @@ import { Slide } from "react-awesome-reveal";
 import "../../AboutMe.css";
 import MyImage from "../MyImage";
 import { useEffect, useState } from "react";
-import { GetInfoAboutMe} from "../../../../Sanity/functionsFetchData";
-import { InfoAboutMe } from "../../../../interface/info.model"
+import { ObjectCustomHook } from "../../../../interface/info.model";
+import { FetchData } from "../../../../customHook/FetchData";
+import Loading from "../../../tools/loading/Loading";
+
+const AboutMe: React.FC = () => {
 
 
-const AboutMe:React.FC = () => {
+
+  // here use customHook to fetch animal data
+  const [saveOpjDataSendToCustomHook, SetSaveOpjDataSendToCustomHook] =
+    useState<ObjectCustomHook>({});
+  const { dataAboutMe , loading } = FetchData(saveOpjDataSendToCustomHook);
 
 
-  const [infoAboutMe, setInfoAboutMe] = useState<InfoAboutMe[]>([]);
 
-
-  const loadingDataInfoAboutMe = async () => {
-
-    setInfoAboutMe(await GetInfoAboutMe());
+  const loadingDataInfoAboutMe = () => {
+    SetSaveOpjDataSendToCustomHook({
+      typeFetchData: "AboutMe",
+    });
   };
 
-
+  
 
   useEffect(() => {
     loadingDataInfoAboutMe();
   }, []);
 
-  
+
+
   return (
     <>
       <div className="ContainerAboutMe" id="About">
@@ -42,25 +49,30 @@ const AboutMe:React.FC = () => {
           <MyImage />
         </Slide>
 
-        
         {/* here show cards data */}
         <div className="CardsAboutMe">
-
-          {infoAboutMe.map((value: any) => (
-              <Slide key={value.title} direction="left">
-                <Card
-                  Icon={
-                    value.title == "Software Practical Engineer"
-                      ? PiCodeThin
-                      : value.title == "Web Developer + Mobile"
-                      ? CgWebsite
-                      : BiLogoAdobe
-                  }
-                  title={value.title}
-                  info={value.info}
-                />
-              </Slide>
-            ))}
+          {loading ?
+            <Loading textLoading={"Cards About Me"} />
+            :
+            <>
+            {dataAboutMe.map((value: any) => (
+            <Slide key={value.title} direction="left">
+              <Card
+                Icon={
+                  value.title == "Software Practical Engineer"
+                    ? PiCodeThin
+                    : value.title == "Web Developer + Mobile"
+                    ? CgWebsite
+                    : BiLogoAdobe
+                }
+                title={value.title}
+                info={value.info}
+              />
+            </Slide>
+          ))}
+            </>    
+        }
+          
         </div>
       </div>
     </>

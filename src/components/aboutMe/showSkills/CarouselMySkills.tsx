@@ -1,20 +1,23 @@
 import { useEffect, useState } from "react";
 import "../AboutMe.css";
-import { GetMySkills } from "../../../Sanity/functionsFetchData";
-import { MySkills } from "../../../interface/info.model";
+import { ObjectCustomHook } from "../../../interface/info.model";
 import ShowSkills from "./ShowSkills";
-
+import { FetchData } from "../../../customHook/FetchData";
 
 const CarouselMySkills: React.FC = () => {
 
 
-  const [skills, setSkills] = useState<MySkills[]>([]);
+  // here use customHook to fetch animal data
+  const [saveOpjDataSendToCustomHook, SetSaveOpjDataSendToCustomHook] =
+    useState<ObjectCustomHook>({});
+  const { dataCarouselMySkills } = FetchData(saveOpjDataSendToCustomHook);
 
 
-  const loadingDataSkills = async () => {
-    setSkills(await GetMySkills());
+  const loadingDataSkills = () => {
+    SetSaveOpjDataSendToCustomHook({
+      typeFetchData: "CarouselMySkills",
+    });
   };
-
 
 
   useEffect(() => {
@@ -25,7 +28,7 @@ const CarouselMySkills: React.FC = () => {
   return (
     <div className="slider">
       <div className="slide-track">
-        {skills.map((value: any) => (
+        {dataCarouselMySkills.map((value) => (
           <div key={value.image.asset.url}>
             <ShowSkills value={value} />
           </div>

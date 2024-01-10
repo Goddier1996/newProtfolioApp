@@ -4,7 +4,6 @@ import { Slide } from "react-awesome-reveal";
 import { SendMessage } from "./SendMessage";
 
 
-
 const InputValueSendEmail = () => {
 
 
@@ -25,13 +24,11 @@ const InputValueSendEmail = () => {
   // check box if user not robot
   const [capVal, setCapVal] = useState<any>(null);
 
-    
-    
+
   const handleChange = (e: any) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
 
-    
     
   const sendEmail = (e: any) => {
     e.preventDefault();
@@ -40,8 +37,6 @@ const InputValueSendEmail = () => {
     SendMessage(toSend);
   };
 
-    
-    
     
   return (
     <div className="inputValue">

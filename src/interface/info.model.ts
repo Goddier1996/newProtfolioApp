@@ -7,7 +7,7 @@ export interface InfoAboutMe{
 
 export interface MySkills{
     title: string;
-    image: string;
+    image: any;
 }[]
 
 
@@ -40,3 +40,8 @@ export interface MyCertificate{
     link: string;
     image: any;
 }[]
+
+
+export interface ObjectCustomHook{
+    typeFetchData?: string;
+}

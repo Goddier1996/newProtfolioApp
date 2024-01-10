@@ -1,5 +1,9 @@
+import { MySkills } from "../../../interface/info.model";
 
-const ShowSkills: React.FC<any> = ({value}) => {
+
+const ShowSkills: React.FC<{
+  value: MySkills;
+}> = ({ value }) => {
 
   return (
     <>
