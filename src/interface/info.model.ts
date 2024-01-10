@@ -44,4 +44,5 @@ export interface MyCertificate{
 
 export interface ObjectCustomHook{
     typeFetchData?: string;
+    typeProject?:any
 }

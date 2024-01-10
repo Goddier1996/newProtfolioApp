@@ -43,6 +43,15 @@ export const FetchData = (funcFetchData:ObjectCustomHook) => {
                     .catch((err) => setLoading(true))
                 break;
             
+            case "ProjectsCountFilterTypeProject":
+                GetProjects()
+                    .then((data) => setDataProjects(data.filter((user: any) =>
+                        user.type.includes(funcFetchData.typeProject)
+                    )))
+                    .then(() => setLoading(false))
+                    .catch((err) => setLoading(true))
+                break;
+            
             case "Recommendations":
                 GetRecommends()
                     .then((data) => setDataRecommendations(data))
