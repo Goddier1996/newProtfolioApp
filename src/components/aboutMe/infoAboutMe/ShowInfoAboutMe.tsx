@@ -4,7 +4,7 @@ const ShowInfoAboutMe = () => {
   return (
     <>
       <p className="aboutMe">
-        i"m a Frontend Developer Specializing in React frameworks and a strong
+        I"m a <b className="highlight">Software Developer</b> with a strong inclination towards <b className="highlight">Frontend</b> Specializing in React frameworks and a strong
         understanding server side (backend) Node.js, Database..
         <br />
         I am Highly Skilled with high performance capabilities and high

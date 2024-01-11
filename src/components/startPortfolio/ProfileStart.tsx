@@ -16,13 +16,13 @@ const ProfileStart:React.FC = () => {
           </h4>
           <h1 className="green">Artem Kot</h1>
           <h3>
-            Front End Developer
+            Software Developer Inclination towards Front End
             <br />
             <br/>
             Expert in <b className="green">React</b> and <b className="green">Server side technologies</b> (Node.js, Database) Ready For Any Challenge 🚀
           </h3>
           <p>
-          Built a portfolio of 10+ personal projects to hone my skill.
+          Built a portfolio of 10+ complex projects.
           </p>
 
           <div className="btn">
