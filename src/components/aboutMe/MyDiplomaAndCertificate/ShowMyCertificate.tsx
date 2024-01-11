@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { FetchData } from "../../../customHook/FetchData";
 
 
+
 const ShowMyCertificate = () => {
 
 
@@ -22,14 +23,12 @@ const ShowMyCertificate = () => {
 
 
   const showAllDataMyCertificate = (arr: Array<MyCertificate>) => {
-
     let optionItems: string = "";
 
     arr.forEach((item: MyCertificate) => {
       {
         loading
-          ? (optionItems =
-            `<div class="center-body">
+          ? (optionItems = `<div class="center-body">
                 <div class="loader-circle-48"></div>
                 <p>Loading Certificate's</p>
              </div>`)
@@ -44,12 +43,11 @@ const ShowMyCertificate = () => {
       }
     });
 
-      return optionItems;   
+    return optionItems;
   };
 
 
   const showPopUpMyCertificates = () => {
-
     Swal.fire({
       html: `
       <div class="positionCertificate">
@@ -69,10 +67,17 @@ const ShowMyCertificate = () => {
   }, []);
 
 
+
   return (
     <div className="styleBtnDiploma">
-      <button onClick={showPopUpMyCertificates}>
-        Show My {dataCertificates.length} Certificate's
+      <button
+        style={loading ? { cursor: "not-allowed" } : {}}
+        disabled={loading}
+        onClick={showPopUpMyCertificates}
+      >
+        {loading
+          ? "Loading Certificate's"
+          : `Show My ${dataCertificates.length} Certificate's`}
       </button>
     </div>
   );

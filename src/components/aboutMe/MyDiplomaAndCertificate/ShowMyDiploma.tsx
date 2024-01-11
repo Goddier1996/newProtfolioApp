@@ -5,9 +5,7 @@ import { FetchData } from "../../../customHook/FetchData";
 import { useEffect, useState } from "react";
 
 
-
 const ShowMyDiploma = () => {
-
 
   // customHook
   const [saveOpjDataSendToCustomHook, SetSaveOpjDataSendToCustomHook] =
@@ -23,7 +21,6 @@ const ShowMyDiploma = () => {
 
 
   const showAllDataDiploma = (arr: Array<MyDiploma>) => {
-
     let optionItems: string = "";
 
     arr.forEach((item: MyDiploma) => {
@@ -60,7 +57,13 @@ const ShowMyDiploma = () => {
 
   return (
     <div className="styleBtnDiploma">
-      <button onClick={showPopUpMyDiploma}>Show My Diploma</button>
+      <button
+        style={loading ? { cursor: "not-allowed" } : {}}
+        disabled={loading}
+        onClick={showPopUpMyDiploma}
+      >
+        {loading ? "Loading Diploma" : `Show My Diploma`}
+      </button>
     </div>
   );
 };

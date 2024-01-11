@@ -6,6 +6,7 @@ import Swal from "sweetalert2";
 import { ShowMyProjects } from "../../../interface/info.model";
 import { AsyncImage } from 'loadable-image'
 import { Zoom  } from 'transitions-kit'
+import Loading from "../../tools/loading/Loading";
 
 
 const CardProjectModel: React.FC<ShowMyProjects> = (props) => {
@@ -13,7 +14,6 @@ const CardProjectModel: React.FC<ShowMyProjects> = (props) => {
 
   const { image, nameProject, link, git, type, skills, about, video } = props;
 
-  
   const ShowPopUpInfoApp = () => {
     Swal.fire({
       html: `<div>
@@ -33,8 +33,8 @@ const CardProjectModel: React.FC<ShowMyProjects> = (props) => {
       <AsyncImage
         src={image}
         style={{ width: "100%", height: "100%" }}
-        Transition={Zoom }
-        loader={<img alt="loading" src={require("../../../images/11.webp") } />}
+        Transition={Zoom}
+        loader={<Loading textLoading=""/>}
         alt="project"
       />
       <div className="about">
