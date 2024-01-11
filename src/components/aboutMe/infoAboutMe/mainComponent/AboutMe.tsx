@@ -13,12 +13,10 @@ import Loading from "../../../tools/loading/Loading";
 const AboutMe: React.FC = () => {
 
 
-
   // here use customHook to fetch animal data
   const [saveOpjDataSendToCustomHook, SetSaveOpjDataSendToCustomHook] =
     useState<ObjectCustomHook>({});
   const { dataAboutMe , loading } = FetchData(saveOpjDataSendToCustomHook);
-
 
 
   const loadingDataInfoAboutMe = () => {
@@ -28,7 +26,6 @@ const AboutMe: React.FC = () => {
   };
 
   
-
   useEffect(() => {
     loadingDataInfoAboutMe();
   }, []);
@@ -72,7 +69,6 @@ const AboutMe: React.FC = () => {
           ))}
             </>    
         }
-          
         </div>
       </div>
     </>

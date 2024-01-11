@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react'
-import { GetInfoAboutMe,GetMySkills,GetProjects,GetRecommends} from "../Sanity/functionsFetchData"
-import { InfoAboutMe,ObjectCustomHook,MySkills,ShowMyProjects, Recommends } from "../interface/info.model"
+import { useEffect, useState } from 'react';
+import { GetCertificate, GetInfoAboutMe, GetMySkills, GetProjects, GetRecommends, GetDiploma } from "../Sanity/functionsFetchData";
+import { InfoAboutMe, ObjectCustomHook, MySkills, ShowMyProjects, Recommends, MyCertificate, MyDiploma } from "../interface/info.model";
 
   
 export const FetchData = (funcFetchData:ObjectCustomHook) => {
@@ -10,6 +10,8 @@ export const FetchData = (funcFetchData:ObjectCustomHook) => {
     const [dataCarouselMySkills, setDataCarouselMySkills] = useState<MySkills[]>([]);
     const [dataProjects, setDataProjects] = useState<ShowMyProjects[]>([]);
     const [dataRecommendations, setDataRecommendations] = useState<Recommends[]>([]);
+    const [dataCertificates, setDataCertificates] = useState<MyCertificate[]>([]);
+    const [dataDiploma, setDataDiploma] = useState<MyDiploma[]>([]);
 
     
     const [loading, setLoading] = useState<boolean>(false);
@@ -59,6 +61,21 @@ export const FetchData = (funcFetchData:ObjectCustomHook) => {
                     .catch((err) => setLoading(true))
                 break;
             
+            case "Certificates":
+                GetCertificate()
+                    .then((data) => setDataCertificates(data))
+                    .then(() => setLoading(false))
+                    .catch((err) => setLoading(true))
+                break;
+            
+            
+            case "Diploma":
+                GetDiploma()
+                    .then((data) => setDataDiploma(data))
+                    .then(() => setLoading(false))
+                    .catch((err) => setLoading(true))
+                break;
+            
           default:
             // setError(`${error} Could not Fetch Data `);
             setLoading(true);
@@ -70,5 +87,5 @@ export const FetchData = (funcFetchData:ObjectCustomHook) => {
         fetchData();
     },[funcFetchData])
 
-    return { dataAboutMe, dataCarouselMySkills, dataProjects, dataRecommendations, loading };
+    return { dataAboutMe, dataCarouselMySkills, dataProjects, dataRecommendations, dataCertificates, dataDiploma, loading };
 }

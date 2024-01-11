@@ -58,3 +58,32 @@ export async function GetMySkills() {
       }`
   );
 }
+
+
+export async function GetCertificate() {
+  return await sanityClient.fetch(
+    `*[_type=="link"]{
+            title,
+        image{
+          asset->{
+            _id,
+            url
+          },
+        },
+      }`
+  );
+}
+
+
+export async function GetDiploma() {
+  return await sanityClient.fetch(
+    `*[_type=="diploma"]{
+        image{
+          asset->{
+            _id,
+            url
+          },
+        },
+      }`
+  );
+}

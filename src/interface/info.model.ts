@@ -37,7 +37,12 @@ export interface TypeMyProject {
 
 
 export interface MyCertificate{
-    link: string;
+    title: string;
+    image: any;
+}[]
+
+
+export interface MyDiploma{
     image: any;
 }[]
 

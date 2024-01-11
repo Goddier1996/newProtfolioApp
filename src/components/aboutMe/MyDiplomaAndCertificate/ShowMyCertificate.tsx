@@ -1,27 +1,24 @@
 import Swal from "sweetalert2";
 import "../AboutMe.css";
-import { MyCertificate } from "../../../interface/info.model";
-
+import { MyCertificate, ObjectCustomHook } from "../../../interface/info.model";
+import { useEffect, useState } from "react";
+import { FetchData } from "../../../customHook/FetchData";
 
 
 const ShowMyCertificate = () => {
 
 
-  const arrCertificate: Array<MyCertificate> = [
-    {
-      link: process.env.REACT_APP_MY_LINK_DIPLOMA1 || "",
-      image:  process.env.REACT_APP_URL_MY_IMG_CERTIFICATE1 || "",
-    },
-    {
-      link: process.env.REACT_APP_MY_LINK_DIPLOMA2 || "",
-      image:  process.env.REACT_APP_URL_MY_IMG_CERTIFICATE2 || "",
-    },
-    {
-      link: process.env.REACT_APP_MY_LINK_DIPLOMA3 || "",
-      image:  process.env.REACT_APP_URL_MY_IMG_CERTIFICATE3 || "",
-    },
-  ];
+  // customHook
+  const [saveOpjDataSendToCustomHook, SetSaveOpjDataSendToCustomHook] =
+    useState<ObjectCustomHook>({});
+  const { dataCertificates, loading } = FetchData(saveOpjDataSendToCustomHook);
 
+
+  const loadingDataCertificates = () => {
+    SetSaveOpjDataSendToCustomHook({
+      typeFetchData: "Certificates",
+    });
+  };
 
 
   const showAllDataMyCertificate = (arr: Array<MyCertificate>) => {
@@ -29,20 +26,26 @@ const ShowMyCertificate = () => {
     let optionItems: string = "";
 
     arr.forEach((item: MyCertificate) => {
-
-      optionItems += `
-      <div class="positionImgCertificate">
-         <div class="imgCertificate">
-           <a aria-label="show my Certificate" href=${item.link}>
-           <img src=${item.image}/>
-           </a>
-         </div>
-      </div>`;
+      {
+        loading
+          ? (optionItems =
+            `<div class="center-body">
+                <div class="loader-circle-48"></div>
+                <p>Loading Certificate's</p>
+             </div>`)
+          : (optionItems += `
+        <div class="positionImgCertificate">
+           <div class="imgCertificate">
+             <a aria-label="show my Certificate" href=${item.title}>
+             <img src=${item.image.asset.url}/>
+             </a>
+           </div>
+        </div>`);
+      }
     });
 
-    return optionItems;
+      return optionItems;   
   };
-
 
 
   const showPopUpMyCertificates = () => {
@@ -53,7 +56,7 @@ const ShowMyCertificate = () => {
          <h6>Select Certificate to See
             <span class="green">More info</span>
          </h6>
-          ${showAllDataMyCertificate(arrCertificate)}
+          ${showAllDataMyCertificate(dataCertificates)}
       </div>`,
       confirmButtonColor: "green",
       confirmButtonText: "Close",
@@ -61,9 +64,16 @@ const ShowMyCertificate = () => {
   };
 
 
+  useEffect(() => {
+    loadingDataCertificates();
+  }, []);
+
+
   return (
     <div className="styleBtnDiploma">
-      <button onClick={showPopUpMyCertificates}>Show My {arrCertificate.length} Certificate's</button>
+      <button onClick={showPopUpMyCertificates}>
+        Show My {dataCertificates.length} Certificate's
+      </button>
     </div>
   );
 };
