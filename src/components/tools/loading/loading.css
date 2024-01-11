@@ -40,6 +40,12 @@
     animation: loader-circle-48-spin2 4s linear infinite, loader-circle-48-pulse 1s linear infinite alternate;
 }
 
+.positionLoading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @keyframes loader-circle-48-spin {
     100% {
         transform: rotate(450deg);
