@@ -5,7 +5,7 @@
     max-width: 1280px;
     width: 80%;
     margin: 0 auto;
-    padding: 1.5rem 0;
+    padding: 2.5rem 0;
     position: relative;
     animation: header 500ms ease-in-out;
 }
@@ -79,7 +79,7 @@
         justify-content: center;
         position: fixed;
         z-index: 100;
-        top: 1rem;
+        top: 2.5rem;
         right: 1rem;
         width: 55px;
         height: 48px;
@@ -101,8 +101,6 @@
         overflow: hidden;
         z-index: 100;
     }
-
-
 
     .bar p {
         font-size: 13px;

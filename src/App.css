@@ -9,6 +9,10 @@
     background: url("../src/images/22.webp");
 }
 
+.bannerMargin {
+    margin-top: -6%;
+}
+
 
 @media (max-width: 640px) {
     .BannerApp {
@@ -22,5 +26,9 @@
     .g-recaptcha {
         transform: scale(0.77);
         transform-origin: 0 0;
+    }
+
+    .bannerMargin {
+        margin-top: -20%;
     }
 }

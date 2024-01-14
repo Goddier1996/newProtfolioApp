@@ -27,7 +27,7 @@ function App() {
           <Header />
         </div>
 
-        <div className="BannerApp" style={{marginTop:"-5%"}}>
+        <div className="BannerApp bannerMargin">
           <ProfileStart />
         </div>
 
