@@ -31,8 +31,13 @@ const ShowMyDiploma = () => {
                 <p>Loading Diploma</p>
              </div>`)
           : (optionItems += `
-             <img src=${item.image.asset.url}/>
-        </div>`);
+          <div class="styleImageMyDiploma">
+          <div class="imgDiploma">
+            <a aria-label="show my Certificate" href=${item.title}>
+            <img src=${item.image.asset.url}/>
+            </a>
+          </div>
+       </div>`);
       }
     });
     return optionItems;
@@ -43,11 +48,17 @@ const ShowMyDiploma = () => {
     Swal.fire({
       html: `<div class="styleImageMyDiploma">
       ${showAllDataDiploma(dataDiploma)}
-                   </div>`,
+             </div>`,
       confirmButtonText: "Close",
       confirmButtonColor: "green",
     });
   };
+
+
+  const aa = () => {
+alert("hi")
+  };
+
 
 
   useEffect(() => {

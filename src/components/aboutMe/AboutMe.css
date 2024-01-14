@@ -183,11 +183,55 @@
   justify-content: space-evenly;
 }
 
-.styleImageMyDiploma img {
-  height: 500px;
+.styleImageMyDiploma {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.imgDiploma img {
+  padding: 2%;
+  height: 240px;
   width: auto;
   border-radius: 2%;
+  opacity: 0.9;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
 }
+
+.imgDiploma img:hover {
+  opacity: 0.7;
+}
+
+.positionCertificate {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+.positionCertificate h6 {
+  font-size: 20px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+}
+
+
+.imgCertificate img {
+  padding: 3%;
+  height: 136px;
+  width: auto;
+  border-radius: 2%;
+  opacity: 0.9;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+}
+
+.imgCertificate img:hover {
+  opacity: 0.7;
+}
+
 
 .styleBtnDiploma button {
   padding: 0.7rem 2rem;
@@ -206,6 +250,7 @@
   filter: drop-shadow(0px 10px 10px #82b5bd22);
   background: #f9a51f;
 }
+
 
 
 .showMyCV {
@@ -236,38 +281,6 @@
     width: 75px;
     height: 65px;
   }
-}
-
-
-.positionCertificate {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-
-.positionCertificate h6 {
-  font-size: 20px;
-  padding-top: 5%;
-  padding-bottom: 5%;
-
-}
-
-.imgCertificate {
-  transition: transform .2s;
-}
-
-
-.imgCertificate:hover {
-  opacity: 0.9;
-}
-
-
-.imgCertificate img {
-  padding: 3%;
-  height: 136px;
-  width: auto;
-  border-radius: 2%;
 }
 
 

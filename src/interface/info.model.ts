@@ -43,6 +43,7 @@ export interface MyCertificate{
 
 
 export interface MyDiploma{
+    title: string;
     image: any;
 }[]
 

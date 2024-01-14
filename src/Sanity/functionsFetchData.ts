@@ -78,6 +78,7 @@ export async function GetCertificate() {
 export async function GetDiploma() {
   return await sanityClient.fetch(
     `*[_type=="diploma"]{
+          title,
         image{
           asset->{
             _id,
