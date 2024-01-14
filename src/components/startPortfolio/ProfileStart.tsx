@@ -11,9 +11,9 @@ const ProfileStart:React.FC = () => {
     <div className="ContainerProfileStart">
       <Slide direction="left">
         <div className="Texts">
-          <h4>
+          {/* <h4>
             Hi <span className="green">There</span> Welcome To The My Portfolio
-          </h4>
+          </h4> */}
           <h1 className="green">Artem Kot</h1>
           <h3>
             Software Developer Inclination towards Front End
