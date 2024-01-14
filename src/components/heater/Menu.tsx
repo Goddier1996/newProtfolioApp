@@ -19,11 +19,9 @@ const Header:React.FC = () => {
   return (
     <Container bar={bar}>
       <div className="ContainerMenu">
+
         <div className="Logo">
-          <span className="green">
-            <FaCode />
-          </span>
-          <h1>Hello World</h1>
+          <span><FaCode className="green" /></span>
         </div>
 
         <div className="Nav" style={bar ? { height: "100vh" } : { height: 0 }}>

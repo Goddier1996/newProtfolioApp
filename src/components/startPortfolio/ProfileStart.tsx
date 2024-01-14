@@ -12,14 +12,14 @@ const ProfileStart:React.FC = () => {
       <Slide direction="left">
         <div className="Texts">
           <h4>
-            Hi <span className="green">There...</span>
+            Hi <span className="green">There</span> Welcome To The My Portfolio
           </h4>
           <h1 className="green">Artem Kot</h1>
           <h3>
             Software Developer Inclination towards Front End
             <br />
             <br/>
-            Expert in <b className="green">React</b> and <b className="green">Server side technologies</b> (Node.js, Database) Ready For Any Challenge 🚀
+            Expert in <b className="green">React</b> and <b className="green">Server side technologies</b> (Node.js, Database) Ready For Any Challenge
           </h3>
           <p>
           Built a portfolio of 10+ complex projects.

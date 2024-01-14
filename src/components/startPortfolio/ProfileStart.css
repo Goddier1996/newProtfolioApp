@@ -1,7 +1,9 @@
 .ContainerProfileStart {
     display: flex;
-    gap: 2rem;
-    padding-top: 7%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 5rem;
     width: 80%;
     max-width: 1280px;
     margin: 0 auto;
@@ -15,6 +17,7 @@
 .Texts h4 {
     padding: 1rem 0;
     font-weight: 500;
+    font-size: 16px;
 }
 
 .Texts h1 {
@@ -25,7 +28,7 @@
 
 .Texts h3 {
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 16px;
     padding-bottom: 1.2rem;
     text-transform: capitalize;
 }
@@ -47,7 +50,7 @@
     font-weight: 500;
     text-decoration: none;
     transition-duration: 0.4s;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
 }
 
 
@@ -79,20 +82,6 @@
     font-size: 0.9rem;
 }
 
-.Social {
-    margin-top: 3rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-
-.Social {
-    margin-top: 3rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
 
 .social-icons {
     display: flex;
@@ -128,7 +117,7 @@
 }
 
 .Profile img {
-    width: 400px;
+    width: 350px;
     filter: drop-shadow(0px 10px 10px #82b5bda5);
     transition: transform 400ms ease-in-out;
     transform: rotate(15deg);
@@ -146,5 +135,16 @@
 
     .Profile img {
         width: 200px;
+    }
+
+    .ContainerProfileStart {
+        gap: 2rem;
+    }
+
+    .Texts h3,
+    .Texts h4,
+    .Texts p,
+    .btn a {
+        font-size: 14px;
     }
 }
