@@ -9,6 +9,9 @@ import { useEffect, useState } from "react";
 import { ObjectCustomHook } from "../../../../interface/info.model";
 import { FetchData } from "../../../../customHook/FetchData";
 import Loading from "../../../tools/loading/Loading";
+import ShowGitHubCalendar from "../../reactGitHubCalendar/ShowGitHubCalendar";
+
+
 
 const AboutMe: React.FC = () => {
 
@@ -71,6 +74,11 @@ const AboutMe: React.FC = () => {
         }
         </div>
       </div>
+      
+      {/* show my active in GitHub */}
+      <Slide direction="left">
+         <ShowGitHubCalendar/>
+      </Slide>
     </>
   );
 };

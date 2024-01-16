@@ -21,6 +21,7 @@
     "react": "^18.2.0",
     "react-awesome-reveal": "^4.2.5",
     "react-dom": "^18.2.0",
+    "react-github-calendar": "^4.0.10",
     "react-google-recaptcha": "^3.1.0",
     "react-icons": "^4.10.1",
     "react-scripts": "5.0.1",

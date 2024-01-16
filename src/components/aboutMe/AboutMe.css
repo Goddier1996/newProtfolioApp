@@ -243,7 +243,6 @@
   text-decoration: none;
   transition-duration: 0.4s;
   -webkit-transition-duration: 0.4s;
-  /* Safari */
 }
 
 .styleBtnDiploma button:hover {
@@ -275,6 +274,25 @@
 }
 
 
+.gitHubCalendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.styleCalendar {
+  background: rgba(0, 0, 0, 0.16);
+  border-radius: 2%;
+  padding: 1rem;
+}
+
+.styleCalendar h1 {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
 
 @media screen and (max-width: 768px) {
   .slider img {
@@ -304,5 +322,14 @@
 
   .showMyCV {
     margin-top: 2%;
+  }
+
+  .gitHubCalendar {
+    margin-bottom: 10%;
+  }
+  
+
+  .styleCalendar {
+    width: 90%;
   }
 }

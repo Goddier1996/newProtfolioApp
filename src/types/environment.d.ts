@@ -6,6 +6,7 @@ declare global {
       REACT_APP_TEMPLATE: string;
       REACT_APP_PASSWORD: string;
       REACT_APP_RECAPTCHA: string;
+      REACT_APP_GIT: string;
     }
   }
 }
