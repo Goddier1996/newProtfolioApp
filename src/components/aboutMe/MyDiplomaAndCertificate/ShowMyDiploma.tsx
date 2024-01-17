@@ -1,25 +1,16 @@
 import Swal from "sweetalert2";
 import "../AboutMe.css";
-import { MyDiploma, ObjectCustomHook } from "../../../interface/info.model";
+import { MyDiploma } from "../../../interface/info.model";
 import { FetchData } from "../../../customHook/FetchData";
-import { useEffect, useState } from "react";
+
 
 
 const ShowMyDiploma = () => {
 
   // customHook
-  const [saveOpjDataSendToCustomHook, SetSaveOpjDataSendToCustomHook] =
-    useState<ObjectCustomHook>({});
-  const { dataDiploma, loading } = FetchData(saveOpjDataSendToCustomHook);
+  const { dataDiploma, loading } = FetchData("Diploma", "");
 
-
-  const loadingDataDiploma = () => {
-    SetSaveOpjDataSendToCustomHook({
-      typeFetchData: "Diploma",
-    });
-  };
-
-
+  
   const showAllDataDiploma = (arr: Array<MyDiploma>) => {
     let optionItems: string = "";
 
@@ -53,17 +44,6 @@ const ShowMyDiploma = () => {
       confirmButtonColor: "green",
     });
   };
-
-
-  const aa = () => {
-alert("hi")
-  };
-
-
-
-  useEffect(() => {
-    loadingDataDiploma();
-  }, []);
 
 
   return (

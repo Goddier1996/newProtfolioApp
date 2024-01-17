@@ -1,9 +1,8 @@
-import { useRef, useContext, useState, useEffect } from "react";
+import { useRef, useContext } from "react";
 import Slider from "react-slick";
 import Project from "../showModelProjects/CardProjectModel";
 import "../Projects.css";
 import SelectCategoryProject from "../../../Context/SelectCategoryProject";
-import { ObjectCustomHook } from "../../../interface/info.model";
 import ButtonNextBackProjects from "./ButtonNextBackProjects";
 import { FetchData } from "../../../customHook/FetchData";
 import Loading from "../../tools/loading/Loading";
@@ -59,23 +58,9 @@ const SliderModelsProjects: React.FC = () => {
 
   const { typeProject } = useContext(SelectCategoryProject);
 
-  const [saveOpjDataSendToCustomHook, SetSaveOpjDataSendToCustomHook] =
-    useState<ObjectCustomHook>({});
-  const { dataProjects, loading } = FetchData(saveOpjDataSendToCustomHook);
+  const { dataProjects, loading } = FetchData("Projects", "");
 
   
-  const loadingDataProjects = () => {
-    SetSaveOpjDataSendToCustomHook({
-      typeFetchData: "Projects",
-    });
-  };
-
-
-  useEffect(() => {
-    loadingDataProjects();
-  }, []);
-
-
   return (
     <div className="ContainerSlider">
       {loading ? (

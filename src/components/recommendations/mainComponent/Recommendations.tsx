@@ -1,10 +1,9 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import Slider from "react-slick";
 import { Slide } from "react-awesome-reveal";
 import CardRecommendations from "../modelRecommendations/CardRecommendations";
 import "../Recommendations.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import { ObjectCustomHook } from "../../../interface/info.model";
 import ButtonNextBack from "../sliderNextBack/ButtonNextBack";
 import { FetchData } from "../../../customHook/FetchData";
 import Loading from "../../tools/loading/Loading";
@@ -50,26 +49,10 @@ let settings = {
 
 const Recommendations: React.FC = () => {
 
-  // here use customHook to fetch animal data
-  const [saveOpjDataSendToCustomHook, SetSaveOpjDataSendToCustomHook] =
-    useState<ObjectCustomHook>({});
-  const { dataRecommendations, loading } = FetchData(
-    saveOpjDataSendToCustomHook
-  );
+
+  const { dataRecommendations, loading } = FetchData("Recommendations", "");
 
   const arrowRef = useRef<any>(null);
-
-
-  const loadingDataRecommends = () => {
-    SetSaveOpjDataSendToCustomHook({
-      typeFetchData: "Recommendations",
-    });
-  };
-
-
-  useEffect(() => {
-    loadingDataRecommends();
-  }, []);
 
 
   return (

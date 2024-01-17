@@ -5,8 +5,6 @@ import Card from "../modelsCardsAboutMe/CardsAboutMe";
 import { Slide } from "react-awesome-reveal";
 import "../../AboutMe.css";
 import MyImage from "../MyImage";
-import { useEffect, useState } from "react";
-import { ObjectCustomHook } from "../../../../interface/info.model";
 import { FetchData } from "../../../../customHook/FetchData";
 import Loading from "../../../tools/loading/Loading";
 import ShowGitHubCalendar from "../../reactGitHubCalendar/ShowGitHubCalendar";
@@ -16,24 +14,9 @@ import ShowGitHubCalendar from "../../reactGitHubCalendar/ShowGitHubCalendar";
 const AboutMe: React.FC = () => {
 
 
-  // here use customHook to fetch animal data
-  const [saveOpjDataSendToCustomHook, SetSaveOpjDataSendToCustomHook] =
-    useState<ObjectCustomHook>({});
-  const { dataAboutMe , loading } = FetchData(saveOpjDataSendToCustomHook);
-
-
-  const loadingDataInfoAboutMe = () => {
-    SetSaveOpjDataSendToCustomHook({
-      typeFetchData: "AboutMe",
-    });
-  };
-
+  // here use customHook to fetch about cards data
+  const { dataAboutMe, loading } = FetchData("AboutMe", "");
   
-  useEffect(() => {
-    loadingDataInfoAboutMe();
-  }, []);
-
-
 
   return (
     <>

@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { GetCertificate, GetInfoAboutMe, GetMySkills, GetProjects, GetRecommends, GetDiploma } from "../Sanity/functionsFetchData";
-import { InfoAboutMe, ObjectCustomHook, MySkills, ShowMyProjects, Recommends, MyCertificate, MyDiploma } from "../interface/info.model";
+import { InfoAboutMe, MySkills, ShowMyProjects, Recommends, MyCertificate, MyDiploma } from "../interface/info.model";
 
   
-export const FetchData = (funcFetchData:ObjectCustomHook) => {
+export const FetchData = (typeFetchData:string,typeProject:string) => {
 
 
     const [dataAboutMe, setDataAboutMe] = useState<InfoAboutMe[]>([]);
@@ -22,7 +22,7 @@ export const FetchData = (funcFetchData:ObjectCustomHook) => {
 
         setLoading(true);
 
-        switch (funcFetchData.typeFetchData) {
+        switch (typeFetchData) {
       
             case "AboutMe":
                 GetInfoAboutMe()
@@ -48,7 +48,7 @@ export const FetchData = (funcFetchData:ObjectCustomHook) => {
             case "ProjectsCountFilterTypeProject":
                 GetProjects()
                     .then((data) => setDataProjects(data.filter((user: any) =>
-                        user.type.includes(funcFetchData.typeProject)
+                        user.type.includes(typeProject)
                     )))
                     .then(() => setLoading(false))
                     .catch((err) => setLoading(true))
@@ -83,9 +83,8 @@ export const FetchData = (funcFetchData:ObjectCustomHook) => {
       };
 
     useEffect(() => {
-        
         fetchData();
-    },[funcFetchData])
+    }, [typeFetchData]);
 
     return { dataAboutMe, dataCarouselMySkills, dataProjects, dataRecommendations, dataCertificates, dataDiploma, loading };
 }

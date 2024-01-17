@@ -1,7 +1,6 @@
 import Swal from "sweetalert2";
 import "../AboutMe.css";
-import { MyCertificate, ObjectCustomHook } from "../../../interface/info.model";
-import { useEffect, useState } from "react";
+import { MyCertificate } from "../../../interface/info.model";
 import { FetchData } from "../../../customHook/FetchData";
 
 
@@ -10,18 +9,9 @@ const ShowMyCertificate = () => {
 
 
   // customHook
-  const [saveOpjDataSendToCustomHook, SetSaveOpjDataSendToCustomHook] =
-    useState<ObjectCustomHook>({});
-  const { dataCertificates, loading } = FetchData(saveOpjDataSendToCustomHook);
+  const { dataCertificates, loading } = FetchData("Certificates", "");
 
-
-  const loadingDataCertificates = () => {
-    SetSaveOpjDataSendToCustomHook({
-      typeFetchData: "Certificates",
-    });
-  };
-
-
+  
   const showAllDataMyCertificate = (arr: Array<MyCertificate>) => {
     let optionItems: string = "";
 
@@ -60,11 +50,6 @@ const ShowMyCertificate = () => {
       confirmButtonText: "Close",
     });
   };
-
-
-  useEffect(() => {
-    loadingDataCertificates();
-  }, []);
 
 
 
