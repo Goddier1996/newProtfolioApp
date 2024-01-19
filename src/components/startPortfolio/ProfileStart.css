@@ -117,9 +117,7 @@
 }
 
 .Profile img {
-    width: 350px;
-    filter: drop-shadow(0px 10px 10px #82b5bda5);
-    transition: transform 400ms ease-in-out;
+    width: 300px;
     transform: rotate(15deg);
 }
 
@@ -134,7 +132,10 @@
     }
 
     .Profile img {
-        width: 200px;
+        width: 250px;
+        margin-top: -40%;
+        margin-bottom: -40%;
+
     }
 
     .ContainerProfileStart {
