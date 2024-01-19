@@ -1,6 +1,5 @@
 import { useState } from "react";
 import styled from "styled-components";
-// import { FaCode } from "react-icons/fa";
 import "./Menu.css";
 import { ObjectMenuOptions } from "../../interface/info.model";
 
@@ -24,8 +23,7 @@ const Header:React.FC = () => {
       <div className="ContainerMenu">
 
         <div className="Logo">
-          {/* <span><FaCode className="green" /></span> */}
-          <img src="https://i.postimg.cc/QN7XRWh6/qa.webp"/>
+          <img src="https://i.postimg.cc/QN7XRWh6/qa.webp" alt="Logo"/>
         </div>
 
         <div className="Nav" style={bar ? { height: "100vh" } : { height: 0 }}>
