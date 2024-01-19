@@ -24,7 +24,8 @@ const Header:React.FC = () => {
       <div className="ContainerMenu">
 
         <div className="Logo">
-          <span><FaCode className="green" /></span>
+          {/* <span><FaCode className="green" /></span> */}
+          <img src="https://i.postimg.cc/QN7XRWh6/qa.webp"/>
         </div>
 
         <div className="Nav" style={bar ? { height: "100vh" } : { height: 0 }}>

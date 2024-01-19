@@ -10,8 +10,38 @@
     animation: header 500ms ease-in-out;
 }
 
-.Logo span {
+/* .Logo span {
     font-size: 1.8rem;
+} */
+
+.Logo {
+    margin-top: -1.5%;
+}
+
+.Logo img {
+    height: 50px;
+    -webkit-animation: spin 5s linear infinite;
+    -moz-animation: spin 5s linear infinite;
+    animation: spin 5s linear infinite;
+}
+
+@-moz-keyframes spin {
+    50% {
+        -moz-transform: rotate(40deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    50% {
+        -webkit-transform: rotate(40deg);
+    }
+}
+
+@keyframes spin {
+    50% {
+        -webkit-transform: rotate(40deg);
+        transform: rotate(40deg);
+    }
 }
 
 .Nav span {
@@ -111,5 +141,9 @@
         font-size: 13px;
         cursor: pointer;
         font-weight: bold;
+    }
+
+    .Logo {
+        margin-top: 0%;
     }
 }
