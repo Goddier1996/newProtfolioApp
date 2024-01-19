@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import { FaCode } from "react-icons/fa";
+// import { FaCode } from "react-icons/fa";
 import "./Menu.css";
 import { ObjectMenuOptions } from "../../interface/info.model";
 
