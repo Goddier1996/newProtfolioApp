@@ -52,3 +52,9 @@ export interface ObjectCustomHook{
     typeFetchData?: string;
     typeProject?:any
 }
+
+
+export interface ObjectMenuOptions{
+    id?: any;
+    type?: string;
+}[]

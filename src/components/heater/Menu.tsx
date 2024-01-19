@@ -2,16 +2,19 @@ import { useState } from "react";
 import styled from "styled-components";
 import { FaCode } from "react-icons/fa";
 import "./Menu.css";
+import { ObjectMenuOptions } from "../../interface/info.model";
+
 
 
 const Header:React.FC = () => {
 
+
   const [bar, setBar] = useState<Boolean>(false);
 
-  const arrayMenuOptions: any = [
+  const arrayMenuOptions: Array<ObjectMenuOptions> = [
     { id: 1, type: "About" },
-    { id: 2, type: "project" },
-    { id: 3, type: "Recommendations" },
+    { id: 2, type: "Project's" },
+    { id: 3, type: "Recommendation's" },
     { id: 4, type: "Contact" },
   ];
 
@@ -26,7 +29,7 @@ const Header:React.FC = () => {
 
         <div className="Nav" style={bar ? { height: "100vh" } : { height: 0 }}>
 
-          {arrayMenuOptions.map((value: any) => (
+          {arrayMenuOptions.map((value: ObjectMenuOptions) => (
             <span key={value.id}>
               <a
                 aria-label={value.type}
@@ -46,8 +49,8 @@ const Header:React.FC = () => {
           className="bars"
           style={
             !bar
-              ? { backgroundColor: "#82b5bd" }
-              : { backgroundColor: "#8B0000",color:"white" }
+              ? { backgroundColor: "#82b5bd"}
+              : { backgroundColor: "#8B0000",color:"white"}
           }
         >
           <div className="bar">{!bar ? <p>Menu</p> : <p>Close</p>}</div>

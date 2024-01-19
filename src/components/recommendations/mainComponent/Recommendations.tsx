@@ -56,7 +56,7 @@ const Recommendations: React.FC = () => {
 
 
   return (
-    <div className="ContainerRecommendations" id="Recommendations">
+    <div className="ContainerRecommendations">
       <Slide className="titleAboutRecommendations" direction="left">
         <span className="green">Recommendations</span>
         <h1>what say about me</h1>

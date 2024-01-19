@@ -8,7 +8,7 @@ const Contact: React.FC = () => {
 
 
   return (
-    <div className="contact" id="Contact">
+    <div className="contact">
       
       <Slide direction="left">
        <ContactMe/>

@@ -20,7 +20,7 @@ const AboutMe: React.FC = () => {
 
   return (
     <>
-      <div className="ContainerAboutMe" id="About">
+      <div className="ContainerAboutMe">
         <Slide direction="down">
           <h1>
             About <span className="green">Me</span>

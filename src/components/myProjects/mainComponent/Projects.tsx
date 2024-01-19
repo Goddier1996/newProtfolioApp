@@ -6,7 +6,7 @@ import { Slide } from "react-awesome-reveal";
 const Projects:React.FC = () => {
 
   return (
-    <div className="ContainerMyProjects" id="project">
+    <div className="ContainerMyProjects">
       <Slide direction="left">
         <h1>
           My <span className="green">Projects</span>

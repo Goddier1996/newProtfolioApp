@@ -10,12 +10,15 @@ import Footer from "./components/footer/Footer";
 import { useEffect } from "react";
 import { sayShabbatShalom } from "./components/tools/popUpShabbatShalom/SayShabbatShalom";
 
+
+
 function App() {
 
   // here show popup animation when friday and saturday
   useEffect(() => {
     sayShabbatShalom();
   });
+
 
   return (
     <>
@@ -31,14 +34,19 @@ function App() {
           <ProfileStart />
         </div>
 
-        <AboutMe />
-
-        <div className="LightColor">
+        <div id="About">
+           <AboutMe />
+        </div>
+        
+        <div id="Project's" className="LightColor">
           <Projects />
         </div>
 
-        <Recommendations />
-        <div className="LightColor">
+        <div id="Recommendation's">
+          <Recommendations />
+        </div>
+        
+        <div id="Contact" className="LightColor">
           <Contact />
         </div>
 
