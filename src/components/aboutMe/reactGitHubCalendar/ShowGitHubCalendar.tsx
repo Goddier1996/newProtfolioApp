@@ -18,6 +18,7 @@ const ShowGitHubCalendar: React.FC = () => {
           blockSize={10.5}
           blockMargin={5}
           fontSize={11}
+          colorScheme="dark"
         />
       </div>
     </div>

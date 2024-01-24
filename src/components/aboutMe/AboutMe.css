@@ -307,9 +307,6 @@
     flex: 100%;
   }
 
-  .imgCertificate img {
-    height: 270px;
-  }
 
   .styleButtonEducation {
     flex-direction: column;

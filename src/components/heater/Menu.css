@@ -1,6 +1,5 @@
 .ContainerMenu {
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
     max-width: 1280px;
     width: 80%;
@@ -10,9 +9,6 @@
     animation: header 500ms ease-in-out;
 }
 
-/* .Logo span {
-    font-size: 1.8rem;
-} */
 
 .Logo {
     margin-top: -1.5%;

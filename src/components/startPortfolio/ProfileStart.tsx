@@ -43,7 +43,7 @@ const ProfileStart:React.FC = () => {
           </div>
         </div>
         <div className="Profile">
-          <img src="https://i.postimg.cc/KjV2TJ5S/yy.png" alt="profile" />
+          <img src="https://i.postimg.cc/mgmYVb9R/a2.webp" alt="profile" />
         </div>
       </Slide>
     </div>
