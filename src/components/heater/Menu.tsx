@@ -1,6 +1,8 @@
 import { useState } from "react";
 import styled from "styled-components";
 import { Slide } from "react-awesome-reveal";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import "./Menu.css";
 import { ObjectMenuOptions } from "../../interface/info.model";
 
@@ -22,10 +24,15 @@ const Header:React.FC = () => {
   return (
     <Container bar={bar}>
       <div className="ContainerMenu">
-
         <Slide direction="down">
           <div className="Logo">
-            <img src="https://i.postimg.cc/QN7XRWh6/qa.webp" alt="Logo"/>
+            <LazyLoadImage
+            src={"https://i.postimg.cc/QN7XRWh6/qa.webp"}
+            width={""}
+            height={50}
+            effect="blur"
+            alt="Logo"
+          />
          </div>
         </Slide>
 

@@ -1,8 +1,11 @@
 import { IoIosQuote } from "react-icons/io";
 import "../Recommendations.css";
 import { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import { Slide } from "react-awesome-reveal";
 import {Recommends} from "../../../interface/info.model"
+
 
 
 const CardRecommendations:React.FC<Recommends> = (props) => {
@@ -23,7 +26,13 @@ const CardRecommendations:React.FC<Recommends> = (props) => {
           </span>
         </div>
         <div className="FooterCard">
-          <img src={image.asset.url} alt={name} />
+          <LazyLoadImage
+            src={image.asset.url}
+            width={64}
+            height={64}
+            effect="blur"
+            alt={name}
+          />
           <div className="details">
             <h1>{name}</h1>
             <p>{position}</p>

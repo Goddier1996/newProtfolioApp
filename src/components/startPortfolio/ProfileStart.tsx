@@ -1,12 +1,14 @@
 import { AiOutlineGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import "./ProfileStart.css";
 
 
+const ProfileStart: React.FC = () => {
 
-const ProfileStart:React.FC = () => {
-  
+
   return (
     <div className="ContainerProfileStart">
       <Slide direction="left">
@@ -15,35 +17,50 @@ const ProfileStart:React.FC = () => {
           <h3>
             Software Developer Inclination towards Front End
             <br />
-            <br/>
-            Expert in <b className="green">React</b> and <b className="green">Server side technologies</b> (Node.js, Database) Ready For Any Challenge
+            <br />
+            Expert in <b className="green">React</b> and{" "}
+            <b className="green">Server side technologies</b> (Node.js,
+            Database) Ready For Any Challenge
           </h3>
-          <p>
-          Built a portfolio of 10+ complex projects.
-          </p>
+          <p>Built a portfolio of 10+ complex projects.</p>
 
           <div className="btn">
-            <a aria-label="about me" href="#About">About Me</a>
+            <a aria-label="about me" href="#About">
+              About Me
+            </a>
           </div>
 
           <div className="Social">
             <p>Check out my</p>
             <div className="social-icons">
               <span>
-                <a aria-label="show im my git all my projects" href="https://github.com/Goddier1996">
+                <a
+                  aria-label="show im my git all my projects"
+                  href="https://github.com/Goddier1996"
+                >
                   <AiOutlineGithub />
                 </a>
               </span>
               <span>
-                <a aria-label="connect to my linkedin" href="https://www.linkedin.com/in/artem-kot96">
+                <a
+                  aria-label="connect to my linkedin"
+                  href="https://www.linkedin.com/in/artem-kot96"
+                >
                   <FaLinkedinIn />
                 </a>
               </span>
             </div>
           </div>
         </div>
+
         <div className="Profile">
-          <img src="https://i.postimg.cc/mgmYVb9R/a2.webp" alt="profile" />
+          <LazyLoadImage
+            src={"https://i.postimg.cc/mgmYVb9R/a2.webp"}
+            width={250}
+            height={""}
+            effect="blur"
+            alt="profile"
+          />
         </div>
       </Slide>
     </div>
