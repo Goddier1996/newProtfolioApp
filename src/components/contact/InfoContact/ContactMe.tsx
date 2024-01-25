@@ -1,3 +1,5 @@
+import LazyImage from "../../tools/LazyLoadImage/LazyImage";
+
 
 
 const ContactMe: React.FC = () => {
@@ -6,9 +8,10 @@ const ContactMe: React.FC = () => {
     <>
       <div className="modelIcons">
         <div className="icons">
-          <img
+          <LazyImage
             src="https://i.postimg.cc/KvYH1Qmr/2.webp"
-            height="60"
+            width={NaN}
+            height={60}
             alt="my email"
           />
           <h3 className="contactEmail">my email</h3>
@@ -16,9 +19,10 @@ const ContactMe: React.FC = () => {
         </div>
 
         <div className="icons">
-          <img
+          <LazyImage
             src="https://i.postimg.cc/P5pV4xpC/3.webp"
-            height="60"
+            width={NaN}
+            height={60}
             alt="my number"
           />
           <h3 className="contactPhone">my number</h3>
@@ -26,9 +30,10 @@ const ContactMe: React.FC = () => {
         </div>
 
         <div className="icons">
-          <img
+          <LazyImage
             src="https://i.postimg.cc/vBMPbtPn/1.webp"
-            height="60"
+            width={NaN}
+            height={60}
             alt="my address"
           />
           <h3 className="contactAddress">my address</h3>

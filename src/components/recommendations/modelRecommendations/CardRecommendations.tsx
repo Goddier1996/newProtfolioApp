@@ -1,20 +1,22 @@
 import { IoIosQuote } from "react-icons/io";
 import "../Recommendations.css";
 import { useState } from "react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
 import { Slide } from "react-awesome-reveal";
-import {Recommends} from "../../../interface/info.model"
+import { Recommends } from "../../../interface/info.model";
+import LazyImage from "../../tools/LazyLoadImage/LazyImage";
 
 
 
-const CardRecommendations:React.FC<Recommends> = (props) => {
-  
+const CardRecommendations: React.FC<Recommends> = (props) => {
+
+
   const { name, position, image, bio } = props;
-  const [showMore, setShowMore] = useState<Boolean>(false);
+  const [showMoreBio, setShowMoreBio] = useState<Boolean>(false);
+  const [showMorePosition, setShowMorePosition] = useState<Boolean>(false);
 
+  const sizeBio: number = bio.length;
+  const sizePosition: number = position.length;
 
-  const sizeWorldInDisc: any = bio.length;
 
 
   return (
@@ -26,29 +28,35 @@ const CardRecommendations:React.FC<Recommends> = (props) => {
           </span>
         </div>
         <div className="FooterCard">
-          <LazyLoadImage
-            src={image.asset.url}
-            width={64}
-            height={64}
-            effect="blur"
-            alt={name}
-          />
+          <LazyImage src={image.asset.url} width={64} height={64} alt="Logo" />
           <div className="details">
             <h1>{name}</h1>
-            <p>{position}</p>
+            <p>
+              {sizePosition < 50 ? (
+                <>{position}</>
+              ) : (
+                <>
+                  {showMorePosition ? position : `${position.substring(0, 40)}`}
+
+                  <b onClick={() => setShowMorePosition(!showMorePosition)}>
+                    {showMorePosition ? "Show Less" : "Read More"}
+                  </b>
+                </>
+              )}
+            </p>
           </div>
         </div>
 
         <div className="BodyCard">
           <p>
-            {sizeWorldInDisc < 140 ? (
+            {sizeBio < 140 ? (
               <>{bio}</>
             ) : (
               <>
-                {showMore ? bio : `${bio.substring(0, 140)}`}
-                  
-                <b onClick={() => setShowMore(!showMore)}>
-                  {showMore ? "Show Less" : "Read More"}
+                {showMoreBio ? bio : `${bio.substring(0, 140)}`}
+
+                <b onClick={() => setShowMoreBio(!showMoreBio)}>
+                  {showMoreBio ? "Show Less" : "Read More"}
                 </b>
               </>
             )}

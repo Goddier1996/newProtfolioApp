@@ -1,14 +1,13 @@
 import { useState } from "react";
 import styled from "styled-components";
 import { Slide } from "react-awesome-reveal";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
 import "./Menu.css";
 import { ObjectMenuOptions } from "../../interface/info.model";
+import LazyImage from "../tools/LazyLoadImage/LazyImage";
 
 
 
-const Header:React.FC = () => {
+const Header: React.FC = () => {
 
 
   const [bar, setBar] = useState<Boolean>(false);
@@ -21,24 +20,22 @@ const Header:React.FC = () => {
   ];
 
 
+
   return (
     <Container bar={bar}>
       <div className="ContainerMenu">
         <Slide direction="down">
           <div className="Logo">
-            <LazyLoadImage
-            src={"https://i.postimg.cc/QN7XRWh6/qa.webp"}
-            width={""}
-            height={50}
-            effect="blur"
-            alt="Logo"
-          />
-         </div>
+            <LazyImage
+              src="https://i.postimg.cc/QN7XRWh6/qa.webp"
+              width={NaN}
+              height={50}
+              alt="Logo"
+            />
+          </div>
         </Slide>
 
-
         <div className="Nav" style={bar ? { height: "100vh" } : { height: 0 }}>
-
           {arrayMenuOptions.map((value: ObjectMenuOptions) => (
             <span key={value.id}>
               <a
@@ -59,8 +56,8 @@ const Header:React.FC = () => {
           className="bars"
           style={
             !bar
-              ? { backgroundColor: "#82b5bd"}
-              : { backgroundColor: "#8B0000",color:"white"}
+              ? { backgroundColor: "#82b5bd" }
+              : { backgroundColor: "#8B0000", color: "white" }
           }
         >
           <div className="bar">{!bar ? <p>Menu</p> : <p>Close</p>}</div>
@@ -70,8 +67,8 @@ const Header:React.FC = () => {
   );
 };
 
-export default Header;
 
+export default Header;
 
 
 

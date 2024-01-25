@@ -1,13 +1,11 @@
 import { AiOutlineGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
 import "./ProfileStart.css";
+import LazyImage from "../tools/LazyLoadImage/LazyImage";
 
 
 const ProfileStart: React.FC = () => {
-
 
   return (
     <div className="ContainerProfileStart">
@@ -54,11 +52,10 @@ const ProfileStart: React.FC = () => {
         </div>
 
         <div className="Profile">
-          <LazyLoadImage
-            src={"https://i.postimg.cc/mgmYVb9R/a2.webp"}
+          <LazyImage
+            src="https://i.postimg.cc/mgmYVb9R/a2.webp"
             width={250}
-            height={""}
-            effect="blur"
+            height={NaN}
             alt="profile"
           />
         </div>

@@ -139,7 +139,6 @@
     cursor: pointer;
     transition-duration: 0.4s;
     -webkit-transition-duration: 0.4s;
-    /* Safari */
 }
 
 .BodyCard b:hover {
@@ -162,13 +161,26 @@
 
 
 .FooterCard h1 {
-    font-size: 1.2rem;
+    font-size: 16px;
     font-weight: 700;
 }
 
 .FooterCard p {
     font-size: 0.8rem;
     color: rgba(255, 255, 255, 0.5);
+}
+
+.FooterCard b {
+    color: #82b5bd;
+    padding-left: 2%;
+    font-size: 13px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+}
+
+.FooterCard b:hover {
+    color: #82b5bda0;
 }
 
 

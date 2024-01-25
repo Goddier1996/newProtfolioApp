@@ -58,3 +58,11 @@ export interface ObjectMenuOptions{
     id?: any;
     type?: string;
 }[]
+
+
+export interface LazyImg{
+    src?: string;
+    width?: number
+    height?:number
+    alt?:string
+}
