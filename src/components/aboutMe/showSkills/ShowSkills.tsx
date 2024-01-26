@@ -1,4 +1,5 @@
 import { MySkills } from "../../../interface/info.model";
+import LazyImage from "../../tools/LazyLoadImage/LazyImage";
 
 
 const ShowSkills: React.FC<{
@@ -7,7 +8,7 @@ const ShowSkills: React.FC<{
 
   return (
     <div className="slide">
-      <img src={value.image.asset.url} alt="skills" />
+      <LazyImage src={value.image.asset.url} width={NaN} height={NaN} alt="skills" />
     </div>
   );
 };
