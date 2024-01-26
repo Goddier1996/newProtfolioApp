@@ -1,20 +1,19 @@
 
 const ShowMyCV = () => {
-    
+
   return (
-    <>
-      <div className="styleBtnDiploma">
+    <div className="myCV">
+      <div className="showMyCV">
         <a
-          className="styleBtnDiploma"
           href={require("../../../images/Artem Kot - Front End CV.pdf")}
           aria-label="My CV"
           download="Artem Kot - Front End CV"
           target="_blank"
         >
-          <button type="button">My CV</button>
+          CV
         </a>
       </div>
-    </>
+    </div>
   );
 };
 

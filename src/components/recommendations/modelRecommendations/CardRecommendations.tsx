@@ -1,4 +1,5 @@
 import { IoIosQuote } from "react-icons/io";
+import Swal from "sweetalert2";
 import "../Recommendations.css";
 import { useState } from "react";
 import { Slide } from "react-awesome-reveal";
@@ -11,11 +12,26 @@ const CardRecommendations: React.FC<Recommends> = (props) => {
 
 
   const { name, position, image, bio } = props;
-  const [showMoreBio, setShowMoreBio] = useState<Boolean>(false);
+  // const [showMoreBio, setShowMoreBio] = useState<Boolean>(false);
   const [showMorePosition, setShowMorePosition] = useState<Boolean>(false);
 
   const sizeBio: number = bio.length;
   const sizePosition: number = position.length;
+
+
+
+  const showRecommendationsMore = (bio: string) => {
+
+    Swal.fire({
+      position: "center",
+      confirmButtonColor: "green",
+      icon: "info",
+      iconColor: "#f9a51f",
+      html: `<div>
+      <p>${bio}</p>
+           </div>`,
+    });
+  };
 
 
 
@@ -32,11 +48,11 @@ const CardRecommendations: React.FC<Recommends> = (props) => {
           <div className="details">
             <h1>{name}</h1>
             <p>
-              {sizePosition < 50 ? (
+              {sizePosition < 40 ? (
                 <>{position}</>
               ) : (
                 <>
-                  {showMorePosition ? position : `${position.substring(0, 40)}`}
+                  {showMorePosition ? position : `${position.substring(0,20)}`}
 
                   <b onClick={() => setShowMorePosition(!showMorePosition)}>
                     {showMorePosition ? "Show Less" : "Read More"}
@@ -53,11 +69,14 @@ const CardRecommendations: React.FC<Recommends> = (props) => {
               <>{bio}</>
             ) : (
               <>
-                {showMoreBio ? bio : `${bio.substring(0, 140)}`}
+                {/* {showMoreBio ? bio : `${bio.substring(0, 140)}`}
 
                 <b onClick={() => setShowMoreBio(!showMoreBio)}>
                   {showMoreBio ? "Show Less" : "Read More"}
-                </b>
+                </b> */}
+                {bio.substring(0, 140)}
+
+                <b onClick={() => showRecommendationsMore(bio)}>Read More</b>
               </>
             )}
           </p>

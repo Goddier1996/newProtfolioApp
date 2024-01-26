@@ -25,9 +25,7 @@ const MyImageInfoAboutMe: React.FC = () => {
       </div>
 
       {/* show my CV */}
-      <div className="showMyCV">
-        <ShowMyCV />
-      </div>
+      <ShowMyCV />
 
     </div>
   );

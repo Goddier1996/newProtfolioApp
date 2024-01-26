@@ -6,11 +6,9 @@ const ShowSkills: React.FC<{
 }> = ({ value }) => {
 
   return (
-    <>
-      <div className="slide">
-        <img src={value.image.asset.url} alt="skills" />
-      </div>
-    </>
+    <div className="slide">
+      <img src={value.image.asset.url} alt="skills" />
+    </div>
   );
 };
 

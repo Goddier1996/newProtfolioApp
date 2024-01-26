@@ -3,13 +3,10 @@ import ShowSkills from "./ShowSkills";
 import { FetchData } from "../../../customHook/FetchData";
 
 
-
 const CarouselMySkills: React.FC = () => {
-
 
   // here use customHook
   const { dataCarouselMySkills } = FetchData("CarouselMySkills", "");
-
 
   return (
     <div className="slider">

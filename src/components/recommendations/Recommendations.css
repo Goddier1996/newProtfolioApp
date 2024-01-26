@@ -75,13 +75,11 @@
     background-color: transparent;
     margin-left: 1.5rem;
     border: none;
-    /* background-color: #f9a51f; */
     cursor: pointer;
     font-size: 32px;
     color: #f9a51f;
     transition-duration: 0.4s;
     -webkit-transition-duration: 0.4s;
-    /* Safari */
 }
 
 .Buttons button:hover {
@@ -95,8 +93,6 @@
         display: none;
     }
 }
-
-
 
 
 
@@ -115,8 +111,10 @@
 
 .Header {
     display: flex;
-    justify-content: end;
-    margin-bottom: -2.5rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: -1.5rem;
+    margin-top: -3%;
 }
 
 .Header .quote {
@@ -128,9 +126,10 @@
 
 .BodyCard {
     font-size: 13px;
-    margin-bottom: 42%;
+    margin-bottom: 35%;
     margin-top: 7%;
 }
+
 
 .BodyCard b {
     padding-left: 2%;
@@ -196,8 +195,9 @@
         font-size: 0.9rem;
     }
 
-    .FooterCard p {
-        font-size: 0.6rem;
+    .FooterCard p,
+    .FooterCard b {
+        font-size: 12px;
     }
 }
 
