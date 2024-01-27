@@ -304,4 +304,10 @@
   .styleCalendar {
     width: 90%;
   }
+
+
+  .slider img {
+    width: auto;
+    height: 45px;
+  }
 }
