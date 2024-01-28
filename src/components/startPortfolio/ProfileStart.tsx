@@ -13,14 +13,14 @@ const ProfileStart: React.FC = () => {
         <div className="Texts">
           <h1 className="green">Artem Kot</h1>
           <h3>
-            Software Developer Inclination towards Front End
+            Software Developer with focus on <b className="green">Frontend</b>
             <br />
             <br />
-            Expert in <b className="green">React</b> and{" "}
-            <b className="green">Server side technologies</b> (Node.js,
-            Database) Ready For Any Challenge
+            Expert in <b className="green">React</b> &{" "}
+            <b className="green">Backend technologies</b> Node.js and Database
+            For me development is like a computer game <b style={{fontSize:"17px"}}>🎯</b>
           </h3>
-          <p>Built a portfolio of 10+ complex projects.</p>
+          <p>Creating a best functional & user experience at project's.</p>
 
           <div className="btn">
             <a aria-label="about me" href="#About">
