@@ -17,7 +17,7 @@ const ProfileStart: React.FC = () => {
             <br />
             <br />
             Expert in <b className="green">React</b> &{" "}
-            <b className="green">Backend technologies</b> Node.js and Database
+            <b className="green">Server technologies</b> (Node.js and Database)
             For me development is like a computer game <b style={{fontSize:"17px"}}>🎯</b>
           </h3>
           <p>Creating a best functional & user experience at project's.</p>
