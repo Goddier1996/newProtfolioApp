@@ -15,7 +15,6 @@
     font-size: 15px;
     transition-duration: 0.4s;
     -webkit-transition-duration: 0.4s;
-    /* Safari */
 }
 
 .styleTextType h6:hover {
