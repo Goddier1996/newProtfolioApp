@@ -26,18 +26,15 @@
 }
 
 .icons h3 {
-    color: rgba(255, 255, 255, 0.793);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 17px;
     padding: .5rem 0;
     padding-top: 1rem;
 }
 
 .icons p {
-    color: rgba(255, 255, 255, 0.616);
-    font-weight: 600;
+    color: rgba(255, 255, 255, 0.5);
     font-size: 14px;
-    text-decoration: none;
 }
 
 .inputValue {
