@@ -13,10 +13,10 @@ const ProfileStart: React.FC = () => {
         <div className="Texts">
           <h1 className="green">Artem Kot</h1>
           <h3>
-             Practical Software Engineering with focus on <b className="green">Frontend</b>
+             Software Engineering | Frontend Developer
             <br />
             <br />
-            experienced with <b className="green">React frameworks </b> &{" "}
+            expert in <b className="green">React frameworks </b> &{" "}
             <b className="green">Server technologies </b> 
             Built a portfolio of 10+ personal projects
           </h3>
