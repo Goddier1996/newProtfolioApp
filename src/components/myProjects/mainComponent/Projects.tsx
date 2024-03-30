@@ -3,8 +3,7 @@ import SelectTypeProject from "../sliderSelectTypeProject/SelectTypeProject";
 import { Slide } from "react-awesome-reveal";
 
 
-const Projects:React.FC = () => {
-
+const Projects: React.FC = () => {
   return (
     <div className="ContainerMyProjects">
       <Slide direction="left">
@@ -18,10 +17,14 @@ const Projects:React.FC = () => {
         </p>
       </Slide>
 
-      {/* here show mini menu select type to show project */}
-      <SelectTypeProject />
+      
+      <Slide direction="left">
+        {/* here show mini menu select type to show project */}
+        <SelectTypeProject />
+      </Slide>
     </div>
   );
 };
+
 
 export default Projects;
