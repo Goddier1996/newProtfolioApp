@@ -3,9 +3,32 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
 import "./ProfileStart.css";
 import LazyImage from "../tools/LazyLoadImage/LazyImage";
+import Swal from "sweetalert2";
+
 
 
 const ProfileStart: React.FC = () => {
+
+
+  const numberMyCodeLine = () => {
+    Swal.fire({
+      html: `
+      <div class="positionCertificate">
+         <h6>Number code lines in my
+            <span class="green">GitHub</span>
+         </h6>
+         <p class="infoCodeLine">Click on the image to see info</p>
+         <div class="positionImgCodeLine">
+             <a aria-label="code line number" href="https://drive.google.com/file/d/1UHjUHwhFt7USDCRpUEF9ySIBh5Rn0p3V/view?usp=sharing">
+             <img src="https://i.postimg.cc/h4p3dXpy/Screenshot-2024-04-04-185856.png" alt="line number"/>
+             </a>
+        </div>
+      </div>`,
+      confirmButtonColor: "green",
+      confirmButtonText: "Close",
+    });
+  };
+
 
   return (
     <div className="ContainerProfileStart">
@@ -13,11 +36,11 @@ const ProfileStart: React.FC = () => {
         <div className="Texts">
           <h1 className="green">Artem Kot</h1>
           <h3>
-             Software Engineering | Frontend Developer
+            Software Engineering | Frontend Developer
             <br />
             <br />
             expert in <b className="green">React frameworks </b> &{" "}
-            <b className="green">Server technologies </b> 
+            <b className="green">Server technologies </b>
             Built a portfolio of 10+ personal projects
           </h3>
           <p>Creating a best functional & user experience at project's.</p>
@@ -46,6 +69,14 @@ const ProfileStart: React.FC = () => {
                 >
                   <FaLinkedinIn />
                 </a>
+              </span>
+
+              <span
+                style={{ background: "#f9a51f" }}
+                className="codeKines"
+                onClick={() => numberMyCodeLine()}
+              >
+                1.7M
               </span>
             </div>
           </div>
