@@ -44,7 +44,9 @@ const ShowMyCertificate = () => {
          <h6>Select Certificate to See
             <span class="green">More info</span>
          </h6>
+         <div class="showImagesCertificate">
           ${showAllDataMyCertificate(dataCertificates)}
+          </div>
       </div>`,
       confirmButtonColor: "green",
       confirmButtonText: "Close",

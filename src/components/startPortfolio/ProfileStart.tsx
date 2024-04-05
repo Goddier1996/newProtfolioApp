@@ -17,7 +17,7 @@ const ProfileStart: React.FC = () => {
          <h6>Number code lines in my
             <span class="green">GitHub</span>
          </h6>
-         <p class="infoCodeLine">Click on the image to see info</p>
+         <p class="infoCodeLine">Click on the image to see more info</p>
          <div class="positionImgCodeLine">
              <a aria-label="code line number" href="https://drive.google.com/file/d/1UHjUHwhFt7USDCRpUEF9ySIBh5Rn0p3V/view?usp=sharing">
              <img src="https://i.postimg.cc/h4p3dXpy/Screenshot-2024-04-04-185856.png" alt="line number"/>
@@ -41,7 +41,7 @@ const ProfileStart: React.FC = () => {
             <br />
             expert in <b className="green">React frameworks </b> &{" "}
             <b className="green">Server technologies </b>
-            Built a portfolio of 10+ personal projects
+            Built a portfolio of 5+ personal projects
           </h3>
           <p>Creating a best functional & user experience at project's.</p>
 
@@ -73,7 +73,7 @@ const ProfileStart: React.FC = () => {
 
               <span
                 style={{ background: "#f9a51f" }}
-                className="codeKines"
+                className="codeLines"
                 onClick={() => numberMyCodeLine()}
               >
                 1.7M

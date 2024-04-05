@@ -185,6 +185,13 @@
   justify-content: space-around;
 }
 
+.showImagesCertificate {
+  overflow: scroll;
+  overflow-x: hidden;
+  /* Hide horizontal scrollbar */
+  height: 270px;
+  width: 100%;
+}
 
 .positionCertificate h6 {
   font-size: 20px;
@@ -195,7 +202,7 @@
 
 .imgCertificate img {
   padding: 3%;
-  height: 136px;
+  height: 240px;
   width: auto;
   border-radius: 2%;
   opacity: 0.9;
