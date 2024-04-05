@@ -291,6 +291,10 @@
     flex: 100%;
   }
 
+  .imgCertificate img {
+    height: 200px;
+  }
+  
   .showImagesCertificate {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
