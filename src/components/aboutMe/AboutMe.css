@@ -290,6 +290,10 @@
     flex: 100%;
   }
 
+  .showImagesCertificate {
+    overflow-y: scroll;
+  }
+
   .styleButtonEducation {
     flex-direction: column;
     align-items: center;
