@@ -188,6 +188,7 @@
 .showImagesCertificate {
   overflow: scroll;
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
   /* Hide horizontal scrollbar */
   height: 270px;
   width: 100%;
@@ -292,6 +293,7 @@
 
   .showImagesCertificate {
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 
   .styleButtonEducation {
