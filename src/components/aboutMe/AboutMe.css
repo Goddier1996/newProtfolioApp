@@ -297,11 +297,6 @@
     height: 200px;
   }
   
-  .showImagesCertificate {
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-  }
-
   .styleButtonEducation {
     flex-direction: column;
     align-items: center;
