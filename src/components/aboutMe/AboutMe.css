@@ -132,8 +132,8 @@
 }
 
 .slider img {
-  width: 100%;
-  height: 55px;
+  width: 55px;
+  height: auto;
   object-fit: cover;
   clip-path: none;
 }
@@ -322,14 +322,12 @@
     margin-bottom: 10%;
   }
 
-
   .styleCalendar {
     width: 90%;
   }
 
-
   .slider img {
-    width: auto;
-    height: 45px;
+    width: 45px;
+    height: auto;
   }
 }
