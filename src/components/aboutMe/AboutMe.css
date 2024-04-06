@@ -191,9 +191,17 @@
   -webkit-overflow-scrolling: touch; */
 
   height: 270px;
-  overflow-y: scroll;
+	label: scroll-box;
+	overflow-y: auto;
   scroll-behavior: smooth;
   width: 100%;
+}
+
+@supports (-webkit-touch-callout: none) {
+  /* CSS specific to iOS devices */
+  .showImagesCertificate {
+    height: -webkit-fill-available;
+  }
 }
 
 .positionCertificate h6 {
