@@ -36,7 +36,7 @@ const ProfileStart: React.FC = () => {
         <div className="Texts">
           <h1 className="green">Artem Kot</h1>
           <h3>
-            Software Engineering | Frontend Developer
+            Software Engineering
             <br />
             <br />
             expert in <b className="green">React frameworks </b> &{" "}
