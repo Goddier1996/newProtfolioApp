@@ -8,24 +8,32 @@ import Contact from "./components/contact/mainComponent/Contact";
 import ScrollUpButton from "./components/tools/scrollUp/ScrollUpButton";
 import Footer from "./components/footer/Footer";
 import { useEffect } from "react";
-import { sayShabbatShalom } from "./components/tools/popUpShabbatShalom/SayShabbatShalom";
-
+// import { sayShabbatShalom } from "./components/tools/popUpShabbatShalom/SayShabbatShalom";
+import { showPopUpInfoApp } from "./components/tools/startPopUpSite/ShowAboutMeStartPopUp";
+import { useMediaQuery } from "@mui/material";
 
 
 function App() {
 
-  // here show popup animation when friday and saturday
+
+  const mobileScreen = useMediaQuery("(min-width:768px)", { noSsr: true });
+
   useEffect(() => {
-    sayShabbatShalom();
+    // show start popup about me video, show only in desktop screen NO MOBILE
+    if (mobileScreen && !sessionStorage.getItem("startPopUp")) {
+      showPopUpInfoApp();
+    }
+
+    // here show popup animation when friday and saturday
+    // sayShabbatShalom();
   });
 
 
   return (
     <>
       <ScrollUpButton />
-      
-      <div className="ContainerApp">
 
+      <div className="ContainerApp">
         <div className="LightColor">
           <Header />
         </div>
@@ -35,9 +43,9 @@ function App() {
         </div>
 
         <div id="About">
-           <AboutMe />
+          <AboutMe />
         </div>
-        
+
         <div id="Project's" className="LightColor">
           <Projects />
         </div>
@@ -45,7 +53,7 @@ function App() {
         <div id="Recommendation's">
           <Recommendations />
         </div>
-        
+
         <div id="Contact" className="LightColor">
           <Contact />
         </div>
