@@ -12,7 +12,10 @@ https://github.com/Goddier1996/newProtfolioApp/assets/59862302/d1950b45-744b-4e5
 
 
 
-https://github.com/Goddier1996/newProtfolioApp/assets/59862302/56cc74f4-b54a-48c8-b5ea-e58f52c2a4bf
+
+https://github.com/Goddier1996/newProtfolioApp/assets/59862302/35a1a473-2795-4ed8-9ce6-2ec780fb70ab
+
+
 
 
 
