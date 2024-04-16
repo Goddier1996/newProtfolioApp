@@ -3,9 +3,10 @@ const ShowInfoAboutMe = () => {
   return (
     <>
       <p className="aboutMe">
-        I"m Software Developer 👨🏻‍💻
+        
+        I'm a software developer,
         <br />
-        Developing cool things with the help of my trusty little companion 😸.
+        Developing cool things with the help of my trusty little companion.
         <br />
         <br />
         With a strong inclination towards <b className="highlight">Frontend</b>,
