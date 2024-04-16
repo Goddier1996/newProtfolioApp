@@ -5,37 +5,27 @@ const ShowInfoAboutMe = () => {
       <p className="aboutMe">
         I"m Software Developer 👨🏻‍💻
         <br />
-        Me and my little helper cat 😸 developing cool things.
+        Developing cool things with the help of my trusty little companion 😸.
         <br />
         <br />
         With a strong inclination towards <b className="highlight">Frontend</b>,
-        but can creating project with Client side and Server side together.
+        I can adeptly navigate both Client-side and Server-side development realms.
         <br />
-        Specializing in <b className="highlight">React frameworks</b>and
-        understanding how developer with
+        Specializing in <b className="highlight">React frameworks</b>
+        I also possess a comprehensive understanding of
         <b className="highlight">Server side (Backend)</b> Node.js, mongoDB and
         MMSQL.
         <br />
         <br />
         <b className="highlight">About my Experience</b>
         <br />
-        Creating complex projects from scratch that can show best functional and
-        user experience, additionally responsive projects for all screens.
+        Creating projects from scratch that showcase optimal functionality and user experience, alongside ensuring responsiveness across all screens.
         <br />
         <br />
-        The top 5 my projects, Building with React frameworks and cool UI
-        component libraries to create the best user experience all my projects
-        can see in my portfolio. Additionally creating Server side to save all
-        data from website or app and control them, use Node.js, Express and
-        database MongoDB or MMSQL.
+        My top 5 projects, built using React frameworks and incorporating cutting-edge UI component libraries, are featured prominently in my portfolio. Additionally, I specialize in crafting server-side solutions to store and manage data using technologies like Node.js, Express, and either MongoDB or MSSQL databases.
         <br />
         <br />
-        I like to challenge myself with complex things. Has the ability to
-        self-learn new technologies and to work in a group / independently. For
-        me development is like a computer game. Learns new things in programming
-        every day and also learns to deal with problems that exist during the
-        creation of project’s. And taking courses in Udemy to increase my
-        talents.
+        I like to challenge myself with complex challenges. I have the ability to self-learn new technologies and to work in a group / independently. To me, development is like a computer game. Learn new programming concepts daily daily and adeptly problem-solving during project creation. I actively seek to enhance my skills through Udemy courses.
         <br />
         <br />
         <b className="highlight">My hobbies</b>

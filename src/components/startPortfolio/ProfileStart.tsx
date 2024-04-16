@@ -36,14 +36,14 @@ const ProfileStart: React.FC = () => {
         <div className="Texts">
           <h1 className="green">Artem Kot</h1>
           <h3>
-            Software Engineering
+          Software Engineer
             <br />
             <br />
-            expert in <b className="green">React frameworks </b> &{" "}
-            <b className="green">Server technologies </b>
-            Built a portfolio of 5+ personal projects
+            Expert In <b className="green">React Frameworks </b> &{" "}
+            <b className="green">Server Technologies </b>
+            Built A Portfolio Of 5+ Personal Projects
           </h3>
-          <p>Creating a best functional & user experience at project's.</p>
+          <p>Creating the optimal blend of functionality & user experience in project development.</p>
 
           <div className="btn">
             <a aria-label="about me" href="#About">
