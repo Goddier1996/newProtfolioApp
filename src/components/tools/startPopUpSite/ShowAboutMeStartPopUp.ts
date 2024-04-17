@@ -11,10 +11,10 @@ export function showPopUpInfoApp() {
           <video
             class="videoShowPopUpAboutMe"
             controls
-            poster="https://i.postimg.cc/4ymvK455/12.webp"
+            poster="https://i.postimg.cc/mDzh2Rh7/123.webp"
            >
             <source
-            src="https://github.com/Goddier1996/newProtfolioApp/assets/59862302/35a1a473-2795-4ed8-9ce6-2ec780fb70ab"
+            src="https://github.com/Goddier1996/newProtfolioApp/assets/59862302/47c55fde-6e34-47c8-bef5-e58162283bdf"
             type="video/mp4">
             </video>
         </div>`,
