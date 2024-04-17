@@ -10,10 +10,13 @@ skills use : React , TypeScript , sweetalert2 , style-components , slider , slid
 https://github.com/Goddier1996/newProtfolioApp/assets/59862302/d1950b45-744b-4e55-b9d3-f0e3ede009ed
 
 
+https://github.com/Goddier1996/newProtfolioApp/assets/59862302/47c55fde-6e34-47c8-bef5-e58162283bdf
 
 
 
-https://github.com/Goddier1996/newProtfolioApp/assets/59862302/35a1a473-2795-4ed8-9ce6-2ec780fb70ab
+
+
+
 
 
 
