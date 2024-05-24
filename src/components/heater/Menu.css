@@ -96,10 +96,10 @@
 }
 
 
-@media (max-width: 640px) {
+@media screen and (max-width: 768px) {
 
     .ContainerMenu {
-        padding: 2rem 0;
+        padding: 2.5rem 0;
     }
 
     .bars {

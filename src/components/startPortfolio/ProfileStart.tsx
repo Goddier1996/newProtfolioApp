@@ -30,25 +30,43 @@ const ProfileStart: React.FC = () => {
   };
 
 
+
   return (
     <div className="ContainerProfileStart">
       <Slide direction="left">
         <div className="Texts">
           <h1 className="green">Artem Kot</h1>
           <h3>
-          Software Engineer
+            Software Engineer
             <br />
             <br />
             Expert In <b className="green">React Frameworks </b> &{" "}
             <b className="green">Server Technologies </b>
             Built A Portfolio Of 5+ Personal Projects
           </h3>
-          <p>Creating the optimal blend of functionality & user experience in project development.</p>
+          <p>
+            Creating the optimal blend of functionality & user experience in
+            project development.
+          </p>
 
-          <div className="btn">
-            <a aria-label="about me" href="#About">
-              About Me
-            </a>
+          <div className="positionButtonAndLineGit">
+            <div className="btn">
+              <a aria-label="about me" href="#About">
+                About Me
+              </a>
+            </div>
+
+            <div
+              className="countLineCodeGit"
+              onClick={() => numberMyCodeLine()}
+            >
+              <LazyImage
+                src="https://i.postimg.cc/hjpXkch0/line-code.webp"
+                width={305}
+                height={NaN}
+                alt="code line git"
+              />
+            </div>
           </div>
 
           <div className="Social">
@@ -69,14 +87,6 @@ const ProfileStart: React.FC = () => {
                 >
                   <FaLinkedinIn />
                 </a>
-              </span>
-
-              <span
-                style={{ background: "#f9a51f" }}
-                className="codeLines"
-                onClick={() => numberMyCodeLine()}
-              >
-                1.7M
               </span>
             </div>
           </div>

@@ -38,9 +38,41 @@
     font-size: 14px;
 }
 
-.btn {
+.positionButtonAndLineGit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-top: 5%;
+    align-items: center;
 }
+
+.countLineCodeGit {
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+}
+
+.countLineCodeGit img {
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 2px;
+    -webkit-animation: lineCode 3s linear infinite;
+    -moz-animation: lineCode 3s linear infinite;
+    animation: lineCode 3s linear infinite;
+}
+
+.countLineCodeGit:hover {
+    filter: drop-shadow(0px 10px 10px #f9a51f5b);
+    opacity: 0.9;
+}
+
+@keyframes lineCode {
+    50% {
+        background: #82b5bd;
+    }
+}
+
+
+
 
 .btn a {
     padding: 0.7rem 2rem;
@@ -89,28 +121,6 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-}
-
-.codeLines {
-    font-size: 13px;
-    text-decoration: none;
-    font-weight: 500;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    cursor: pointer;
-    -webkit-animation: lineCode 3s linear infinite;
-    -moz-animation: lineCode 3s linear infinite;
-    animation: lineCode 3s linear infinite;
-}
-
-
-@keyframes lineCode {
-    50% {
-        background: #82b5bd;
-    }
 }
 
 .positionImgCodeLine img {
@@ -166,6 +176,7 @@
     transform: translateY(-10px);
 }
 
+
 @media screen and (max-width: 768px) {
     .Profile {
         display: flex;
@@ -189,5 +200,49 @@
 
     .positionImgCodeLine img {
         height: 130px;
+    }
+
+    .positionButtonAndLineGit {
+        flex-direction: column;
+    }
+
+    .countLineCodeGit {
+        margin-top: 5%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .countLineCodeGit img {
+        width: 250px;
+    }
+}
+
+
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+    .positionButtonAndLineGit {
+        flex-direction: column;
+    }
+
+    .countLineCodeGit {
+        margin-top: 5%;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+    .positionButtonAndLineGit {
+        flex-direction: column;
+    }
+
+    .countLineCodeGit {
+        margin-top: 5%;
+        align-items: center;
+        text-align: center;
     }
 }
