@@ -25,6 +25,8 @@ const ShowInfoAboutMe = () => {
         <br />
         My top 5 projects, built using React frameworks and incorporating cutting-edge UI component libraries, are featured prominently in my portfolio. Additionally, I specialize in crafting server-side solutions to store and manage data using technologies like Node.js, Express, and either MongoDB or MSSQL databases.
         <br />
+        Including code <b className="highlight">testing and debugging</b> to find a problem and fix it. 
+        <br />
         <br />
         I like to challenge myself with complex challenges. I have the ability to self-learn new technologies and to work in a group / independently. To me, development is like a computer game. Learn new programming concepts daily daily and adeptly problem-solving during project creation. I actively seek to enhance my skills through Udemy courses.
         <br />
