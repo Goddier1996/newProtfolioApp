@@ -62,7 +62,7 @@ const ProfileStart: React.FC = () => {
             >
               <LazyImage
                 src="https://i.postimg.cc/hjpXkch0/line-code.webp"
-                width={305}
+                width={270}
                 height={NaN}
                 alt="code line git"
               />
