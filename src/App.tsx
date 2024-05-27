@@ -11,6 +11,7 @@ import { useEffect } from "react";
 // import { sayShabbatShalom } from "./components/tools/popUpShabbatShalom/SayShabbatShalom";
 import { showPopUpInfoApp } from "./components/tools/startPopUpSite/ShowAboutMeStartPopUp";
 import { useMediaQuery } from "@mui/material";
+import TagManager from 'react-gtm-module'
 
 
 function App() {
@@ -27,6 +28,15 @@ function App() {
     // here show popup animation when friday and saturday
     // sayShabbatShalom();
   });
+
+
+  
+  // here show COUNTING THE DAYS war 7.10
+  const tagManagerArgs = {
+    gtmId: 'GTM-KTL44Q68'
+  }
+  TagManager.initialize(tagManagerArgs)
+
 
 
   return (
