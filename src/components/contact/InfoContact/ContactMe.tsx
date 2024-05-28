@@ -23,7 +23,7 @@ const ContactMe: React.FC = () => {
             src="https://i.postimg.cc/1zJfg8YD/linkdin-logo-1.webp"
             width={NaN}
             height={60}
-            alt="my number"
+            alt="my linkedin data"
           />
           <h3 className="contactPhone">Linkedin</h3>
           <p>artem-kot96</p>
