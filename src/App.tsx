@@ -33,7 +33,7 @@ function App() {
   
   // here show COUNTING THE DAYS war 7.10
   const tagManagerArgs = {
-    gtmId: 'GTM-KTL44Q68'
+    gtmId: process.env.REACT_APP_GTM || ""
   }
   TagManager.initialize(tagManagerArgs)
 

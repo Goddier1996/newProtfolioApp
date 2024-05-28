@@ -20,13 +20,13 @@ const ContactMe: React.FC = () => {
 
         <div className="icons">
           <LazyImage
-            src="https://i.postimg.cc/P5pV4xpC/3.webp"
+            src="https://i.postimg.cc/1zJfg8YD/linkdin-logo-1.webp"
             width={NaN}
             height={60}
             alt="my number"
           />
-          <h3 className="contactPhone">my number</h3>
-          <p>+972 542546828</p>
+          <h3 className="contactPhone">Linkedin</h3>
+          <p>artem-kot96</p>
         </div>
 
         <div className="icons">
