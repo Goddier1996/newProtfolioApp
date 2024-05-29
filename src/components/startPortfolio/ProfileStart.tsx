@@ -37,12 +37,12 @@ const ProfileStart: React.FC = () => {
         <div className="Texts">
           <h1 className="green">Artem Kot</h1>
           <h3>
-            Software Engineer
+            Software Engineer | Actively <b className="green">Looking For Work</b>
             <br />
             <br />
-            Expert In <b className="green">React Frameworks </b> &{" "}
+            Expert In <b className="green">Web Technologies  </b> &{" "}
             <b className="green">Server Technologies </b>
-            Built A Portfolio Of 5+ Personal Projects
+            Built A Portfolio Of 10+ Personal Projects
           </h3>
           <p>
             Creating the optimal blend of functionality & user experience in
