@@ -196,4 +196,9 @@
         -webkit-transition-duration: 0ms;
         /* Safari */
     }
+
+    .styleTextTypeCommunication h6:hover {
+        font-size: 15px;
+        color: rgba(255, 255, 255, 0.633);
+    }
 }
