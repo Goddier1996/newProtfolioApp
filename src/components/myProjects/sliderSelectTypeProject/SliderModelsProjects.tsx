@@ -8,48 +8,6 @@ import { FetchData } from "../../../customHook/FetchData";
 import Loading from "../../tools/loading/Loading";
 
 
-// this settings for Slider
-let settings = {
-  className: "center",
-  centerMode: true,
-  dots: false,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  initialSlide: 0,
-  arrows: false,
-  responsive: [
-    {
-      breakpoint: 990,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: false,
-        centerMode: false,
-      },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        initialSlide: 2,
-        centerMode: false,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        centerMode: false,
-      },
-    },
-  ],
-};
-
 
 const SliderModelsProjects: React.FC = () => {
 
@@ -60,7 +18,52 @@ const SliderModelsProjects: React.FC = () => {
 
   const { dataProjects, loading } = FetchData("Projects", "");
 
-  
+
+
+  // this settings for Slider
+  let settings = {
+    className: "center",
+    centerMode: true,
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: typeProject === "Communication & Info Security" ? 2.7 : 3,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 990,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+        },
+      },
+    ],
+  };
+
+
+
   return (
     <div className="ContainerSlider">
       {loading ? (

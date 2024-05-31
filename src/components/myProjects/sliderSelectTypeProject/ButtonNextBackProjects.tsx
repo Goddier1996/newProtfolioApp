@@ -1,6 +1,5 @@
 
 const ButtonNextBackProjects: React.FC<any> = ({ type, Click, typeClassName }) => {
-
     return (
         <>
             <button
