@@ -24,7 +24,7 @@ const Header: React.FC = () => {
   return (
     <Container bar={bar}>
       <div className="ContainerMenu">
-        <Slide direction="down">
+        {/* <Slide direction="down"> */}
           <div className="Logo">
             <LazyImage
               src="https://i.postimg.cc/QN7XRWh6/qa.webp"
@@ -33,7 +33,7 @@ const Header: React.FC = () => {
               alt="Logo"
             />
           </div>
-        </Slide>
+        {/* </Slide> */}
 
         <div className="Nav" style={bar ? { height: "100vh" } : { height: 0 }}>
           {arrayMenuOptions.map((value: ObjectMenuOptions) => (
