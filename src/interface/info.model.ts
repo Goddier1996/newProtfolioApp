@@ -66,3 +66,10 @@ export interface LazyImg{
     height?:number
     alt?:string
 }
+
+
+export interface SocialData{
+    ariaLabel?: string;
+    hrefSocial?: string;
+    typeSocial?: string;
+}

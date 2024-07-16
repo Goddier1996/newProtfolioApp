@@ -1,10 +1,8 @@
-import { AiOutlineGithub } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
 import { Slide } from "react-awesome-reveal";
 import "./ProfileStart.css";
 import LazyImage from "../tools/LazyLoadImage/LazyImage";
 import Swal from "sweetalert2";
-
+import SocialMyData from "./showSocialMyData/SocialMyData";
 
 
 const ProfileStart: React.FC = () => {
@@ -37,10 +35,11 @@ const ProfileStart: React.FC = () => {
         <div className="Texts">
           <h1 className="green">Artem Kot</h1>
           <h3>
-            Software Engineer | Actively <b className="green">Looking For Work</b>
+            Software Engineer | Actively{" "}
+            <b className="green">Looking For Work</b>
             <br />
             <br />
-            Expert In <b className="green">Web Technologies  </b> &{" "}
+            Expert In <b className="green">Web Technologies </b> &{" "}
             <b className="green">Server Technologies </b>
             Built A Portfolio Of 10+ Personal Projects
           </h3>
@@ -72,22 +71,23 @@ const ProfileStart: React.FC = () => {
           <div className="Social">
             <p>Check out my</p>
             <div className="social-icons">
-              <span>
-                <a
-                  aria-label="show im my git all my projects"
-                  href="https://github.com/Goddier1996"
-                >
-                  <AiOutlineGithub />
-                </a>
-              </span>
-              <span>
-                <a
-                  aria-label="connect to my linkedin"
-                  href="https://www.linkedin.com/in/artem-kot96"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </span>
+              <SocialMyData
+                ariaLabel="show im my git all my projects"
+                hrefSocial="https://github.com/Goddier1996"
+                typeSocial="github"
+              />
+
+              <SocialMyData
+                ariaLabel="connect to my linkedin"
+                hrefSocial="https://www.linkedin.com/in/artem-kot96"
+                typeSocial="linkedin"
+              />
+
+              <SocialMyData
+                ariaLabel="connect to my Instagram"
+                hrefSocial="https://www.instagram.com/artem_kot96"
+                typeSocial="instagram"
+              />
             </div>
           </div>
         </div>
