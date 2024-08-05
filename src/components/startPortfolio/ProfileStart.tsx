@@ -40,7 +40,7 @@ const ProfileStart: React.FC = () => {
             <br />
             <br />
             Expert In <b className="green">Web Technologies </b> &{" "}
-            <b className="green">Server Technologies </b>
+            <b className="green">Writing efficient code </b>
             Built A Portfolio Of 10+ Personal Projects
           </h3>
           <p>
