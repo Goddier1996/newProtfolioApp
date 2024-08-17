@@ -12,11 +12,10 @@
     height: auto;
 }
 
-
 .arrowShowPopUp {
     position: absolute;
     transform: rotate(-90deg);
-    margin-left: -120px;
+    margin-left: -100px;
 }
 
 .arrowShowPopUp span {

@@ -13,12 +13,11 @@ export function showPopUpInfoApp() {
           <video
             class="videoShowPopUpAboutMe"
             controls
-            poster="https://i.postimg.cc/mDzh2Rh7/123.webp"
-           >
+            poster="https://i.postimg.cc/mDzh2Rh7/123.webp">
             <source
             src="https://github.com/Goddier1996/newProtfolioApp/assets/59862302/47c55fde-6e34-47c8-bef5-e58162283bdf"
             type="video/mp4">
-            </video>
+          </video>
 
           <div class="arrowShowPopUp">
             <span></span>
