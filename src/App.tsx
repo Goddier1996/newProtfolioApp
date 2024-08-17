@@ -21,9 +21,7 @@ function App() {
 
   useEffect(() => {
     // show start popup about me video, show only in desktop screen NO MOBILE
-    // if (mobileScreen && !sessionStorage.getItem("startPopUp")) {
-      if (mobileScreen) {
-
+    if (mobileScreen && !sessionStorage.getItem("startPopUp")) {
       showPopUpInfoApp();
     }
 
