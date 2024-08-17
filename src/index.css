@@ -106,6 +106,11 @@ body {
 }
 
 
+/* Remove SweetAlert button outline on focus */
+.swal2-close:focus {
+  box-shadow: none !important;
+}
+
 
 /* popup say shabbatShalom */
 .popUpShabbatShalom {
