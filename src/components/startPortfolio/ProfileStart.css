@@ -46,35 +46,53 @@
     align-items: center;
 }
 
-.countLineCodeGit {
+.postSearch {
     transition-duration: 0.4s;
     -webkit-transition-duration: 0.4s;
     transform: rotate(-2deg);
 }
 
-.countLineCodeGit img {
+.postSearch img {
     border-radius: 8px;
     cursor: pointer;
     padding: 2px;
-    -webkit-animation: lineCode 3s linear infinite;
+    /* -webkit-animation: lineCode 3s linear infinite;
     -moz-animation: lineCode 3s linear infinite;
-    animation: lineCode 3s linear infinite;
+    animation: lineCode 3s linear infinite; */
     transition-duration: 0.4s;
     -webkit-transition-duration: 0.4s;
+    -webkit-animation: post 5s linear infinite;
+    -moz-animation: post 5s linear infinite;
+    animation: post 5s linear infinite;
 }
 
-.countLineCodeGit:hover {
+.postSearch:hover {
     filter: drop-shadow(0px 10px 10px #f9a51f5b);
     opacity: 0.9;
     transform: rotate(2deg);
 }
 
 
-@keyframes lineCode {
+@-moz-keyframes post {
     50% {
-        background: #82b5bd;
+        -moz-transform: rotate(40deg);
     }
 }
+
+@-webkit-keyframes post {
+    50% {
+        -webkit-transform: rotate(40deg);
+    }
+}
+
+@keyframes post {
+    50% {
+        -webkit-transform: rotate(-30deg);
+        transform: rotate(-30deg);
+    }
+}
+
+
 
 
 
@@ -128,15 +146,15 @@
     gap: 1rem;
 }
 
-.positionImgCodeLine img {
-    height: 180px;
+.positionPostSearch img {
+    height: 100px;
     width: auto;
     transition-duration: 0.4s;
     -webkit-transition-duration: 0.4s;
     border-radius: 5px;
 }
 
-.positionImgCodeLine img:hover {
+.positionPostSearch img:hover {
     opacity: 0.7;
 }
 
@@ -203,23 +221,23 @@
         font-size: 14px;
     }
 
-    .positionImgCodeLine img {
-        height: 130px;
+    .positionPostSearch img {
+        height: 80px;
     }
 
     .positionButtonAndLineGit {
         flex-direction: column;
     }
 
-    .countLineCodeGit {
-        margin-top: 5%;
+    .postSearch {
+        margin-top: 8%;
         align-items: center;
         text-align: center;
         transform: rotate(0deg);
     }
 
-    .countLineCodeGit img {
-        width: 250px;
+    .postSearch img {
+        width: 50px;
     }
 }
 
@@ -232,7 +250,7 @@
         flex-direction: column;
     }
 
-    .countLineCodeGit {
+    .postSearch {
         margin-top: 5%;
         align-items: center;
         text-align: center;
@@ -247,7 +265,7 @@
         flex-direction: column;
     }
 
-    .countLineCodeGit {
+    .postSearch {
         margin-top: 5%;
         align-items: center;
         text-align: center;

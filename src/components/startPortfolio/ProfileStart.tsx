@@ -1,31 +1,31 @@
 import { Slide } from "react-awesome-reveal";
 import "./ProfileStart.css";
 import LazyImage from "../tools/LazyLoadImage/LazyImage";
-// import Swal from "sweetalert2";
+import Swal from "sweetalert2";
 import SocialMyData from "./showSocialMyData/SocialMyData";
 
 
 const ProfileStart: React.FC = () => {
 
 
-  // const numberMyCodeLine = () => {
-  //   Swal.fire({
-  //     html: `
-  //     <div class="positionCertificate">
-  //        <h6>Number code lines in my
-  //           <span class="green">GitHub</span>
-  //        </h6>
-  //        <p class="infoCodeLine">Click on the image to see more info</p>
-  //        <div class="positionImgCodeLine">
-  //            <a aria-label="code line number" href="https://drive.google.com/file/d/1UHjUHwhFt7USDCRpUEF9ySIBh5Rn0p3V/view?usp=sharing">
-  //            <img src="https://i.postimg.cc/h4p3dXpy/Screenshot-2024-04-04-185856.png" alt="line number"/>
-  //            </a>
-  //       </div>
-  //     </div>`,
-  //     confirmButtonColor: "green",
-  //     confirmButtonText: "Close",
-  //   });
-  // };
+  const positionPostSearch = () => {
+    Swal.fire({
+      html: `
+      <div class="positionCertificate">
+         <h6>Last post about my
+            <span class="green"> job search</span>
+         </h6>
+         <p class="infoCodeLine">Click on the Linkedin icon to see a post</p>
+         <div class="positionPostSearch">
+             <a aria-label="postSearch" href="https://www.linkedin.com/posts/artem-kot96_opentowork-acraclacsacgabracsacpacpadd-adaadeaclacpacpaddacoabracyadeachacladgabrackacjacjacpadg-activity-7230833688920432640-xoJw?utm_source=share&utm_medium=member_desktop">
+             <img src="https://i.postimg.cc/Dfj6fGqw/linkedin-my.webp" alt="linkedin post"/>
+             </a>
+        </div>
+      </div>`,
+      confirmButtonColor: "green",
+      confirmButtonText: "Close",
+    });
+  };
 
 
 
@@ -55,17 +55,17 @@ const ProfileStart: React.FC = () => {
               </a>
             </div>
 
-            {/* <div
-              className="countLineCodeGit"
-              onClick={() => numberMyCodeLine()}
+            <div
+              className="postSearch"
+              onClick={() => positionPostSearch()}
             >
               <LazyImage
-                src="https://i.postimg.cc/hjpXkch0/line-code.webp"
-                width={270}
+                src="https://i.postimg.cc/DZ5gXJH5/job-Search.webp"
+                width={60}
                 height={NaN}
-                alt="code line git"
+                alt="post search work in linkedin"
               />
-            </div> */}
+            </div>
           </div>
 
           <div className="Social">
