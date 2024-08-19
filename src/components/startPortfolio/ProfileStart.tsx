@@ -55,7 +55,7 @@ const ProfileStart: React.FC = () => {
               </a>
             </div>
 
-            <div
+            {/* <div
               className="countLineCodeGit"
               onClick={() => numberMyCodeLine()}
             >
@@ -65,7 +65,7 @@ const ProfileStart: React.FC = () => {
                 height={NaN}
                 alt="code line git"
               />
-            </div>
+            </div> */}
           </div>
 
           <div className="Social">
