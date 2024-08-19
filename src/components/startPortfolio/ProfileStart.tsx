@@ -1,31 +1,31 @@
 import { Slide } from "react-awesome-reveal";
 import "./ProfileStart.css";
 import LazyImage from "../tools/LazyLoadImage/LazyImage";
-import Swal from "sweetalert2";
+// import Swal from "sweetalert2";
 import SocialMyData from "./showSocialMyData/SocialMyData";
 
 
 const ProfileStart: React.FC = () => {
 
 
-  const numberMyCodeLine = () => {
-    Swal.fire({
-      html: `
-      <div class="positionCertificate">
-         <h6>Number code lines in my
-            <span class="green">GitHub</span>
-         </h6>
-         <p class="infoCodeLine">Click on the image to see more info</p>
-         <div class="positionImgCodeLine">
-             <a aria-label="code line number" href="https://drive.google.com/file/d/1UHjUHwhFt7USDCRpUEF9ySIBh5Rn0p3V/view?usp=sharing">
-             <img src="https://i.postimg.cc/h4p3dXpy/Screenshot-2024-04-04-185856.png" alt="line number"/>
-             </a>
-        </div>
-      </div>`,
-      confirmButtonColor: "green",
-      confirmButtonText: "Close",
-    });
-  };
+  // const numberMyCodeLine = () => {
+  //   Swal.fire({
+  //     html: `
+  //     <div class="positionCertificate">
+  //        <h6>Number code lines in my
+  //           <span class="green">GitHub</span>
+  //        </h6>
+  //        <p class="infoCodeLine">Click on the image to see more info</p>
+  //        <div class="positionImgCodeLine">
+  //            <a aria-label="code line number" href="https://drive.google.com/file/d/1UHjUHwhFt7USDCRpUEF9ySIBh5Rn0p3V/view?usp=sharing">
+  //            <img src="https://i.postimg.cc/h4p3dXpy/Screenshot-2024-04-04-185856.png" alt="line number"/>
+  //            </a>
+  //       </div>
+  //     </div>`,
+  //     confirmButtonColor: "green",
+  //     confirmButtonText: "Close",
+  //   });
+  // };
 
 
 
