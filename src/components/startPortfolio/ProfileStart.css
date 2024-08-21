@@ -61,40 +61,61 @@
     animation: lineCode 3s linear infinite; */
     transition-duration: 0.4s;
     -webkit-transition-duration: 0.4s;
-    -webkit-animation: post 5s linear infinite;
-    -moz-animation: post 5s linear infinite;
-    animation: post 5s linear infinite;
+    -webkit-animation: post 4s linear infinite;
+    -moz-animation: post 4s linear infinite;
+    animation: post 4s linear infinite;
 }
 
 .postSearch:hover {
-    filter: drop-shadow(0px 10px 10px #f9a51f5b);
+    filter: drop-shadow(0px 10px 10px #ffffff3b);
     opacity: 0.9;
-    transform: rotate(2deg);
 }
 
 
 @-moz-keyframes post {
     50% {
-        -moz-transform: rotate(40deg);
+        -moz-transform: rotate(30deg);
     }
 }
 
 @-webkit-keyframes post {
     50% {
-        -webkit-transform: rotate(40deg);
+        -webkit-transform: rotate(30deg);
     }
 }
 
 @keyframes post {
     50% {
-        -webkit-transform: rotate(-30deg);
-        transform: rotate(-30deg);
+        -webkit-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+        filter: drop-shadow(0px 10px 10px #f9a51f2d);
     }
 }
 
+.positionPostJob h6 {
+    font-size: 18px;
+}
 
+.positionPostJob p {
+    font-size: 14px;
+    margin-top: 5%;
+}
 
+.haveAProblemSeePostJob p {
+    font-size: 13px;
+}
 
+.haveAProblemSeePostJob a {
+    text-decoration: none;
+    color: #f9a51f;
+    font-size: 12px;
+    transition-duration: 0.4s;
+
+}
+
+.haveAProblemSeePostJob a:hover {
+    color: #f9a51f99;
+}
 
 
 .btn a {
@@ -138,7 +159,6 @@
 .Social p {
     font-size: 0.9rem;
 }
-
 
 .social-icons {
     display: flex;
@@ -237,7 +257,7 @@
     }
 
     .postSearch img {
-        width: 50px;
+        width: 80px;
     }
 }
 

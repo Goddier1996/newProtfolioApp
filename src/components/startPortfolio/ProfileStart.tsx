@@ -5,20 +5,31 @@ import Swal from "sweetalert2";
 import SocialMyData from "./showSocialMyData/SocialMyData";
 
 
+
 const ProfileStart: React.FC = () => {
 
 
   const positionPostSearch = () => {
     Swal.fire({
       html: `
-      <div class="positionCertificate">
+      <div class="positionPostJob">
          <h6>Last post about my
             <span class="green"> job search</span>
          </h6>
-         <p class="infoCodeLine">Click on the Linkedin icon to see a post</p>
+         <p class="infoCodeLine">I am looking for a warm house (job)
+         <br/>
+         Click on the LinkedIn icon 
+         </p>
          <div class="positionPostSearch">
              <a aria-label="postSearch" href="https://www.linkedin.com/posts/artem-kot96_opentowork-acraclacsacgabracsacpacpadd-adaadeaclacpacpaddacoabracyadeachacladgabrackacjacjacpadg-activity-7230833688920432640-xoJw?utm_source=share&utm_medium=member_desktop">
              <img src="https://i.postimg.cc/Dfj6fGqw/linkedin-my.webp" alt="linkedin post"/>
+             </a>
+        </div>
+
+        <div class="haveAProblemSeePostJob">
+              <p>* If icon don't work click to the link</p>
+              <a aria-label="postSearch" href="https://www.linkedin.com/posts/artem-kot96_opentowork-acraclacsacgabracsacpacpadd-adaadeaclacpacpaddacoabracyadeachacladgabrackacjacjacpadg-activity-7230833688920432640-xoJw?utm_source=share&utm_medium=member_desktop">
+                Link Job Post
              </a>
         </div>
       </div>`,
@@ -60,8 +71,8 @@ const ProfileStart: React.FC = () => {
               onClick={() => positionPostSearch()}
             >
               <LazyImage
-                src="https://i.postimg.cc/DZ5gXJH5/job-Search.webp"
-                width={60}
+                src="https://i.postimg.cc/dQn7vGZN/job-search.png"
+                width={95}
                 height={NaN}
                 alt="post search work in linkedin"
               />
