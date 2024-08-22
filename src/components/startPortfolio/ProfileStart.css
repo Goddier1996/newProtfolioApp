@@ -56,39 +56,22 @@
     border-radius: 8px;
     cursor: pointer;
     padding: 2px;
-    /* -webkit-animation: lineCode 3s linear infinite;
-    -moz-animation: lineCode 3s linear infinite;
-    animation: lineCode 3s linear infinite; */
-    transition-duration: 0.4s;
-    -webkit-transition-duration: 0.4s;
-    -webkit-animation: post 4s linear infinite;
-    -moz-animation: post 4s linear infinite;
-    animation: post 4s linear infinite;
+    transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    -webkit-animation: post 2s linear infinite;
+    -moz-animation: post 2s linear infinite;
+    animation: post 2s linear infinite;
 }
 
 .postSearch:hover {
-    filter: drop-shadow(0px 10px 10px #ffffff3b);
-    opacity: 0.9;
-}
-
-
-@-moz-keyframes post {
-    50% {
-        -moz-transform: rotate(30deg);
-    }
-}
-
-@-webkit-keyframes post {
-    50% {
-        -webkit-transform: rotate(30deg);
-    }
+    transform: rotate(360deg);
+    opacity: 0.8;
+    filter: none;
 }
 
 @keyframes post {
     50% {
-        -webkit-transform: rotate(-20deg);
-        transform: rotate(-20deg);
-        filter: drop-shadow(0px 10px 10px #f9a51f2d);
+        filter: drop-shadow(0px 10px 10px #ffffff50);
     }
 }
 
@@ -110,7 +93,6 @@
     color: #f9a51f;
     font-size: 12px;
     transition-duration: 0.4s;
-
 }
 
 .haveAProblemSeePostJob a:hover {
@@ -257,7 +239,7 @@
     }
 
     .postSearch img {
-        width: 80px;
+        width: 90px;
     }
 }
 

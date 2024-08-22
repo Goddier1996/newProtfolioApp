@@ -71,8 +71,8 @@ const ProfileStart: React.FC = () => {
               onClick={() => positionPostSearch()}
             >
               <LazyImage
-                src="https://i.postimg.cc/dQn7vGZN/job-search.png"
-                width={95}
+                src="https://i.postimg.cc/L4v4qxbp/job-search.png"
+                width={100}
                 height={NaN}
                 alt="post search work in linkedin"
               />
