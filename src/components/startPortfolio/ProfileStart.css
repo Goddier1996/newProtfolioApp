@@ -242,11 +242,11 @@
 
     .postSearch img {
         width: 150px;
-        transition-duration: 0.3s;
-        -webkit-transition-duration: 0.3s;
-        -webkit-animation: postMobileScreen 3s linear infinite;
-        -moz-animation: postMobileScreen 3s linear infinite;
-        animation: postMobileScreen 3s linear infinite;
+        transition-duration: 0.2s;
+        -webkit-transition-duration: 0.2s;
+        -webkit-animation: postMobileScreen 2s linear infinite;
+        -moz-animation: postMobileScreen 2s linear infinite;
+        animation: postMobileScreen 2s linear infinite;
     }
 
     @keyframes postMobileScreen {
