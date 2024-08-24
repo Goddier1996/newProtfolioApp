@@ -1,43 +1,65 @@
+import ShowMyInfo from "./showPersonaInfo/ShowMyInfo";
+
+
+
 const ShowInfoAboutMe = () => {
 
+
+  const wordAboutMe: string = `
+    With a deep passion for both web and mobile development, I specialize in
+  creating dynamic, responsive applications that offer seamless user
+  experiences. My expertise lies in the React framework, where I bring
+  complex projects to life with an eye for detail and a commitment to
+  excellence. While my primary focus is on the client side, I also have a
+  solid understanding of server-side technologies, working proficiently
+  with Node.js, Express, MongoDB, and MSSQL.`;
+
+  const wordEducation: string = `
+        I have a Degree of practical engineer in the software engineering track
+        and continuously explore new technologies and techniques to enhance my
+        skill set, 'improve my game, and innovate. I thrive on challenges and am
+        driven by the opportunity to solve complex problems as they surface
+        during the creation of a project. With a strong sense of curiosity,
+        creativity, attention to detail, and resilience, I approach development
+        not just as a job but as a passion that drives me to learn, create, and
+        push the boundaries of what's possible.`;
+
+  const wordExperiences: string = `
+        Key Experiences and Skills: I have successfully developed complex
+        projects from the ground up, ensuring that each application not only
+        functions flawlessly but also provides an exceptional user experience
+        across all devices. Every project undergoes rigorous code testing and
+        debugging to identify and resolve issues efficiently, ensuring a
+        high-quality result.`;
+
+  const wordPortfolio: string = `
+        My portfolio showcases the top five projects l've built using React and
+        advanced Ul component libraries, each designed to maximize user
+        engagement and satisfaction. On the server side, I have developed robust
+        backends to manage and store data, leveraging technologies like Node.js,
+        Express, and databases such as MongoDB and MSSQL to create secure and
+        scalable solutions.`;
+
+  
   return (
     <>
       <p className="aboutMe">
-        
         I'm a software developer,
         <br />
-        Developing cool things with the help of my trusty little companion.
+        <ShowMyInfo info={wordAboutMe} />
         <br />
         <br />
-        With a strong inclination towards <b className="highlight">Frontend</b>,
-        I can adeptly navigate both Client-side and Server-side development realms.
-        <br />
-        Specializing in <b className="highlight">React frameworks</b>
-        I also possess a comprehensive understanding of
-        <b className="highlight">Server side (Backend)</b> Node.js, mongoDB and
-        MMSQL.
+        <ShowMyInfo info={wordEducation} />
         <br />
         <br />
-        <b className="highlight">About my Experience</b>
-        <br />
-        Creating projects from scratch that showcase optimal functionality and user experience, alongside ensuring responsiveness across all screens.
+        <ShowMyInfo info={wordExperiences} />
         <br />
         <br />
-        My top 5 projects, built using React frameworks and incorporating cutting-edge UI component libraries, are featured prominently in my portfolio. Additionally, I specialize in crafting server-side solutions to store and manage data using technologies like Node.js, Express, and either MongoDB or MSSQL databases.
-        <br />
-        Including code <b className="highlight">testing and debugging</b> to find a problem and fix it. 
-        <br />
-        <br />
-        I like to challenge myself with complex challenges. I have the ability to self-learn new technologies and to work in a group / independently. To me, development is like a computer game. Learn new programming concepts daily daily and adeptly problem-solving during project creation. I actively seek to enhance my skills through Udemy courses.
-        <br />
-        <br />
-        <b className="highlight">My hobbies</b>
-        <br />
-        gamer , following new technologies , cars , lego , and traveling to a
-        variety of beautiful places in the world.
+        <ShowMyInfo info={wordPortfolio} />
       </p>
     </>
   );
 };
+
 
 export default ShowInfoAboutMe;

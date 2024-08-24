@@ -5,6 +5,11 @@ export interface InfoAboutMe{
 }[]
 
 
+export interface InfoAboutMePersonal{
+    info: string;
+}
+
+
 export interface MySkills{
     title: string;
     image: any;
