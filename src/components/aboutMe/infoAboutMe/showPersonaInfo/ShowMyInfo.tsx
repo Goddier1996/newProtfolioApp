@@ -11,11 +11,11 @@ const ShowMyInfo: React.FC<InfoAboutMePersonal> = (props) => {
 
   return (
     <>
-      {sizeWords < 300 ? (
+      {sizeWords < 240 ? (
         <>{info}</>
       ) : (
         <>
-          {showMoreWord ? info : `${info.substring(0, 300)}`}
+          {showMoreWord ? info : `${info.substring(0, 240)}`}
           <b className="boldMoreInfo" onClick={() => setShowMoreWord(!showMoreWord)}>
             {showMoreWord ? " Show less" : " Read more"}
           </b>

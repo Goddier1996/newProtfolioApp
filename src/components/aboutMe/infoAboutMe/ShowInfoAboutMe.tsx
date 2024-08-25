@@ -6,7 +6,7 @@ const ShowInfoAboutMe = () => {
 
 
   const wordAboutMe: string = `
-    With a deep passion for both web and mobile development, I specialize in
+  I'm a software developer, with a deep passion for both web and mobile development, I specialize in
   creating dynamic, responsive applications that offer seamless user
   experiences. My expertise lies in the React framework, where I bring
   complex projects to life with an eye for detail and a commitment to
@@ -44,8 +44,6 @@ const ShowInfoAboutMe = () => {
   return (
     <>
       <p className="aboutMe">
-        I'm a software developer,
-        <br />
         <ShowMyInfo info={wordAboutMe} />
         <br />
         <br />
