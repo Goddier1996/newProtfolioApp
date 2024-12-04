@@ -65,18 +65,6 @@ const ProfileStart: React.FC = () => {
                 About Me
               </a>
             </div>
-
-            {/* <div
-              className="postSearch"
-              onClick={() => positionPostSearch()}
-            >
-              <LazyImage
-                src="https://i.postimg.cc/L4v4qxbp/job-search.png"
-                width={100}
-                height={NaN}
-                alt="post search work in linkedin"
-              />
-            </div> */}
           </div>
 
           <div className="Social">
@@ -103,19 +91,11 @@ const ProfileStart: React.FC = () => {
           </div>
         </div>
 
-        {/* <div className="Profile">
-          <LazyImage
-            src="https://i.postimg.cc/mgmYVb9R/a2.webp"
-            width={250}
-            height={NaN}
-            alt="profile"
-          />
-        </div> */}
 
         <div className="postSearch" onClick={() => positionPostSearch()}>
           <LazyImage
-            src="https://i.postimg.cc/L4v4qxbp/job-search.png"
-            width={220}
+            src="https://i.postimg.cc/PxVq5vPg/my-image.png"
+            width={245}
             height={NaN}
             alt="post search work in linkedin"
           />
