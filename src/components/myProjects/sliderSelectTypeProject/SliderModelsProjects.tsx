@@ -27,7 +27,7 @@ const SliderModelsProjects: React.FC = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: typeProject === "Communication & Info Security" ? 2.7 : 3,
+    slidesToShow: typeProject === "Communication & Info Security" || typeProject === "Python" ? 2.7 : 3.5,
     slidesToScroll: 1,
     initialSlide: 0,
     arrows: false,

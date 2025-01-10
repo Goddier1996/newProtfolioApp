@@ -10,11 +10,7 @@ const Projects: React.FC = () => {
         <h1>
           My <span className="green">Projects</span>
         </h1>
-        <p style={{ fontSize: "12px" }}>
-          Here all my projects ( Website , Apps , Python app , Arduino ).
-          <br />
-          Select a project and you can see Live app , Git link and info.
-        </p>
+        <br />
       </Slide>
 
       

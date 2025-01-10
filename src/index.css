@@ -34,15 +34,34 @@ body {
 }
 
 .center .slick-center .project {
-  transform: scale(1.3);
+  transform: scale(1.2);
   z-index: 10000;
   transition: all 400ms ease-in-out;
   pointer-events: all;
   opacity: 1;
+
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  -webkit-animation: projects 4s linear infinite;
+  -moz-animation: projects 4s linear infinite;
+  animation: projects 4s linear infinite;
+}
+
+
+
+@keyframes projects {
+  50% {
+    filter: drop-shadow(0 0 0.40rem #ffffffb6);
+    transform: rotate(0deg);
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
 }
 
 .center .project {
-  opacity: 0.7;
+  opacity: 0.3;
   pointer-events: none;
 }
 
