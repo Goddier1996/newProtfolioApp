@@ -40,16 +40,16 @@ body {
   pointer-events: all;
   opacity: 1;
 
-  transition-duration: 0.1s;
+  /* transition-duration: 0.1s;
   -webkit-transition-duration: 0.1s;
   -webkit-animation: projects 1s linear infinite;
   -moz-animation: projects 1s linear infinite;
-  animation: projects 1s linear infinite;
+  animation: projects 1s linear infinite; */
 }
 
 
 
-@keyframes projects {
+/* @keyframes projects {
   50% {
     filter: drop-shadow(0 0 0.40rem #ffffffb6);
     /* transform: rotate(0deg);
@@ -58,7 +58,7 @@ body {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px; */
   }
-}
+} */
 
 .center .project {
   opacity: 0.3;
