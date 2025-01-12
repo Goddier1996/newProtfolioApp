@@ -40,11 +40,11 @@ body {
   pointer-events: all;
   opacity: 1;
 
-  transition-duration: 0.4s;
-  -webkit-transition-duration: 0.4s;
-  -webkit-animation: projects 4s linear infinite;
-  -moz-animation: projects 4s linear infinite;
-  animation: projects 4s linear infinite;
+  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -webkit-animation: projects 2s linear infinite;
+  -moz-animation: projects 2s linear infinite;
+  animation: projects 2s linear infinite;
 }
 
 
@@ -52,11 +52,11 @@ body {
 @keyframes projects {
   50% {
     filter: drop-shadow(0 0 0.40rem #ffffffb6);
-    transform: rotate(0deg);
+    /* transform: rotate(0deg);
     border-bottom-left-radius: 70px;
     border-bottom-right-radius: 70px;
     border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    border-top-right-radius: 12px; */
   }
 }
 
