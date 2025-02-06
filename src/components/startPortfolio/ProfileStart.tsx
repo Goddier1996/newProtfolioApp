@@ -21,7 +21,7 @@ const ProfileStart: React.FC = () => {
          Click on the LinkedIn icon 
          </p>
          <div class="positionPostSearch">
-             <a aria-label="postSearch" href="https://www.linkedin.com/posts/artem-kot96_opentowork-acraclacsacgabracsacpacpadd-adaadeaclacpacpaddacoabracyadeachacladgabrackacjacjacpadg-activity-7230833688920432640-xoJw?utm_source=share&utm_medium=member_desktop">
+             <a aria-label="postSearch" href="https://www.linkedin.com/posts/artem-kot96_acraclacsacgabracsacpacpadd-adgacwaclabracsacpabradcacgacwacx-activity-7292799518897508352-aFPl?utm_source=share&utm_medium=member_desktop">
              <img src="https://i.postimg.cc/Dfj6fGqw/linkedin-my.webp" alt="linkedin post"/>
              </a>
         </div>
