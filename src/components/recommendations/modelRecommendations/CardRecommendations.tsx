@@ -2,7 +2,6 @@ import { IoIosQuote } from "react-icons/io";
 import Swal from "sweetalert2";
 import "../Recommendations.css";
 import { useState } from "react";
-import { Slide } from "react-awesome-reveal";
 import { Recommends } from "../../../interface/info.model";
 import LazyImage from "../../tools/LazyLoadImage/LazyImage";
 
@@ -36,7 +35,6 @@ const CardRecommendations: React.FC<Recommends> = (props) => {
 
 
   return (
-    <Slide direction="down">
       <div className="ContainerRecommendationsCard">
         <div className="Header">
           <span className="quote">
@@ -69,20 +67,13 @@ const CardRecommendations: React.FC<Recommends> = (props) => {
               <>{bio}</>
             ) : (
               <>
-                {/* {showMoreBio ? bio : `${bio.substring(0, 140)}`}
-
-                <b onClick={() => setShowMoreBio(!showMoreBio)}>
-                  {showMoreBio ? "Show Less" : "Read More"}
-                </b> */}
                 {bio.substring(0, 140)}
-
                 <b onClick={() => showRecommendationsMore(bio)}>Read More</b>
               </>
             )}
           </p>
         </div>
       </div>
-    </Slide>
   );
 };
 

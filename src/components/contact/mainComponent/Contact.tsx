@@ -1,25 +1,20 @@
 import "../Contact.css";
-import { Slide } from "react-awesome-reveal";
 import ContactMe from "../InfoContact/ContactMe";
 import InputValueSendEmail from "../sendMail/InputValueSendEmail";
 
 
 const Contact: React.FC = () => {
-
-
+  
   return (
     <div className="contact">
-      
-      <Slide direction="left">
-       <ContactMe/>
-      </Slide>
+      <div>
+        <ContactMe />
+      </div>
 
       {/* send Email */}
-      <InputValueSendEmail/>
-      
+      <InputValueSendEmail />
     </div>
   );
 };
-
 
 export default Contact;

@@ -1,6 +1,5 @@
 import { useRef } from "react";
 import Slider from "react-slick";
-import { Slide } from "react-awesome-reveal";
 import CardRecommendations from "../modelRecommendations/CardRecommendations";
 import "../Recommendations.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
@@ -57,7 +56,7 @@ const Recommendations: React.FC = () => {
 
   return (
     <div className="ContainerRecommendations">
-      <Slide className="titleAboutRecommendations" direction="left">
+      <div className="titleAboutRecommendations">
         <span className="green">Recommendations</span>
         <h1>what say about me</h1>
         <h6>
@@ -67,13 +66,13 @@ const Recommendations: React.FC = () => {
           </b>{" "}
           Recommendations
         </h6>
-      </Slide>
+        </div>
 
       {loading ? (
         <Loading textLoading={"Recommendations"} />
       ) : (
         <div className="Testimonials">
-          <Slider className="modelsShowCards" ref={arrowRef} {...settings}>
+            <Slider className="modelsShowCards" ref={arrowRef} {...settings}>
             {dataRecommendations.map((value) => (
               <div key={value.name}>
                 <CardRecommendations

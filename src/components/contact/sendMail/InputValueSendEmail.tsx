@@ -1,6 +1,5 @@
 import ReCAPTCHA from "react-google-recaptcha";
 import { useState } from "react";
-import { Slide } from "react-awesome-reveal";
 import { SendMessage } from "./SendMessage";
 
 
@@ -82,7 +81,6 @@ const InputValueSendEmail = () => {
           onChange={(val) => setCapVal(val)}
         />
 
-        <Slide direction="up">
           <div className="btnSendMessage">
             <button
               style={
@@ -101,7 +99,6 @@ const InputValueSendEmail = () => {
               Send Message
             </button>
           </div>
-        </Slide>
       </form>
     </div>
   );

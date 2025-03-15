@@ -1,4 +1,3 @@
-import { Slide } from "react-awesome-reveal";
 import "./ProfileStart.css";
 import LazyImage from "../tools/LazyLoadImage/LazyImage";
 import Swal from "sweetalert2";
@@ -42,7 +41,6 @@ const ProfileStart: React.FC = () => {
 
   return (
     <div className="ContainerProfileStart">
-      <Slide direction="left">
         <div className="Texts">
           <h1 className="green">Artem Kot</h1>
           <h3>
@@ -94,13 +92,12 @@ const ProfileStart: React.FC = () => {
 
         <div className="postSearch" onClick={() => positionPostSearch()}>
           <LazyImage
-            src="https://i.postimg.cc/PxVq5vPg/my-image.png"
+            src="https://i.postimg.cc/1z5XZ08B/my-image.webp"
             width={250}
             height={NaN}
             alt="post search work in linkedin"
           />
         </div>
-      </Slide>
     </div>
   );
 };

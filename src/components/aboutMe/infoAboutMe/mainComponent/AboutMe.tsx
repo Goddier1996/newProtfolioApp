@@ -2,7 +2,6 @@ import { PiCodeThin } from "react-icons/pi";
 import { BiLogoAdobe } from "react-icons/bi";
 import { CgWebsite } from "react-icons/cg";
 import Card from "../modelsCardsAboutMe/CardsAboutMe";
-import { Slide } from "react-awesome-reveal";
 import "../../AboutMe.css";
 import MyImage from "../MyImage";
 import { FetchData } from "../../../../customHook/FetchData";
@@ -21,16 +20,12 @@ const AboutMe: React.FC = () => {
   return (
     <>
       <div className="ContainerAboutMe">
-        <Slide direction="down">
           <h1>
             About <span className="green">Me</span>
           </h1>
-        </Slide>
 
         {/* here show my image,and in component MyImage use other component to show mini info about me */}
-        <Slide direction="left">
           <MyImage />
-        </Slide>
 
         {/* here show cards data */}
         <div className="CardsAboutMe">
@@ -39,8 +34,8 @@ const AboutMe: React.FC = () => {
             :
             <>
             {dataAboutMe.map((value: any) => (
-            <Slide key={value.title} direction="left">
               <Card
+                key={value.title}
                 Icon={
                   value.title == "Software Practical Engineer"
                     ? PiCodeThin
@@ -51,7 +46,6 @@ const AboutMe: React.FC = () => {
                 title={value.title}
                 info={value.info}
               />
-            </Slide>
           ))}
             </>    
         }
@@ -59,9 +53,7 @@ const AboutMe: React.FC = () => {
       </div>
       
       {/* show my active in GitHub */}
-      <Slide direction="left">
          <ShowGitHubCalendar/>
-      </Slide>
     </>
   );
 };

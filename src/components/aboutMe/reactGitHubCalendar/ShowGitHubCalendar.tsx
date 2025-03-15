@@ -17,7 +17,7 @@ const ShowGitHubCalendar: React.FC = () => {
           username={process.env.REACT_APP_GIT || ""}
           blockSize={10.5}
           blockMargin={5}
-          fontSize={11}
+          fontSize={12}
           colorScheme="dark"
         />
       </div>

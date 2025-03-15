@@ -1,16 +1,14 @@
 .BannerApp {
-    height: 100vh;
+    /* height: 90vh; */
     background: url("../src/images/11.webp");
-    border-bottom-left-radius: 2%;
-    border-bottom-right-radius: 2%;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
 }
 
 .LightColor {
     background: url("../src/images/22.webp");
-}
-
-.bannerMargin {
-    margin-top: -6%;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
 }
 
 
@@ -28,7 +26,8 @@
         transform-origin: 0 0;
     }
 
-    .bannerMargin {
-        margin-top: -12%;
+    .BannerApp,
+    .LightColor {
+        border-radius: 0;
     }
 }

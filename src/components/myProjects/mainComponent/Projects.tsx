@@ -6,18 +6,18 @@ import { Slide } from "react-awesome-reveal";
 const Projects: React.FC = () => {
   return (
     <div className="ContainerMyProjects">
-      <Slide direction="left">
+      {/* <Slide direction="left"> */}
         <h1>
           My <span className="green">Projects</span>
         </h1>
         <br />
-      </Slide>
+      {/* </Slide> */}
 
       
-      <Slide direction="left">
+      {/* <Slide direction="left"> */}
         {/* here show mini menu select type to show project */}
         <SelectTypeProject />
-      </Slide>
+      {/* </Slide> */}
     </div>
   );
 };

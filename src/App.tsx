@@ -8,14 +8,12 @@ import Contact from "./components/contact/mainComponent/Contact";
 import ScrollUpButton from "./components/tools/scrollUp/ScrollUpButton";
 import Footer from "./components/footer/Footer";
 import { useEffect } from "react";
-// import { sayShabbatShalom } from "./components/tools/popUpShabbatShalom/SayShabbatShalom";
 import { showPopUpInfoApp } from "./components/tools/startPopUpSite/ShowAboutMeStartPopUp";
 import { useMediaQuery } from "@mui/material";
-import TagManager from 'react-gtm-module'
+import TagManager from "react-gtm-module";
 
 
 function App() {
-
 
   const mobileScreen = useMediaQuery("(min-width:768px)", { noSsr: true });
 
@@ -24,18 +22,14 @@ function App() {
     if (mobileScreen && !sessionStorage.getItem("startPopUp")) {
       showPopUpInfoApp();
     }
-
-    // here show popup animation when friday and saturday
-    // sayShabbatShalom();
   });
 
 
-  
   // here show COUNTING THE DAYS war 7.10
   const tagManagerArgs = {
-    gtmId: process.env.REACT_APP_GTM || ""
-  }
-  TagManager.initialize(tagManagerArgs)
+    gtmId: process.env.REACT_APP_GTM || "",
+  };
+  TagManager.initialize(tagManagerArgs);
 
 
 
@@ -44,11 +38,9 @@ function App() {
       <ScrollUpButton />
 
       <div className="ContainerApp">
-        <div className="LightColor">
-          <Header />
-        </div>
+        <Header />
 
-        <div className="BannerApp bannerMargin">
+        <div className="BannerApp">
           <ProfileStart />
         </div>
 
@@ -73,6 +65,5 @@ function App() {
     </>
   );
 }
-
 
 export default App;

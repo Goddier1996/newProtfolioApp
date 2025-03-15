@@ -1,6 +1,6 @@
 import CarouselMySkills from "../showSkills/CarouselMySkills";
-import ShowMyCertificate from "../MyDiplomaAndCertificate/ShowMyCertificate";
-import ShowMyEducation from "../MyDiplomaAndCertificate/ShowMyDiploma";
+// import ShowMyCertificate from "../MyDiplomaAndCertificate/ShowMyCertificate";
+// import ShowMyEducation from "../MyDiplomaAndCertificate/ShowMyDiploma";
 // import ShowMyCV from "../myCV/ShowMyCV";
 import ShowInfoAboutMe from "./ShowInfoAboutMe";
 
@@ -19,10 +19,10 @@ const MyImageInfoAboutMe: React.FC = () => {
       <CarouselMySkills />
 
       {/* here show my education diploma and course */}
-      <div className="styleButtonEducation">
+      {/* <div className="styleButtonEducation">
         <ShowMyEducation />
         <ShowMyCertificate />
-      </div>
+      </div> */}
 
       {/* show my CV */}
       {/* <ShowMyCV /> */}

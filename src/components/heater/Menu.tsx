@@ -1,6 +1,5 @@
 import { useState } from "react";
 import styled from "styled-components";
-import { Slide } from "react-awesome-reveal";
 import "./Menu.css";
 import { ObjectMenuOptions } from "../../interface/info.model";
 import LazyImage from "../tools/LazyLoadImage/LazyImage";
@@ -24,7 +23,6 @@ const Header: React.FC = () => {
   return (
     <Container bar={bar}>
       <div className="ContainerMenu">
-        {/* <Slide direction="down"> */}
           <div className="Logo">
             <LazyImage
               src="https://i.postimg.cc/QN7XRWh6/qa.webp"
@@ -33,7 +31,6 @@ const Header: React.FC = () => {
               alt="Logo"
             />
           </div>
-        {/* </Slide> */}
 
         <div className="Nav" style={bar ? { height: "100vh" } : { height: 0 }}>
           {arrayMenuOptions.map((value: ObjectMenuOptions) => (
