@@ -7,6 +7,7 @@ export async function GetRecommends() {
       name,
       position,
       bio,
+      linkedin,
       image{
         asset->{
           _id,

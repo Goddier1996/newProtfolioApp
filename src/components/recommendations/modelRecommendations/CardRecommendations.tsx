@@ -10,7 +10,7 @@ import LazyImage from "../../tools/LazyLoadImage/LazyImage";
 const CardRecommendations: React.FC<Recommends> = (props) => {
 
 
-  const { name, position, image, bio } = props;
+  const { name, position, image, bio, linkedin } = props;
   // const [showMoreBio, setShowMoreBio] = useState<Boolean>(false);
   const [showMorePosition, setShowMorePosition] = useState<Boolean>(false);
 
@@ -57,7 +57,8 @@ const CardRecommendations: React.FC<Recommends> = (props) => {
                   </b>
                 </>
               )}
-            </p>
+          </p>
+           <a className="LinkedinStyle" href={linkedin}>Linkedin</a>
           </div>
         </div>
 

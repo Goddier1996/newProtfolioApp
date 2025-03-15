@@ -9,9 +9,7 @@ import Loading from "../../../tools/loading/Loading";
 import ShowGitHubCalendar from "../../reactGitHubCalendar/ShowGitHubCalendar";
 
 
-
 const AboutMe: React.FC = () => {
-
 
   // here use customHook to fetch about cards data
   const { dataAboutMe, loading } = FetchData("AboutMe", "");

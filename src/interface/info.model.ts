@@ -33,6 +33,7 @@ export interface Recommends{
     position: string;
     image: any;
     bio: string;
+    linkedin:string;
 }[]
 
 

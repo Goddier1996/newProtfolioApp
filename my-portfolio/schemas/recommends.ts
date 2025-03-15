@@ -27,6 +27,11 @@ export default defineType({
       name: 'bio',
       title: 'Bio',
       type: 'string',
-    })
-  ]
+    }),
+    defineField({
+      name: 'linkedin',
+      title: 'Linkedin',
+      type: 'string',
+    }),
+  ],
 })

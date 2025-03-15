@@ -80,6 +80,7 @@ const Recommendations: React.FC = () => {
                   position={value.position}
                   image={value.image}
                   bio={value.bio}
+                  linkedin={value.linkedin}
                 />
               </div>
             ))}

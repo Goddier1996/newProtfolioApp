@@ -6,7 +6,6 @@ import { InfoAboutMe } from "../../../../interface/info.model";
 
 const CardsAboutMe: React.FC<InfoAboutMe> = (props) => {
 
-
   const { Icon, info, title } = props;
 
   const [showMore, setShowMore] = useState<Boolean>(false);

@@ -44,13 +44,13 @@ const ProfileStart: React.FC = () => {
         <div className="Texts">
           <h1 className="green">Artem Kot</h1>
           <h3>
-            Software Engineer | Actively{" "}
-            <b className="green">Looking For Work</b>
+            Software Developer |{" "}
+            <b className="green">Transforming Ideas into Reality</b>
             <br />
             <br />
             Expert In <b className="green">Web Technologies </b> &{" "}
             <b className="green">Writing efficient code </b>
-            Built A Portfolio Of 10+ Personal Projects
+            Built A Portfolio Of 5+ Projects
           </h3>
           <p>
             Creating the optimal blend of functionality & user experience in
