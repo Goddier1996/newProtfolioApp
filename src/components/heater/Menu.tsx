@@ -21,7 +21,6 @@ const Header: React.FC = () => {
 
 
   return (
-    <Container bar={bar}>
       <div className="ContainerMenu">
           <div className="Logo">
             <LazyImage
@@ -48,19 +47,8 @@ const Header: React.FC = () => {
           ))}
         </div>
 
-        <div
-          onClick={() => setBar(!bar)}
-          className="bars"
-          style={
-            !bar
-              ? { backgroundColor: "#82b5bd" }
-              : { backgroundColor: "#8B0000", color: "white" }
-          }
-        >
-          <div className="bar">{!bar ? <p>Menu</p> : <p>Close</p>}</div>
-        </div>
+       
       </div>
-    </Container>
   );
 };
 
@@ -68,19 +56,3 @@ const Header: React.FC = () => {
 export default Header;
 
 
-
-const Container = styled.div<any>`
-  @media (max-width: 640px) {
-    :before {
-      transform: ${(props) =>
-        props.bar ? "rotate(45deg)" : "translateY(10px)"};
-      transition: all 400ms ease-in-out;
-    }
-
-    :after {
-      transform: ${(props) =>
-        props.bar ? "rotate(-45deg)" : "translateY(-10px)"};
-      transition: all 400ms ease-in-out;
-    }
-  }
-`;

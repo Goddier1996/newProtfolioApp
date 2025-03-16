@@ -73,19 +73,8 @@
     transform-origin: left;
 }
 
-.bars {
-    transition-duration: 0.4s;
-    -webkit-transition-duration: 0.4s;
-}
-
-.Nav a:hover,
-.bars:hover {
+.Nav a:hover {
     opacity: 0.7;
-}
-
-.bars {
-    display: none;
-    color: black;
 }
 
 
@@ -102,21 +91,6 @@
         padding: 2.5rem 0;
     }
 
-    .bars {
-        width: 55px;
-        height: 55px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        /* position: fixed; */
-        z-index: 100;
-        top: 2.5rem;
-        right: 1rem;
-        width: 55px;
-        height: 48px;
-        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    }
-
     .Nav {
         position: fixed;
         display: flex;
@@ -131,12 +105,6 @@
         transition: height 400ms ease-in-out;
         overflow: hidden;
         z-index: 100;
-    }
-
-    .bar p {
-        font-size: 13px;
-        cursor: pointer;
-        font-weight: bold;
     }
 
     .Logo {
