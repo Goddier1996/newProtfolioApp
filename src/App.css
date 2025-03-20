@@ -1,12 +1,11 @@
 .BannerApp {
-    /* height: 90vh; */
-    background: url("../src/images/11.webp");
+    background: rgba(128, 128, 128, 0.097);
     border-top-left-radius: 20%;
     border-top-right-radius: 20%;
 }
 
 .LightColor {
-    background: url("../src/images/22.webp");
+    background: rgba(128, 128, 128, 0.097);
     border-top-left-radius: 20%;
     border-top-right-radius: 20%;
 }
