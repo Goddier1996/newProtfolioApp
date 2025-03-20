@@ -16,11 +16,11 @@
 
 body {
   width: 100%;
-  background: url("https://i.postimg.cc/8kKddfvG/87878.png");
+  background: url("https://i.postimg.cc/8kKddfvG/87878.png"), rgb(48, 48, 48);
   color: #fff;
   overflow-x: hidden;
   position: relative;
-  cursor: url("https://i.postimg.cc/q7R0vBGq/cursor-Start-Web.png"), pointer;
+  /* cursor: url("https://i.postimg.cc/q7R0vBGq/cursor-Start-Web.png"), pointer; */
 }
 
 .green {
