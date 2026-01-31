@@ -10,7 +10,6 @@ import Footer from "./components/footer/Footer";
 import { useEffect } from "react";
 import { showPopUpInfoApp } from "./components/tools/startPopUpSite/ShowAboutMeStartPopUp";
 import { useMediaQuery } from "@mui/material";
-import TagManager from "react-gtm-module";
 
 
 function App() {
@@ -23,14 +22,6 @@ function App() {
       showPopUpInfoApp();
     }
   });
-
-
-  // here show COUNTING THE DAYS war 7.10
-  const tagManagerArgs = {
-    gtmId: process.env.REACT_APP_GTM || "",
-  };
-  TagManager.initialize(tagManagerArgs);
-
 
 
   return (
